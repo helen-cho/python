@@ -24,3 +24,9 @@ def insertPost():
   #print(req)
   result = bbs.insert(req)
   return result
+
+@bp.route('/<int:bid>')
+def read(bid):
+  vo=bbs.read(bid)
+  return render_template(
+    'index.html', bbs=vo, title='게시글정보', pageName='bbs/read.html')
