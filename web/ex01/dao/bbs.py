@@ -38,3 +38,16 @@ def read(bid):
     print('읽기오류:', err)
   finally:
     cursor.close()
+
+def delete(bid):
+  try:
+    with db.connection.cursor() as cursor:
+      sql= "delete from bbs where bid=%s"
+      cursor.execute(sql, bid)
+      db.connection.commit()
+      return 'success'
+  except Exception as err:
+    print('삭제오류:', err)
+    return 'fail'
+  finally:
+    cursor.close()    

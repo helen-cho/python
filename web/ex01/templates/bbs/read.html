@@ -1,5 +1,9 @@
 <div class="my-5 px-5">
   <h1 class="text-center mb-5">{{title}}</h1>
+  <div class="text-end mb-2" id="update">
+    <button class="btn btn-outline-success btn-sm update">수정</button>
+    <button class="btn btn-outline-danger btn-sm delete">삭제</button>
+  </div>
   <div class="card">
     <div class="card-body">
       <h5>[{{bbs.bid}}] {{bbs.title}}</h5>
@@ -7,7 +11,32 @@
       <div style="white-space:pre-wrap;">{{bbs.contents}}</div>
     </div>
     <div class="card-footer text-muted py-3">
-      Posted by {{bbs.writer}} on {{bbs.fmtDate}}
+      Posted by 
+      <span style="color:blue;font-size:18px;">{{bbs.writer}}</span> 
+      on {{bbs.fmtDate}}
     </div>
   </div>
 </div>
+<script>
+  const writer="{{bbs.writer}}";
+  if(writer == uid){
+    $("#update").show();
+  }else{
+    $("#update").hide();
+  }
+
+  $(".delete").on("click", function(){
+    const bid="{{bbs.bid}}";
+    if(!confirm(`${bid}번 게시글을 삭제하실래요?`)) return;
+    //삭제
+    $.ajax({
+      type:"delete",
+      url:`/bbs/${bid}`,
+      success:function(data){
+        if(data=='success'){
+          location.href="/bbs";
+        }
+      }
+    });
+  });
+</script>

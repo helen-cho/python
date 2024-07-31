@@ -30,3 +30,8 @@ def read(bid):
   vo=bbs.read(bid)
   return render_template(
     'index.html', bbs=vo, title='게시글정보', pageName='bbs/read.html')
+
+@bp.route('/<int:bid>', methods=['DELETE'])
+def delete(bid):
+  result = bbs.delete(bid)
+  return result
