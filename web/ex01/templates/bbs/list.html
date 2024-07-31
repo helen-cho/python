@@ -1,0 +1,12 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">{{title}}</h1>
+</div>
+<script>
+  $.ajax({
+    type:"get",
+    url:"/bbs/list.json",
+    success:function(data){
+      console.log(data);
+    }
+  });
+</script>
