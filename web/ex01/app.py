@@ -1,8 +1,9 @@
 from flask import Flask, render_template
-from routes import bbs
+from routes import bbs, users
 
 app = Flask(__name__, template_folder="templates")
 app.register_blueprint(bbs.bp)
+app.register_blueprint(users.bp)
 
 @app.route("/")
 def index():
