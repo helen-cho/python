@@ -21,5 +21,6 @@ def insert():
 @bp.route('/insert', methods=['POST'])
 def insertPost():
   req = json.loads(request.get_data())
-  print(req)
-  return "sucess"
+  #print(req)
+  result = bbs.insert(req)
+  return result

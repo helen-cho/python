@@ -28,7 +28,12 @@
       url:"/bbs/insert",
       data:JSON.stringify({uid, title, contents}),
       success:function(data){
-        alert(data);
+        //alert(data);
+        if(data=="success"){
+          location.href="/bbs"
+        }else{
+          alert("글쓰기를 실패했습니다.");
+        }
       }
     });
   });
