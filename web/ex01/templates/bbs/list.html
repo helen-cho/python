@@ -1,5 +1,8 @@
 <div class="my-5">
   <h1 class="text-center mb-5">{{title}}</h1>
+  <div id="insert">
+    <a href="/bbs/insert">글쓰기</a>
+  </div>
   <div id="div_list"></div>
   {%raw%}
   <script id="temp_list" type="x-handlebars-template">
@@ -30,4 +33,9 @@
     });
   }
 
+  if(uid){
+    $("#insert").show();
+  }else{
+    $("#insert").hide();
+  }
 </script>

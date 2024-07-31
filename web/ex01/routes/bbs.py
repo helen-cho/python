@@ -1,5 +1,6 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 from dao import bbs
+import json
 
 bp = Blueprint('bbs', __name__, url_prefix='/bbs')
 
@@ -11,3 +12,14 @@ def list():
 @bp.route('/list.json')
 def listJSON():
   return bbs.list()
+
+@bp.route('/insert')
+def insert():
+  return render_template(
+    'index.html',title='글쓰기', pageName='bbs/insert.html')
+
+@bp.route('/insert', methods=['POST'])
+def insertPost():
+  req = json.loads(request.get_data())
+  print(req)
+  return "sucess"
