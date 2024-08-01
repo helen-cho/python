@@ -14,3 +14,18 @@ def list(bid):
     print('목록오류', err)
   finally:
     cursor.close()
+
+def insert(reply):
+    try:
+      with db.connection.cursor() as cursor:
+        sql="insert into reply(bid, contents, writer)\
+            values(%s, %s, %s)"
+        cursor.execute(sql, 
+          (reply.get('bid'), reply.get('contents'), reply.get('uid')))
+        db.connection.commit()
+        return 'success'
+    except Exception as err:
+      print('등록오류', err)
+      return 'fail'
+    finally:
+      cursor.close()

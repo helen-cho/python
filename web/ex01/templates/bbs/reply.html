@@ -1,5 +1,27 @@
 <div class="my-5">
-  <h3 class="text-center">댓글관리</h3>
+  <h3 class="text-center mb-3">댓글관리</h3>
+  <div>
+    <textarea id="contents" class="form-control" rows="5" placeholder="댓글내용을 입력하세요."></textarea>
+    <div class="text-end mt-2 mb-5">
+      <button id="insert" class="btn btn-primary px-5">등록</button>
+    </div>
+  </div>
+  <div id="div_list"></div>
+  {%raw%}
+  <script id="temp_list" type="x-handlebars-template">
+    {{#each .}}
+      <div>
+        <div class="text-muted" style="font-size:13px;">
+          {{writer}} | {{fmtDate}}
+        </div>  
+        <div>
+          {{contents}}
+        </div>  
+        <hr>
+      </div>  
+    {{/each}}
+  </script>
+  {%endraw%}
 </div>
 <script>
   getList();
@@ -8,8 +30,35 @@
       type:"get",
       url:`/reply/list.json/${bid}`,
       success:function(data){
-        console.log(data);
+        //console.log(data);
+        const temp=Handlebars.compile($("#temp_list").html());
+        $("#div_list").html(temp(data));
       }
     });
   }
+
+  $("#insert").on("click", ()=>{
+    if(!uid){
+      sessionStorage.setItem("target", `/bbs/${bid}`);
+      location.href="/users/login";
+    }
+    const contents = $("#contents").val();
+    if(contents == "") {
+      alert("댓글내용을 입력하세요!");
+      $("#contents").focus();
+      return;
+    }
+    //댓글등록
+    $.ajax({
+      type:"post",
+      url:"/reply/insert",
+      data:JSON.stringify({bid, uid, contents}),
+      success:function(data){
+        if(data=='success') {
+          getList();
+          $("#contents").val("");
+        }
+      }
+    });
+  });
 </script>
