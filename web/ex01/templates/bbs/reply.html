@@ -118,6 +118,10 @@
         }
 
         if(curPages != totalPages){
+          if(page > curPages) {
+            page--;
+            getList();
+          }
           totalPages = curPages;
           $("#pagination").twbsPagination("changeTotalPages", totalPages, page);
         }
