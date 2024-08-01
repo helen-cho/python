@@ -11,7 +11,10 @@ def list():
 
 @bp.route('/list.json')
 def listJSON():
-  return bbs.list()
+  list = bbs.list()
+  total = bbs.total()
+  data = {'total':total.get('cnt'), 'list':list}
+  return data
 
 @bp.route('/insert')
 def insert():
@@ -45,5 +48,5 @@ def update(bid):
 @bp.route('update', methods=['POST'])
 def updatePost():
   req = json.loads(request.get_data())
-  print(req)
-  return 'success'
+  result = bbs.update(req)
+  return result

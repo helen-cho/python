@@ -24,7 +24,9 @@
       url:"/bbs/update",
       data:JSON.stringify({bid, title, contents}),
       success:function(data){
-        alert(data);
+        if(data=='success'){
+          location.href=`/bbs/${bid}`;
+        }
       }
     });
   });
