@@ -11,3 +11,21 @@
     </form>
   </div>
 </div>
+<script>
+  $(frm).on("submit", (e)=>{
+    e.preventDefault();
+    const title=$(frm.title).val();
+    const contents=$(frm.contents).val();
+    const bid="{{bbs.bid}}";
+    if(!confirm("정말로 수정하실래요?")) return;
+    //수정
+    $.ajax({
+      type:"post",
+      url:"/bbs/update",
+      data:JSON.stringify({bid, title, contents}),
+      success:function(data){
+        alert(data);
+      }
+    });
+  });
+</script>

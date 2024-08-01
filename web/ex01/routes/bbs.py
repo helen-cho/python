@@ -41,3 +41,9 @@ def update(bid):
   vo=bbs.read(bid)
   return render_template(
     'index.html', bbs=vo, title='정보수정', pageName='bbs/update.html')
+
+@bp.route('update', methods=['POST'])
+def updatePost():
+  req = json.loads(request.get_data())
+  print(req)
+  return 'success'
