@@ -11,7 +11,11 @@ def list():
 
 @bp.route('/list.json')
 def listJSON():
-  list = bbs.list()
+  args = request.args
+  page = args['page']
+  size = args['size']
+  print(page, size)
+  list = bbs.list(page, size)
   total = bbs.total()
   data = {'total':total.get('cnt'), 'list':list}
   return data

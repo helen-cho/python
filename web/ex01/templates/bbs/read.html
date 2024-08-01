@@ -1,3 +1,7 @@
+<script>
+  const writer="{{bbs.writer}}";
+  const bid="{{bbs.bid}}";
+</script>
 <div class="my-5 px-5">
   <h1 class="text-center mb-5">{{title}}</h1>
   <div class="text-end mb-2" id="update">
@@ -16,17 +20,14 @@
       on {{bbs.fmtDate}}
     </div>
   </div>
+  {%include 'bbs/reply.html'%}
 </div>
 <script>
-  const writer="{{bbs.writer}}";
-  const bid="{{bbs.bid}}";
-
   if(writer == uid){
     $("#update").show();
   }else{
     $("#update").hide();
   }
-
   $(".delete").on("click", function(){
     if(!confirm(`${bid}번 게시글을 삭제하실래요?`)) return;
     //삭제

@@ -30,11 +30,12 @@
     $.ajax({
       type:"get",
       url:"/bbs/list.json",
+      data:{page, size},
       success:function(data){
-        console.log(data);
+        //console.log(data);
         const temp=Handlebars.compile($("#temp_list").html());
         $("#div_list").html(temp(data));
-        
+
         const curPages = data.total == 0 ? 1:Math.ceil(data.total/size);
         if(curPages != totalPages){
           totalPages = curPages;

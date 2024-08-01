@@ -1,12 +1,15 @@
 from dao import db
 
-def list():
+def list(page, size):
+  page = int(page)
+  size = int(size)
+  start=(page-1) * size
   try:
     with db.connection.cursor() as cursor:
-      sql = "select *, date_format(regDate,'%Y-%m-%d %T') fmtDate \
+      sql = "select *, date_format(regDate,'%%Y-%%m-%%d %%T') fmtDate \
             from bbs order by bid desc \
-            limit 0, 5"
-      cursor.execute(sql)
+            limit %s, %s"
+      cursor.execute(sql, (start, size))
       rows = cursor.fetchall()
       return rows
   except Exception as err:
