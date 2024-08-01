@@ -58,3 +58,16 @@ def delete(rid):
       return 'fail'
     finally:
       cursor.close()
+
+def update(reply):
+  try:
+    with db.connection.cursor() as cursor:
+      sql="update reply set contents=%s, regDate=now() where rid=%s"
+      cursor.execute(sql, (reply.get('contents'), reply.get('rid')))
+      db.connection.commit()
+      return 'success'
+  except Exception as err:
+    print('수정오류', err)
+    return 'fail'
+  finally:
+    cursor.close()

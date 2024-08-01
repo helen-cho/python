@@ -22,3 +22,9 @@ def insert():
 def delete(rid):
   result = DAO.delete(rid)
   return result
+
+@bp.route('/update', methods=['POST'])
+def update():
+  req = json.loads(request.get_data())
+  result = DAO.update(req)
+  return result
