@@ -45,3 +45,16 @@ def total(bid):
     print('댓글수오류', err)
   finally:
     cursor.close()
+
+def delete(rid):
+    try:
+      with db.connection.cursor() as cursor:
+        sql="delete from reply where rid=%s"
+        cursor.execute(sql, rid)
+        db.connection.commit()
+        return 'success'
+    except Exception as err:
+      print('삭제오류', err)
+      return 'fail'
+    finally:
+      cursor.close()

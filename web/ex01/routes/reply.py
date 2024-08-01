@@ -17,3 +17,8 @@ def insert():
   req = json.loads(request.get_data())
   result = DAO.insert(req)
   return result
+
+@bp.route('/<int:rid>', methods=['DELETE'])
+def delete(rid):
+  result = DAO.delete(rid)
+  return result

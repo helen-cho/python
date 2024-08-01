@@ -11,15 +11,34 @@
   {%raw%}
   <script id="temp_list" type="x-handlebars-template">
     {{#each list}}
-      <div>
-        <div class="text-muted" style="font-size:13px;">
-          {{writer}} | {{fmtDate}}
+      <div class="display{{rid}}">
+        <div class="text-muted row mb-2" style="font-size:13px;">
+          <div class="col">{{writer}} | {{fmtDate}}</div>
+          <div class="col text-end" style="{{style writer}}" rid="{{rid}}">
+            <button class="btn btn-outline-success btn-sm update">수정</button>
+            <button class="btn btn-outline-danger btn-sm delete">삭제</button>
+          </div>  
         </div>  
-        <div style="cursor:pointer;white-space:pre-wrap" 
-                  class="ellipsis contents">{{contents}}</div>  
+        <div style="cursor:pointer;white-space:pre-wrap" class="ellipsis contents">{{rid}}:{{contents}}</div>  
         <hr>
-      </div>  
+      </div>
+      <div class="edit{{rid}}" style="display:none">
+        <div class="text-muted row mb-2" style="font-size:13px;">
+          <div class="col">{{writer}} | {{fmtDate}}</div>
+          <div class="col text-end" rid="{{rid}}">
+            <button class="btn btn-outline-success btn-sm save">저장</button>
+            <button class="btn btn-outline-danger btn-sm cancel">취소</button>
+          </div>  
+        </div>  
+        <textarea class="form-control" rows="5">{{contents}}</textarea>  
+        <hr>
+      </div>   
     {{/each}}
+  </script>
+  <script>
+    Handlebars.registerHelper("style", function(writer){
+      if(uid!=writer) return "display:none";
+    });
   </script>
   {%endraw%}
 </div>
@@ -27,6 +46,36 @@
   let page=1;
   let totalPages=100;
   let size=3;
+
+  //수정버튼 클릭
+  $("#div_list").on("click", ".update", function(){
+    const rid=$(this).parent().attr("rid");
+    $("#div_list .edit" + rid).show();
+    $("#div_list .display" + rid).hide();
+  });
+
+  //취소버튼 클릭
+  $("#div_list").on("click", ".cancel", function(){
+    const rid=$(this).parent().attr("rid");
+    $("#div_list .edit" + rid).hide();
+    $("#div_list .display" + rid).show();
+  });
+
+  //삭제버튼 클릭
+  $("#div_list").on("click", ".delete", function(){
+    const rid=$(this).parent().attr("rid");
+    if(!confirm(`${rid}번 댓글을 삭제하실래요?`)) return;
+    //댓글삭제
+    $.ajax({
+      type:"delete",
+      url:`/reply/${rid}`,
+      success:function(data){
+        if(data=='success'){
+          getList();
+        }
+      }
+    });
+  });
 
   $("#div_list").on("click", ".contents", function(){
     $(this).toggleClass("ellipsis")
