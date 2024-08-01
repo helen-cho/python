@@ -46,6 +46,7 @@
   let page=1;
   let totalPages=100;
   let size=3;
+  let total=0;
 
   //저장버튼을 클릭
   $("#div_list").on("click", ".save", function(){
@@ -89,6 +90,8 @@
       url:`/reply/${rid}`,
       success:function(data){
         if(data=='success'){
+          const last = Math.ceil((total-1)/size)
+          if(totalPages > last && last > 0) page--;
           getList();
         }
       }
@@ -109,6 +112,7 @@
         //console.log(data);
         const temp=Handlebars.compile($("#temp_list").html());
         $("#div_list").html(temp(data));
+        total = data.total;
         const curPages = data.total == 0 ? 1:Math.ceil(data.total/size);
 
         if(data.total > size) {
@@ -118,10 +122,6 @@
         }
 
         if(curPages != totalPages){
-          if(page > curPages) {
-            page--;
-            getList();
-          }
           totalPages = curPages;
           $("#pagination").twbsPagination("changeTotalPages", totalPages, page);
         }
