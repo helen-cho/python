@@ -6,11 +6,11 @@ bp = Blueprint('reply', __name__, url_prefix='/reply')
 
 @bp.route("/list.json/<int:bid>")
 def list(bid):
-  rows = DAO.list(bid)
-  if rows:
-    return rows
-  else:
-    return []
+  args = request.args
+  row = DAO.total(bid)
+  rows = DAO.list(bid, args)
+  data = {'total':row.get('cnt'), 'list':rows}
+  return data
   
 @bp.route('/insert', methods=['POST'])
 def insert():

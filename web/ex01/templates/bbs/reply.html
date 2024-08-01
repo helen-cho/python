@@ -7,9 +7,10 @@
     </div>
   </div>
   <div id="div_list"></div>
+  <div id="pagination" class="pagination justify-content-center mt-5"></div>
   {%raw%}
   <script id="temp_list" type="x-handlebars-template">
-    {{#each .}}
+    {{#each list}}
       <div>
         <div class="text-muted" style="font-size:13px;">
           {{writer}} | {{fmtDate}}
@@ -24,15 +25,30 @@
   {%endraw%}
 </div>
 <script>
+  let page=1;
+  let totalPages=100;
+  let size=3;
+
   getList();
   function getList(){
     $.ajax({
       type:"get",
+      data:{page, size},
       url:`/reply/list.json/${bid}`,
       success:function(data){
         //console.log(data);
         const temp=Handlebars.compile($("#temp_list").html());
         $("#div_list").html(temp(data));
+        const curPages = data.total == 0 ? 1:Math.ceil(data.total/size);
+        if(data.total > size) {
+          $("#pagination").show();
+        }else{
+          $("#pagination").hide();
+        }
+        if(curPages != totalPages){
+          totalPages = curPages;
+          $("#pagination").twbsPagination("changeTotalPages", totalPages, page);
+        }
       }
     });
   }
@@ -60,5 +76,22 @@
         }
       }
     });
+  });
+
+  $('#pagination').twbsPagination({
+    totalPages:totalPages,
+    visiblePages: 5,
+    startPage : 1,
+    initiateStartPageClick: false,
+    first:'<<',
+    prev :'<',
+    next :'>',
+    last :'>>',
+    onPageClick: function (event, clickedPage) {
+      if(page != clickedPage) {
+        page=clickedPage; 
+        getList();
+      }
+    }
   });
 </script>
