@@ -13,4 +13,26 @@
     if(!confirm("저장")) return;
     frm.submit();
   });
+  // $(frm).on("submit", function(e){
+  //   e.preventDefault();
+  //   const uid = $(frm.uid).val()
+  //   const uname = $(frm.uname).val()
+  //   const file = $(frm.file)[0].files[0];
+  //   const formData = new FormData();
+  //   formData.append("file", file);
+  //   formData.append("uid", uid);
+  //   formData.append("uname", uname);
+  //   $.ajax({
+  //     type:"post",
+  //     url:"/users/insert",
+  //     data:formData,
+  //     processData:false,
+  //     contentType:false,
+  //     success:function() {
+  //         alert("첨부파일 업로드가 성공되었습니다.");
+  //     }
+  //   });
+  // })
+  
+
 </script>

@@ -28,6 +28,9 @@ def insertPost():
   files=request.files.getlist('file')
   for file in files:
     file.save('static/images/' + file.filename)
+  form=request.form
+  form['file'] = '/static/images/' + file.filename
+  print(form.get("uid"), form.get('file'))
   return redirect('/')
   
 

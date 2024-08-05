@@ -60,6 +60,8 @@
       data:JSON.stringify({rid, contents}),
       success:function(data){
         if(data=='success'){
+          page=1;
+          console.log(page)
           getList();
         }
       }
@@ -90,8 +92,8 @@
       url:`/reply/${rid}`,
       success:function(data){
         if(data=='success'){
-          const last = Math.ceil((total-1)/size)
-          if(totalPages > last && last > 0) page--;
+          const curPages = Math.ceil((total-1)/size)
+          if(totalPages > curPages && page > 1) page--;
           getList();
         }
       }
@@ -120,8 +122,8 @@
         }else{
           $("#pagination").hide();
         }
-
-        if(curPages != totalPages){
+        console.log('page............', page);
+        if(curPages != totalPages){    
           totalPages = curPages;
           $("#pagination").twbsPagination("changeTotalPages", totalPages, page);
         }
@@ -165,6 +167,7 @@
     last :'>>',
     onPageClick: function (event, clickedPage) {
       if(page != clickedPage) {
+        console.log('page click', page)
         page=clickedPage; 
         getList();
       }
