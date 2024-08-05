@@ -6,7 +6,7 @@ def list(page, size):
   start=(page-1) * size
   try:
     with db.connection.cursor() as cursor:
-      sql = "select *, date_format(regDate,'%%Y-%%m-%%d %%T') fmtDate \
+      sql = "select *, date_format('%%Y-%%m-%%d %%T', regDate) fmtDate \
             from bbs order by bid desc \
             limit %s, %s"
       cursor.execute(sql, (start, size))

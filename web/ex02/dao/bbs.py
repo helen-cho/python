@@ -6,7 +6,7 @@ def list(args):
   start = (page-1) * size
   try:
     with db.connection.cursor() as cursor:
-      sql="select * from bbs\
+      sql="select *, date_format(regDate, '%%Y-%%m-%%d %%T') fmtDate from bbs\
            order by bid desc\
            limit %s, %s"
       cursor.execute(sql, (start, size))
@@ -70,7 +70,7 @@ def read(bid):
 def update(bbs):
   try:
     with db.connection.cursor() as cursor:
-      sql="update bbs set title=%s, contents=%s where bid=%s, regDate=now()"
+      sql="update bbs set title=%s, contents=%s,regDate=now() where bid=%s"
       cursor.execute(sql, (bbs.get('title'), bbs.get('contents'), bbs.get('bid')))
       db.connection.commit()
       return "success"

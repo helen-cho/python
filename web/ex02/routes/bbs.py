@@ -9,6 +9,7 @@ def list():
   args = request.args
   rows = bbsDAO.list(args)
   row = bbsDAO.total()
+  #print(rows)
   return {'total':row.get('cnt'), 'list':rows}
 
 @bp.route('/', methods=['POST'])
