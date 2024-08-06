@@ -9,15 +9,16 @@ def create_soup(page):
   soup = BeautifulSoup(res.text, "lxml")
   return soup
 
-file = open('data/코스피시가총액1~100.csv', 'w', encoding='utf-8', newline='')
+file = open('data/코스피시가총액1~100.csv', 'w', encoding='utf-8-sig', newline='')
 writer = csv.writer(file)
-title='N	종목명	현재가	전일비	등락률	액면가	시가총액	상장주식수	외국인비율	거래량	PER	ROE	토론실'.split('\t')
+title='NO,종목명,현재가,전일비,등락률,액면가,시가총액,상장주식수,외국인비율,거래량,PER,ROE,토론실'.strip().split(',')
 writer.writerow(title)
 
 for i in range(1, 3):
   soup = create_soup(i)
   es = soup.find('table', attrs={'class':'type_2'}).find_all('tr')
   for e in es:
+    idx=0
     columns = e.find_all('td')
     if len(columns) <= 1:
       continue

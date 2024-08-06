@@ -10,11 +10,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js"></script>
   <title>{{title}}</title>
+  <style>
+    #loading {
+        position: absolute;
+        display: block;
+        left:40%;
+        top:40%;
+        display: none;
+    }
+</style>
 </head>
 <body>
   <div class="container">
     {%include 'header.html'%}
     {%include 'menu.html'%}
+    <div class="text-center">
+    <img src="/static/images/loading.gif" id="loading">
+    </div>
     {%include pageName%}
     {%include 'bottom.html'%}
   </div>

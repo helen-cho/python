@@ -1,17 +1,10 @@
-import requests
-from bs4 import BeautifulSoup
+import csv
+import json
 
-#네이버 주식 TOP 종목
-url = 'https://finance.naver.com/'
-res =  requests.get(url)
+data = []
+with open('data/코스피시가총액1~100.csv', 'r', encoding='utf-8') as csv_file:
+  reader = csv.DictReader(csv_file)
+  data = list(reader)
 
-soup = BeautifulSoup(res.text, 'lxml')
-
-es = soup.find('tbody', attrs={'id':'_topItems1'}).find_all('tr', limit=5)
-for e in es:
-  title = e.find('a').get_text()
-  td = e.find_all('td')
-  price = td[0].get_text()
-  updown = td[1].get_text()
-  rate = td[2].get_text()
-  print(title, price, updown, rate.strip())
+with open('data/코스피시가총액1~100.json', 'w', encoding='utf8') as json_file:
+  json_file.write(json.dumps(data, indent=4, ensure_ascii=False))
