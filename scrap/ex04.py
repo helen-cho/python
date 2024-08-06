@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 
 index = 0
-
+items = []
 #쿠팡에서 노트북 검색 1페이지 데이터
 for i in range(1, 6):
   url = 'https://www.coupang.com/np/search?q=노트북&channel=user&component=&eventCategory=SRP&trcid=&traid=&sorter=scoreDesc&minPrice=&maxPrice=&priceRange=&filterType=&listSize=36&filter=&isPriceRange=false&brand=&offerCondition=&rating=0&page={}&rocketAll=false&searchIndexingToken=&backgroundColor='.format(i)
@@ -20,7 +20,12 @@ for i in range(1, 6):
   
   for e in es:
     name = e.find('div', attrs={'class':'name'}).get_text().strip()
-    price = e.find('strong', attrs={'class':'price-value'}).get_text()
+    price = e.find('strong', attrs={'class':'price-value'})
+    if price:
+      price = price.get_text()
+    else:
+      continue
+
     if 'Apple' in name:
       continue
 
@@ -50,5 +55,15 @@ for i in range(1, 6):
     print('평점수:', count)
     print('평점:', rating)
     print('-' * 80)
+    data ={'name':name, 'price':price, 'rating':rating, 'count':count}
+    items.append(data)
+
+print(items)
+
+
+import json
+with open('./data/shop.json', 'w', encoding='utf-8') as file:
+  file.write(json.dumps(items, indent=4, ensure_ascii=False))
+
 
   
