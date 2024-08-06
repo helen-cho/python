@@ -42,3 +42,21 @@ def movie_json():
   else:
     json_data = scrap_movie()
   return json_data
+
+@bp.route('/finance')
+def finance():
+  return render_template('index.html', 
+                         title='시가총액', pageName='scrap/finance.html')
+
+@bp.route('/finance.json')
+def scrap_finace():
+  #CSV -> JSON 변환
+  import csv
+  import json
+  data = []
+  with open('static/data/코스피시가총액1~100.csv', 'r', encoding='utf-8') as csv_file:
+    reader =  csv.DictReader(csv_file)
+    data = list(reader)
+  
+  json_data = json.dumps(data, indent=4, ensure_ascii=False)
+  return json_data

@@ -11,7 +11,7 @@ def create_soup(page):
 
 file = open('data/코스피시가총액1~100.csv', 'w', encoding='utf-8-sig', newline='')
 writer = csv.writer(file)
-title='NO,종목명,현재가,전일비,등락률,액면가,시가총액,상장주식수,외국인비율,거래량,PER,ROE,토론실'.strip().split(',')
+title='번호,종목명,현재가,전일비,등락률,액면가,시가총액,상장주식수,외국인비율,거래량,PER,ROE,토론실'.strip().split(',')
 writer.writerow(title)
 
 for i in range(1, 3):

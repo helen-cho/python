@@ -1,0 +1,49 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">시가총액상위(1~100)</h1>
+  <div id="div_list"></div>
+  {%raw%}
+  <script id="temp_list" type="x-handlebars-template">
+    <table class="table">
+      <tr>
+        <th>No.</th>
+        <th>종목명</th>
+        <th>현재가</th>
+        <th>전일비</th>
+        <th>등락률</th>
+        <th>액면가</th>    
+        <th>시가총액</th>
+        <th>상장주식수</th>
+        <th>외국인비율</th>
+        <th>거래량</th>
+      </tr>  
+      {{#each .}}
+      <tr>
+        <td>{{NO}}</td>
+        <td>{{종목명}}</td>
+        <td>{{현재가}}</td>
+        <td>{{전일비}}</td>
+        <td>{{등락률}}</td>
+        <td>{{액면가}}</td>
+        <td>{{시가총액}}</td>
+        <td>{{상장주식수}}</td>
+        <td>{{외국인비율}}</td>
+        <td>{{거래량}}</td>
+      </tr>  
+      {{/each}}
+    </table>  
+  </script>
+  {%endraw%}
+</div>
+<script>
+  $("#loading").show();
+  $.ajax({
+    type:"get",
+    url:"/scrap/finance.json",
+    success:function(data){
+      console.log(JSON.parse(data));
+      const temp = Handlebars.compile($("#temp_list").html());
+      $("#div_list").html(temp(JSON.parse(data)));
+      $("#loading").hide();
+    }
+  });
+</script>

@@ -24,7 +24,9 @@
       console.log(data);
       const temp = Handlebars.compile($("#temp_list").html());
       $("#div_list").html(temp(data));
-      $("#loading").hide();
+      setTimeout(()=>{
+        $("#loading").hide();
+      }, 1000)
     }
   });
 </script>
