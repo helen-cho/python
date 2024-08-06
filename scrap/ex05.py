@@ -18,6 +18,7 @@ def create_soup(query, page):
   return soup
 
 index=0
+items=[]
 for i in range(1, 6):
   soup = create_soup('노트북', i)
   es = soup.find_all('li', attrs={'class':re.compile('^search-product')})
@@ -42,9 +43,17 @@ for i in range(1, 6):
     print("가격:", price)
     print("이미지:", image)
 
+    item = {'name':name, 'price':price, 'image':image}
+    items.append(item)
+
     #이미지 다운로드
-    res_image = requests.get(image)
-    with open('images/img{}.jpg'.format(index), 'wb') as file:
-      file.write(res_image.content)
-      
+    # res_image = requests.get(image)
+    # with open('images/img{}.jpg'.format(index), 'wb') as file:
+    #   file.write(res_image.content)
+
+#items JSON 파일로 저장
+import json
+with open('data/shop.json', 'w', encoding='utf-8') as file:
+  file.write(json.dumps(items, indent=4, sort_keys=True, ensure_ascii=False))
+
 print('상품수:', index)
