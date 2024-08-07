@@ -6,7 +6,7 @@ def browser_config(url, query):
   from selenium import webdriver
   from selenium.webdriver.common.by import By
   from selenium.webdriver.common.keys import Keys
-
+  import time
   options = webdriver.ChromeOptions()
   options.add_argument('headless')
   options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36')
@@ -18,7 +18,7 @@ def browser_config(url, query):
   e = browser.find_element(By.ID, 'queryInputHeader')
   e.send_keys(query)
   e.send_keys(Keys.ENTER)
-
+  
   from bs4 import BeautifulSoup
   soup = BeautifulSoup(browser.page_source, 'lxml')
   return soup
@@ -29,11 +29,15 @@ def houseJson():
   query = args['query']
   url='https://land.naver.com/'
   soup=browser_config(url, query)
-  
+
   es = soup.find_all('div', attrs={'class':'item'})
   items = []
   for e in es:
-    title = e.find('div', attrs={'class':'title'})
+    title = e.find('div', attrs={'class':['title','item_title']})
+    if title:
+      title=title.get_text()
+    else:
+      title=''  
     address=e.find('div', attrs={'class':'address'})
     if address:
       address = address.get_text()
@@ -44,7 +48,7 @@ def houseJson():
       info = info.get_text()
     else:
       info =''
-    item={'title':title.get_text(), 'address':address, 'info':info}
+    item={'title':title, 'address':address, 'info':info}
     items.append(item)
   return items
 
