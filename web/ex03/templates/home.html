@@ -32,15 +32,22 @@
     {{/each}}
   </script>
 {%endraw%}
-
 <script>
-  $.ajax({
-    type:"get",
-    url:"/crawl/weather",
-    success:function(data){
-      $("#temp").html(data)
-    }
-  });
+  getWeather();
+  
+  // setInterval(()=>{
+  //   getWeather()
+  // }, 2000);
+
+  function getWeather(){
+    $.ajax({
+      type:"get",
+      url:"/crawl/weather",
+      success:function(data){
+        $("#temp").html(data)
+      }
+    });
+  }
 
   $.ajax({
     type:"get",

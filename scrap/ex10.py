@@ -12,7 +12,7 @@ browser = webdriver.Chrome(options=options)
 browser.maximize_window()
 
 def wait_until(xpath):
-  WebDriverWait(browser, 30).until(EC.presence_of_all_elements_located((By.XPATH, xpath)))
+  WebDriverWait(browser, 10).until(EC.presence_of_all_elements_located((By.XPATH, xpath)))
 
 browser.get('https://flight.naver.com/')
 e = browser.find_element(By.XPATH, '//button[text()="가는 날"]')
