@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, request
 import json
+
 bp = Blueprint('crawl', __name__, url_prefix='/crawl')
 
 def browser_config(url, query):
@@ -56,3 +57,20 @@ def houseJson():
 def house():
   return render_template('index.html', 
       title='부동산검색', pageName='crawl/house.html')
+
+
+from routes import ex14
+
+@bp.route('/news')
+def news():
+  result = json.dumps(ex14.news(), indent=4, ensure_ascii=False)
+  return result
+
+@bp.route('/weather')
+def weather():
+  return ex14.weather()
+
+@bp.route('/english')
+def english():
+  result = json.dumps(ex14.english(), indent=4, ensure_ascii=False)
+  return result
