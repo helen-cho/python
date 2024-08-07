@@ -1,0 +1,53 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">부동산검색</h1>
+  <div class="row">
+    <form class="col-6 col-md-4" name="frm">
+      <div class="input-group">
+        <input class="form-control" name="query">
+        <button class="btn btn-primary">검색</button>
+      </div>
+    </form>
+  </div>
+  <hr>
+  <div id="div_list"></div>
+</div>
+{%raw%}
+<script id="temp_list" type="x-handlebars-template">
+  {{#each .}}
+    <div>
+      <div>{{title}}</div>
+      <div>{{address}}</div>
+      <div>{{info}}</div>
+      <hr>
+    </div>  
+  {{/each}}
+</script>
+{%endraw%}
+<script>
+  let query=''
+
+  $(frm).on("submit", function(e){
+    e.preventDefault();
+    query=$(frm.query).val();
+    if(query == ""){
+      alert("검색어를 입력하세요!");
+      return;
+    }
+    getList();
+  });
+
+  function getList(){
+    $("#loading").show();
+    $.ajax({
+      type:'get',
+      url:'/crawl/house.json',
+      data:{query},
+      success:function(data){
+        console.log(data)
+        $("#loading").hide();
+        const temp=Handlebars.compile($("#temp_list").html());
+        $("#div_list").html(temp(data));
+      }
+    });
+  }
+</script>

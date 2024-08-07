@@ -1,8 +1,9 @@
 from flask import Flask, render_template
-from routes import scrap
+from routes import scrap, crawl
 
 app = Flask(__name__, template_folder="templates")
 app.register_blueprint(scrap.bp)
+app.register_blueprint(crawl.bp)
 
 @app.route("/")
 def index():
