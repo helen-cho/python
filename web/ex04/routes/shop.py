@@ -14,4 +14,9 @@ def searchJSON():
   args = request.args
   query = args['query']
   return daangn.search(query)
+
+@bp.route('/list')
+def list():
+  return render_template(
+    'index.html', title='상품목록', pageName='shop/list.html')
   

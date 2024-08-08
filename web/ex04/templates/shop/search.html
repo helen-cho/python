@@ -18,14 +18,14 @@
       <td>No.</td>
       <td>이미지</td>
       <td>상품정보</td>
-      <td>저장</td>
+      <td>등록하실래요?</td>
     </t>
     {{#each .}}
     <tr>
       <td>{{no}}</td>
       <td><img src="{{image}}" width="80px"></td>
       <td>{{title}}<br>{{address}}<br>{{price}}</td>
-      <td><button class="btn btn-primary insert" shop="{{fncShop @this}}">상품등록</button></td>
+      <td><button class="btn btn-primary insert" shop="{{fncShop @this}}">등록</button></td>
     </tr>  
     {{/each}}  
   </table>  
