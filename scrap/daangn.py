@@ -22,7 +22,7 @@ def create_soup(query):
   browser.get(url)
 
   try:
-    xpath = '//*[@id="result"]/div[1]/div[2]/span'
+    xpath = '//*[@id="result"]/div[1]/div[2]/span' #더보기
     wait_until(browser, xpath)
     e=browser.find_element(By.XPATH, xpath)
     e.click()
