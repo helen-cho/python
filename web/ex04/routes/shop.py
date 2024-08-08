@@ -19,4 +19,9 @@ def searchJSON():
 def list():
   return render_template(
     'index.html', title='상품목록', pageName='shop/list.html')
+
+@bp.route('/read/<id>')
+def read(id):
+  return render_template(
+    'index.html', title='상품정보', pageName='shop/read.html', id=id)
   

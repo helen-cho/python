@@ -14,7 +14,9 @@
     {{#each .}}
     <tr>
       <td>{{@index}}</td>
-      <td><img src="{{image}}" width="80px"></td>
+      <td>
+        <a href="/shop/read/{{id}}"><img src="{{image}}" width="80px"></a>
+      </td>
       <td>{{id}}<br>{{title}}<br>{{address}}<br>{{price}}</td>
       <td><button class="btn btn-primary delete" id="{{id}}">삭제</button></td>
     </tr>  
