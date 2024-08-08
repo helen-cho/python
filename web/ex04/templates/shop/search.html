@@ -1,3 +1,59 @@
 <div class="my-5">
   <h1 class="text-center mb-5">상품검색</h1>
+  <div class="row">
+    <form name="frm" class="col-6 col-md-4">
+      <div class="input-group">
+        <input name="query" class="form-control">
+        <button class="btn btn-primary">검색</button>
+      </div>
+    </form>
+  </div>
+  <hr>
+  <div id="div_list"></div>
 </div>
+{%raw%}
+<script id="temp_list" type="x-handlebars-template">
+  <table class="table table-hover">
+    <tr>
+      <td>No.</td>
+      <td>이미지</td>
+      <td>상품정보</td>
+    </t>
+    {{#each .}}
+    <tr>
+      <td>{{no}}</td>
+      <td><img src="{{image}}" width="80px"></td>
+      <td>{{title}}<br>{{address}}<br>{{price}}</td>
+    </tr>  
+    {{/each}}  
+  </table>  
+</script>
+{%endraw%}
+<script>
+  let query=""
+  $(frm).on("submit", function(e){
+    e.preventDefault();
+    query = $(frm.query).val();
+    if(query==""){
+      alert("검색어를 입력하세요!");
+      $(frm.query).focus()
+      return;
+    }
+    getList();
+  });
+
+  function getList(){
+    $("#loading").show();
+    $.ajax({
+      type:"get",
+      url:"/shop/search.json",
+      data:{query},
+      success:function(data){
+        //console.log(data);
+        $("#loading").hide();
+        const temp=Handlebars.compile($("#temp_list").html());
+        $("#div_list").html(temp(JSON.parse(data)));
+      }
+    })
+  }
+</script>
