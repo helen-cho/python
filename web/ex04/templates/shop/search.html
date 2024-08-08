@@ -18,18 +18,30 @@
       <td>No.</td>
       <td>이미지</td>
       <td>상품정보</td>
+      <td>저장</td>
     </t>
     {{#each .}}
     <tr>
       <td>{{no}}</td>
       <td><img src="{{image}}" width="80px"></td>
       <td>{{title}}<br>{{address}}<br>{{price}}</td>
+      <td><button class="btn btn-primary insert" shop="{{fncShop @this}}">상품등록</button></td>
     </tr>  
     {{/each}}  
   </table>  
 </script>
-{%endraw%}
 <script>
+  Handlebars.registerHelper("fncShop", function(shop){
+    return JSON.stringify(shop);
+  });
+</script>
+{%endraw%}
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+<script type="module">
+  import {app} from '/static/firebase.js';
+  import {getFirestore,collection,addDoc} from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+  const db = getFirestore(app);
+
   let query=""
   $(frm).on("submit", function(e){
     e.preventDefault();
@@ -56,4 +68,15 @@
       }
     })
   }
+
+  //상품등록버튼을 클릭한 경우
+  $("#div_list").on("click", ".insert", async function(){
+    if(!confirm("선택한 상품을 등록하실래요?")) return;
+    let shop=JSON.parse($(this).attr("shop"));
+    const date = moment(new Date()).format("YYYY-MM-DD-HH HH:mm:ss");
+    shop = {...shop, date}
+    //console.log(shop);
+    await addDoc(collection(db, 'shop'), shop);
+    alert("상품등록완료!");
+  });
 </script>
