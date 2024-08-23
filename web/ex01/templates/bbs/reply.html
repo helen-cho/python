@@ -1,0 +1,176 @@
+<div class="my-5">
+  <h3 class="text-center mb-3">댓글관리</h3>
+  <div>
+    <textarea id="contents" class="form-control" rows="5" placeholder="댓글내용을 입력하세요."></textarea>
+    <div class="text-end mt-2 mb-5">
+      <button id="insert" class="btn btn-primary px-5">등록</button>
+    </div>
+  </div>
+  <div id="div_list"></div>
+  <div id="pagination" class="pagination justify-content-center mt-5"></div>
+  {%raw%}
+  <script id="temp_list" type="x-handlebars-template">
+    {{#each list}}
+      <div class="display{{rid}}" rid="{{rid}}">
+        <div class="text-muted row mb-2" style="font-size:13px;">
+          <div class="col">{{writer}} | {{fmtDate}}</div>
+          <div class="col text-end" style="{{style writer}}" rid="{{rid}}">
+            <button class="btn btn-outline-success btn-sm update">수정</button>
+            <button class="btn btn-outline-danger btn-sm delete">삭제</button>
+          </div>  
+        </div>  
+        <div style="cursor:pointer;white-space:pre-wrap" class="ellipsis contents">{{rid}}:{{contents}}</div>  
+        <hr>
+      </div>
+      <div class="edit{{rid}}" rid="{{rid}}" style="display:none">
+        <div class="text-muted row mb-2" style="font-size:13px;">
+          <div class="col">{{writer}} | {{fmtDate}}</div>
+          <div class="col text-end" rid="{{rid}}">
+            <button class="btn btn-outline-success btn-sm save">저장</button>
+            <button class="btn btn-outline-danger btn-sm cancel">취소</button>
+          </div>  
+        </div>  
+        <textarea class="form-control contents" rows="5">{{contents}}</textarea>  
+        <hr>
+      </div>   
+    {{/each}}
+  </script>
+  <script>
+    Handlebars.registerHelper("style", function(writer){
+      if(uid!=writer) return "display:none";
+    });
+  </script>
+  {%endraw%}
+</div>
+<script>
+  let page=1;
+  let totalPages=100;
+  let size=3;
+  let total=0;
+
+  //저장버튼을 클릭
+  $("#div_list").on("click", ".save", function(){
+    const rid=$(this).parent().attr("rid");
+    const contents=$(this).parent().parent().parent().find(".contents").val();
+    if(!confirm(`${rid}번 댓글을 수정하실래요?`)) return;
+    //댓글수정
+    $.ajax({
+      type:"post",
+      url:"/reply/update",
+      data:JSON.stringify({rid, contents}),
+      success:function(data){
+        if(data=='success'){
+          page=1;
+          console.log(page)
+          getList();
+        }
+      }
+    });
+  });
+
+  //수정버튼 클릭
+  $("#div_list").on("click", ".update", function(){
+    const rid=$(this).parent().attr("rid");
+    $("#div_list .edit" + rid).show();
+    $("#div_list .display" + rid).hide();
+  });
+
+  //취소버튼 클릭
+  $("#div_list").on("click", ".cancel", function(){
+    const rid=$(this).parent().attr("rid");
+    $("#div_list .edit" + rid).hide();
+    $("#div_list .display" + rid).show();
+  });
+
+  //삭제버튼 클릭
+  $("#div_list").on("click", ".delete", function(){
+    const rid=$(this).parent().attr("rid");
+    if(!confirm(`${rid}번 댓글을 삭제하실래요?`)) return;
+    //댓글삭제
+    $.ajax({
+      type:"delete",
+      url:`/reply/${rid}`,
+      success:function(data){
+        if(data=='success'){
+          const curPages = Math.ceil((total-1)/size)
+          if(totalPages > curPages && page > 1) page--;
+          getList();
+        }
+      }
+    });
+  });
+
+  $("#div_list").on("click", ".contents", function(){
+    $(this).toggleClass("ellipsis")
+  });
+
+  getList();
+  function getList(){
+    $.ajax({
+      type:"get",
+      data:{page, size},
+      url:`/reply/list.json/${bid}`,
+      success:function(data){
+        //console.log(data);
+        const temp=Handlebars.compile($("#temp_list").html());
+        $("#div_list").html(temp(data));
+        total = data.total;
+        const curPages = data.total == 0 ? 1:Math.ceil(data.total/size);
+
+        if(data.total > size) {
+          $("#pagination").show();
+        }else{
+          $("#pagination").hide();
+        }
+        console.log('page............', page);
+        if(curPages != totalPages){    
+          totalPages = curPages;
+          $("#pagination").twbsPagination("changeTotalPages", totalPages, page);
+        }
+      }
+    });
+  }
+
+  $("#insert").on("click", ()=>{
+    if(!uid){
+      sessionStorage.setItem("target", `/bbs/${bid}`);
+      location.href="/users/login";
+    }
+    const contents = $("#contents").val();
+    if(contents == "") {
+      alert("댓글내용을 입력하세요!");
+      $("#contents").focus();
+      return;
+    }
+    //댓글등록
+    $.ajax({
+      type:"post",
+      url:"/reply/insert",
+      data:JSON.stringify({bid, uid, contents}),
+      success:function(data){
+        if(data=='success') {
+          getList();
+          $("#contents").val("");
+        }
+      }
+    });
+  });
+
+  $('#pagination').twbsPagination({
+    totalPages:totalPages,
+    visiblePages: 5,
+    startPage : 1,
+    initiateStartPageClick: false,
+    first:'<<',
+    prev :'<',
+    next :'>',
+    last :'>>',
+    onPageClick: function (event, clickedPage) {
+      if(page != clickedPage) {
+        console.log('page click', page)
+        page=clickedPage; 
+        getList();
+      }
+    }
+  });
+</script>

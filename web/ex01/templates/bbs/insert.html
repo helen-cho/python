@@ -1,0 +1,40 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">{{title}}</h1>
+  <div class="px-5">
+    <form name="frm">
+      <input name="title" class="form-control mb-2" placeholder="제목을 입력하세요.">
+      <textarea name="contents" class="form-control" rows="10"></textarea>
+      <div class="text-center mt-3">
+        <button class="btn btn-primary px-5">등록</button>
+        <button type="reset" class="btn btn-secondary px-5">취소</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script>
+  $(frm).on("submit", function(e){
+    e.preventDefault();
+    const title=$(frm.title).val();
+    const contents=$(frm.contents).val();
+    if(title==""){
+      alert("제목을 입력하세요!");
+      $(frm.title).focus();
+      return;
+    }
+    //게시글등록
+    //console.log(uid, title, contents);
+    $.ajax({
+      type:"post",
+      url:"/bbs/insert",
+      data:JSON.stringify({uid, title, contents}),
+      success:function(data){
+        //alert(data);
+        if(data=="success"){
+          location.href="/bbs"
+        }else{
+          alert("글쓰기를 실패했습니다.");
+        }
+      }
+    });
+  });
+</script>

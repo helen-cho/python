@@ -1,0 +1,82 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">상품검색</h1>
+  <div class="row">
+    <form name="frm" class="col-6 col-md-4">
+      <div class="input-group">
+        <input name="query" class="form-control">
+        <button class="btn btn-primary">검색</button>
+      </div>
+    </form>
+  </div>
+  <hr>
+  <div id="div_list"></div>
+</div>
+{%raw%}
+<script id="temp_list" type="x-handlebars-template">
+  <table class="table table-hover">
+    <tr>
+      <td>No.</td>
+      <td>이미지</td>
+      <td>상품정보</td>
+      <td>등록하실래요?</td>
+    </t>
+    {{#each .}}
+    <tr>
+      <td>{{no}}</td>
+      <td><img src="{{image}}" width="80px"></td>
+      <td>{{title}}<br>{{address}}<br>{{price}}</td>
+      <td><button class="btn btn-primary insert" shop="{{fncShop @this}}">등록</button></td>
+    </tr>  
+    {{/each}}  
+  </table>  
+</script>
+<script>
+  Handlebars.registerHelper("fncShop", function(shop){
+    return JSON.stringify(shop);
+  });
+</script>
+{%endraw%}
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+<script type="module">
+  import {app} from '/static/firebase.js';
+  import {getFirestore,collection,addDoc} from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+  const db = getFirestore(app);
+
+  let query=""
+  $(frm).on("submit", function(e){
+    e.preventDefault();
+    query = $(frm.query).val();
+    if(query==""){
+      alert("검색어를 입력하세요!");
+      $(frm.query).focus()
+      return;
+    }
+    getList();
+  });
+
+  function getList(){
+    $("#loading").show();
+    $.ajax({
+      type:"get",
+      url:"/shop/search.json",
+      data:{query},
+      success:function(data){
+        //console.log(data);
+        $("#loading").hide();
+        const temp=Handlebars.compile($("#temp_list").html());
+        $("#div_list").html(temp(JSON.parse(data)));
+      }
+    })
+  }
+
+  //상품등록버튼을 클릭한 경우
+  $("#div_list").on("click", ".insert", async function(){
+    if(!confirm("선택한 상품을 등록하실래요?")) return;
+    let shop=JSON.parse($(this).attr("shop"));
+    const date = moment(new Date()).format("YYYY-MM-DD-HH HH:mm:ss");
+    shop = {...shop, date}
+    //console.log(shop);
+    await addDoc(collection(db, 'shop'), shop);
+    alert("상품등록완료!");
+  });
+</script>

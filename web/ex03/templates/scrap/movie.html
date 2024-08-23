@@ -1,0 +1,32 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">Movie Chart</h1>
+  <div id="div_list" class="row"></div>
+  {%raw%}
+  <script id="temp_list" type="x-handlebars-template">
+    {{#each .}}
+      <div class="col-6 col-md-3 mb-5">
+        <img src="{{image}}" width="100%">
+        <div class="ellipsis mt-2">{{title}}</div>
+        <div>{{date}} 개봉</div>
+        <a class="btn btn-danger w-100" href="{{link}}">예매하기</a>
+      </div>  
+    {{/each}}
+  </script>
+  {%endraw%}
+</div>
+
+<script>
+  $("#loading").show();
+  $.ajax({
+    type:"get",
+    url:"/scrap/movie.json",
+    success:function(data){
+      console.log(data);
+      const temp = Handlebars.compile($("#temp_list").html());
+      $("#div_list").html(temp(data));
+      setTimeout(()=>{
+        $("#loading").hide();
+      }, 1000)
+    }
+  });
+</script>

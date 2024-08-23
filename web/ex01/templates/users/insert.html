@@ -1,0 +1,31 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">회원가입</h1>
+  <form name="frm" enctype="multipart/form-data" method="post">
+    <input name="uid" class="form-control mb-2">
+    <input name="uname" class="form-control mb-2">
+    <input name="file" type="file" class="form-control mb-2">
+    <button class="btn btn-primary px-5">등록</button>
+  </form>
+</div>
+<script>
+  $(frm).on("submit", function(e){
+    e.preventDefault();
+    const uid = $(frm.uid).val()
+    const uname = $(frm.uname).val()
+    const file = $(frm.file)[0].files[0];
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("uid", uid);
+    formData.append("uname", uname);
+    $.ajax({
+      type:"post",
+      url:"/users/insert",
+      data:formData,
+      processData:false,
+      contentType:false,
+      success:function() {
+          alert("첨부파일 업로드가 성공되었습니다.");
+      }
+    });
+  });
+</script>

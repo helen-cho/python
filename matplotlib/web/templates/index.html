@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script> 
+  <title>{{title}}</title>
+</head>
+<body>
+  <div class="my-5 px-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div>
+      <a id="page1" href="/page1" class="me-3">1.국내 Top8 영화평점정보</a>
+      <a id="page2" href="/page2" class="me-3">2.개봉 연도별 평점</a>
+      <a id="page3" href="/page3" class="me-3">3.출생아수 및 합계출산율</a>
+    </div>
+    <div class="row">
+      <div id="result" class="my-5 col-md-5"></div>
+      <div class="col-md-7 my-5">
+        <img id="image" src="http://via.placeholder.com/180x100" width="100%">
+      </div>
+    </div>
+    <hr>
+  </div>
+</body>
+<script>
+  $("#page1, #page2, #page3").on("click", function(e){
+    e.preventDefault();
+    const  url = $(this).attr("href");
+    $.ajax({
+      type:"get",
+      url:url,
+      success:function(data){
+        $("#result").html(data);
+      }
+    });
+  });
+
+  $("#page1").on("click", function(){
+    $("#image").attr("src", "/image1");
+  });
+
+  $("#page2").on("click", function(){
+    $("#image").attr("src", "/image2");
+  });
+
+  $("#page3").on("click", function(){
+    $("#image").attr("src", "/image3");
+  });
+</script>
+</html>

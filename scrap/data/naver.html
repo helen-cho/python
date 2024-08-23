@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, HelveticaNeue,
+      AppleSDGothicNeo, sans-serif;
+    }
+    a {
+      text-decoration: none;
+      color: #00c73c;
+    }
+    .content_error {
+      line-height: 19px;
+      max-width: 578px;
+      padding: 64px 40px;
+      letter-spacing: -0.5px;
+      text-align: center;
+      word-break: keep-all;
+    }
+    .content_error:before {
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+      background: url(https://ssl.pstatic.net/shoppingsearch/static/icons/img_error.png) no-repeat 0 0;
+      -webkit-background-size: 64px;
+      background-size: 64px;
+      content: '';
+    }
+    .content_error .head {
+      line-height: 28px;
+      margin-top: 12px;
+      font-size: 20px;
+      color: #121212;
+      font-weight: bold;
+    }
+    .content_error .desc {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #3f3f3f;
+    }
+    .content_error .reason {
+      background-color: #f8f9fd;
+      margin-top: 14px;
+      padding: 14px 0;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #7a7a7a;
+      list-style: none;
+    }
+    .content_error .reason li:before {
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      margin: 9px 5px 0 0;
+      border-radius: 50%;
+      background-color: #babbbe;
+      vertical-align: top;
+      content: '';
+    }
+    .content_error .footer {
+      margin-top: 14px;
+      font-size: 14px;
+      color: #949494;
+    }
+  </style>
+  <title>네이버쇼핑</title>
+</head>
+<body>
+<div class="content_error">
+  <div class="head">쇼핑 서비스 접속이 일시적으로 제한되었습니다. </div>
+  <div class="desc">
+    네이버는 안정적인 쇼핑 서비스 제공하고자 시스템을 통해 아래와 같은 비정상적인 접근이 감지될 경우 해당 네트워크의 접속을 일시적으로 제한하고 있습니다.
+  </div>
+  <ul class="reason">
+    <li>상품 구매, 탐색과 무관한 외부 이벤트를 통한 접속</li>
+    <li>짧은 시간 내에 너무 많은 요청이 이루어진 IP</li>
+    <li>VPN을 사용하여 접속한 IP</li>
+    <li>특정 확장 프로그램 이용 시</li>
+  </ul>
+  <div class="footer">위와 같은 접근이 아님에도 접속이 제한된 경우,네이버앱을 업데이트 또는 <a href="https://help.naver.com/service/30016/category/5278" target="_blank">원클릭 진단</a>을 부탁드립니다.<br/> 해당 방법을 통해서도 접속이 불가한 경우 <a href="https://help.pay.naver.com/mail/form.help?alias=shopping_stop" target="_blank">네이버쇼핑 고객센터</a>로 문의 부탁드립니다.</div>
+</div>
+</body>
+</html>

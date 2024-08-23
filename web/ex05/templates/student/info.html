@@ -1,0 +1,19 @@
+<div class="my-5">
+  <h1 class="mb-5 text-center">학생정보</h1>
+  <div class="row">
+    <div class="col-md-6">
+      {{table1|safe}}
+      <hr>
+      {{table3|safe}}
+    </div>
+    <div class="col-md-6">
+      {{table2|safe}}
+    </div>
+  </div>
+</div>
+<script>
+  $("#tbl1 tr:nth-child(2)").hide();
+  $("#tbl2 tr:nth-child(2)").hide();
+  $("#tbl1 td, #tbl1 th").addClass('text-start')
+  $("#tbl2 td, #tbl2 th").addClass('text-start')
+</script>

@@ -1,0 +1,70 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">{{title}}</h1>
+  <div id="insert">
+    <a href="/bbs/insert">글쓰기</a>
+  </div>
+  <div id="div_list"></div>
+  <div id="pagination" class="pagination justify-content-center mt-5"></div>
+  {%raw%}
+  <script id="temp_list" type="x-handlebars-template">
+    <table class="table table-striped table-hover">
+      {{#each list}}
+        <tr>
+          <td>{{bid}}</td>
+          <td><a href="/bbs/{{bid}}">{{title}}</a></td>
+          <td>{{writer}}</td>
+          <td>{{fmtDate}}</td>
+        </tr>  
+      {{/each}}
+    </table>  
+  </script>
+  {%endraw%}
+</div>
+<script>
+  let page=1;
+  let size=5;
+  let totalPages=1;
+
+  getList();
+  function getList(){
+    $.ajax({
+      type:"get",
+      url:"/bbs/list.json",
+      data:{page, size},
+      success:function(data){
+        //console.log(data);
+        const temp=Handlebars.compile($("#temp_list").html());
+        $("#div_list").html(temp(data));
+
+        const curPages = data.total == 0 ? 1:Math.ceil(data.total/size);
+        if(curPages != totalPages){
+          totalPages = curPages;
+          $("#pagination").twbsPagination("changeTotalPages", totalPages, page);
+        }
+      }
+    });
+  }
+
+  if(uid){
+    $("#insert").show();
+  }else{
+    $("#insert").hide();
+  }
+
+  $('#pagination').twbsPagination({
+    totalPages:totalPages,
+    visiblePages: 5,
+    startPage : 1,
+    initiateStartPageClick: false,
+    first:'<<',
+    prev :'<',
+    next :'>',
+    last :'>>',
+    onPageClick: function (event, clickedPage) {
+      if(page != clickedPage) {
+        page=clickedPage; 
+        getList();
+      }
+    }
+  });
+</script>

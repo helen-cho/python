@@ -1,0 +1,28 @@
+<div class="my-5 row justify-content-center">
+  <h1 class="text-center mb-5">{{title}}</h1>
+  <form name="frm" class="col-md-6">
+    <div class="input-group">
+      <div class="input-group-text px-5">공부시간</div>
+      <input name="hours" class="form-control">
+      <button class="btn btn-primary">예측</button>
+    </div>
+    <div class="my-5 text-center">
+      <h1>예측점수:<span id="result"></span></h1>
+    </div>
+  </form>
+</div>
+<script>
+  $(frm).on("submit", function(e){
+    e.preventDefault();
+    const hours=$(frm.hours).val();
+    $.ajax({
+      type:"get",
+      url:"/linear/result1",
+      data:{hours},
+      success:function(data){
+        console.log(data);
+        $("#result").html(data);
+      }
+    });
+  });
+</script>

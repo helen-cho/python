@@ -1,0 +1,34 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">상품정보</h1>
+  <div id="div_shop" class="row justify-content-center"></div>
+</div>
+{%raw%}
+<script id="temp_shop" type="x-handlebars-template">
+  <div class="col-8">
+    <div class="text-center">
+      <img src="{{image}}" width="80%">
+    </div>
+    <hr>
+    <div>
+      <h3>{{title}}</h3>
+      <div>{{address}}</div>
+      <h5>{{price}}</div>
+    </div>    
+  </div>    
+</script>
+{%endraw%}
+<script type="module">
+  import {app} from '/static/firebase.js';
+  import {getFirestore, collection, addDoc, deleteDoc, doc, getDoc} 
+      from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+  import {onSnapshot, query, orderBy} 
+      from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+  const db = getFirestore(app);
+
+  const id="{{id}}";
+  
+  const shop = await getDoc(doc(db, 'shop', id));
+  console.log(shop.data());
+  const temp=Handlebars.compile($("#temp_shop").html());
+  $("#div_shop").html(temp(shop.data()));
+</script>

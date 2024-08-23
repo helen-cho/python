@@ -1,0 +1,56 @@
+<div class="my-5">
+  <h1 class="text-center mb-5">상품목록</h1>
+  <div id="div_list"></div>
+</div>
+{%raw%}
+<script id="temp_list" type="x-handlebars-template">
+  <table class="table table-hover">
+    <tr>
+      <td>No.</td>
+      <td>이미지</td>
+      <td>상품정보</td>
+      <td>삭제</td>
+    </t>
+    {{#each .}}
+    <tr>
+      <td>{{@index}}</td>
+      <td>
+        <a href="/shop/read/{{id}}"><img src="{{image}}" width="80px"></a>
+      </td>
+      <td>{{id}}<br>{{title}}<br>{{address}}<br>{{price}}</td>
+      <td><button class="btn btn-primary delete" id="{{id}}">삭제</button></td>
+    </tr>  
+    {{/each}}  
+  </table>  
+</script>
+{%endraw%}
+
+<script type="module">
+    import {app} from '/static/firebase.js';
+    import {getFirestore, collection, addDoc, deleteDoc, doc} 
+      from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+    import {onSnapshot, query, orderBy} 
+      from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+    const db = getFirestore(app);
+
+    getList();
+    function getList(){
+      const q=query(collection(db, 'shop'), orderBy('date', 'desc'));
+      onSnapshot(q, snap=>{
+        let rows=[];
+        snap.forEach(row=>{
+          rows.push({id:row.id, ...row.data()})
+        });
+        console.log(rows);
+        const temp=Handlebars.compile($("#temp_list").html());
+        $("#div_list").html(temp(rows));
+      });
+    }
+
+    $("#div_list").on("click", ".delete", async function(e){
+      const id = $(this).attr("id");
+      if(!confirm(`${id}번 상품을 삭제하실래요?`)) return;
+      await deleteDoc(doc(db, 'shop', id));
+      alert("상품삭제완료!");
+    });
+</script>
