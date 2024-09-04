@@ -1,0 +1,811 @@
+index,wine_name,wine_region,wine_country,wine_rating,wine_reviews,wine_price,wine_link
+1,Morning Fog Chardonnay 2003,Wente Vineyards,United States,3.9,29592,"28,335",https://www.vivino.com/wente-vineyards-morning-fog-chardonnay/w/1720?year=2003&price_id=2895323
+2,Moscato,Barefoot,United States,3.8,19902,"18,751",https://www.vivino.com/barefoot-moscato/w/1201651?price_id=7943990
+3,Pouilly-Fuissé 2002,Louis Jadot,France,4.1,19678,"964,546",https://www.vivino.com/louis-jadot-pouilly-fuisse/w/2991?year=2002&price_id=35329545
+4,Pouilly-Fuissé 1993,Louis Jadot,France,4.1,19678,"649,214",https://www.vivino.com/louis-jadot-pouilly-fuisse/w/2991?year=1993&price_id=35329518
+5,Pouilly-Fuissé 2000,Louis Jadot,France,4.1,19678,"958,358",https://www.vivino.com/louis-jadot-pouilly-fuisse/w/2991?year=2000&price_id=35329564
+6,Blanco 2006,El Coto,Spain,3.5,17617,"23,335",https://www.vivino.com/el-coto-blanco/w/8617?year=2006&price_id=16059718
+7,Chardonnay 2004,Vint by Robert Mondavi Private Selection,United States,3.6,16485,"37,085",https://www.vivino.com/vint-by-robert-mondavi-private-selection-chardonnay/w/4000?year=2004&price_id=2895314
+8,Masianco 2005,Masi,Italy,3.6,14738,"37,502",https://www.vivino.com/masi-veneto-masianco/w/21950?year=2005&price_id=2805031
+9,Napa Valley Sauvignon Blanc 2004,Duckhorn,United States,4.0,13360,"68,754",https://www.vivino.com/duckhorn-napa-valley-sauvignon-blanc/w/1128386?year=2004&price_id=2754285
+10,Gelblack Riesling Trocken 2006,Schloss Johannisberg,Germany,4.0,13091,"45,002",https://www.vivino.com/schloss-johannisberg-gelblack-riesling-trocken/w/2130558?year=2006&price_id=2804923
+11,La Segreta Il Bianco 2003,Planeta,Italy,3.6,12571,"35,002",https://www.vivino.com/planeta-la-segreta-il-bianco/w/4991?year=2003&price_id=14539463
+12,Riva Ranch Chardonnay 2002,Wente Vineyards,United States,4.0,12415,"43,752",https://www.vivino.com/wente-vineyards-riva-ranch-chardonnay/w/1742845?year=2002&price_id=2894897
+13,Muga Blanco 2006,Muga,Spain,3.7,12268,"24,168",https://www.vivino.com/muga-muga-blanco/w/1287516?year=2006&price_id=2895092
+14,Founders' Estate Chardonnay 2005,Beringer,United States,3.7,10354,"41,044",https://www.vivino.com/beringer-founders-estate-chardonnay/w/1133291?year=2005&price_id=2754642
+15,Riesling Relax 2004,Schmitt Söhne,Germany,3.8,10079,"22,501",https://www.vivino.com/schmitt-sohne-gmbh-weinkellerei-riesling-relax/w/14758?year=2004&price_id=9353562
+16,Sauvignon Blanc 2019,Cloudy Bay,New Zealand,4.2,9236,"52,920",https://www.vivino.com/cloudy-bay-sauvignon-blanc/w/18978?year=2019&price_id=20230408
+17,Sauvignon Blanc 2016,Kim Crawford,New Zealand,4.0,8201,"48,336",https://www.vivino.com/kim-crawford-sauvignon-blanc/w/66534?year=2016&price_id=15446460
+18,Grand Reserve Chardonnay 2004,Kendall-Jackson,United States,3.8,8160,"58,337",https://www.vivino.com/kendall-jackson-grand-reserve-chardonnay/w/2121?year=2004&price_id=14549866
+19,Chardonnay 2001,Robert Mondavi Winery,United States,3.8,8140,"56,878",https://www.vivino.com/robert-mondavi-winery-chardonnay/w/2422?year=2001&price_id=14541993
+20,Sauvignon Blanc 2016,Cloudy Bay,New Zealand,4.1,7690,"52,086",https://www.vivino.com/cloudy-bay-sauvignon-blanc/w/18978?year=2016&price_id=8976760
+21,Tenuta Valleselle Arnasi Pinot Grigio 2006,Tinazzi,Italy,4.2,7188,"50,003",https://www.vivino.com/tinazzi-tenuta-valleselle-arnasi-pinot-grigio/w/1125487?year=2006&price_id=2895362
+22,Chardonnay 2002,Toasted Head,United States,3.6,7140,"35,419",https://www.vivino.com/toasted-head-chardonnay/w/1138765?year=2002&price_id=2895035
+23,Lafóa Sauvignon 2001,Colterenzio (Schreckbichl),Italy,4.2,6807,"133,341",https://www.vivino.com/colterenzio-schreckbichl-lafoa-sauvignon/w/11170?year=2001&price_id=14650456
+24,Reserva Chardonnay 2006,Terrazas de los Andes,Argentina,3.7,6710,"37,502",https://www.vivino.com/terrazas-de-los-andes-reserva-chardonnay/w/1132928?year=2006&price_id=2895185
+25,Casal di Serra Verdicchio dei Castelli di Jesi Classico Superiore 2009,Umani Ronchi,Italy,3.8,6547,"39,586",https://www.vivino.com/umani-ronchi-casal-di-serra-verdicchio-dei-castelli-di-jesi-classico-superiore/w/3743?year=2009&price_id=21591930
+26,Saint-Véran 1989,Joseph Drouhin,France,3.8,6478,"1,075,840",https://www.vivino.com/joseph-drouhin-saint-veran/w/24148?year=1989&price_id=36831576
+27,Saint-Véran 2001,Joseph Drouhin,France,3.8,6478,"241,137",https://www.vivino.com/joseph-drouhin-saint-veran/w/24148?year=2001&price_id=36841181
+28,Sauvignon Blanc 2007,Shaw + Smith,Australia,4.0,6176,"40,836",https://www.vivino.com/shaw-smith-sauvignon-blanc/w/31554?year=2007&price_id=2754167
+29,Chardonnay 2002,Gallo Family Vineyards,United States,3.1,6014,"13,334",https://www.vivino.com/gallo-family-vineyards-chardonnay/w/38484?year=2002&price_id=2895309
+30,Chardonnay 2000,Gallo Family Vineyards,United States,3.1,6014,"37,502",https://www.vivino.com/gallo-family-vineyards-chardonnay/w/38484?year=2000&price_id=2873823
+31,Grand Selection Sauvignon Blanc 2006,Lapostolle,Chile,3.5,5975,"33,335",https://www.vivino.com/lapostolle-grand-selection-sauvignon-blanc/w/1808938?year=2006&price_id=2895341
+32,M3 Chardonnay 2006,Shaw + Smith,Australia,4.0,5914,"56,253",https://www.vivino.com/shaw-smith-m3-chardonnay/w/31564?year=2006&price_id=2754247
+33,Grande Cuvée Chablis 1er Cru 2003,La Chablisienne,France,4.0,5761,"41,252",https://www.vivino.com/la-chablisienne-grande-cuvee-chablis-1er-cru/w/1711342?year=2003&price_id=7953588
+34,Sauvignon Blanc 2020,Kim Crawford,New Zealand,3.9,5618,"48,336",https://www.vivino.com/kim-crawford-sauvignon-blanc/w/66534?year=2020&price_id=30008985
+35,Sauvignon Blanc 2022,Cloudy Bay,New Zealand,4.2,5494,"55,003",https://www.vivino.com/cloudy-bay-sauvignon-blanc/w/18978?year=2022&price_id=30635713
+36,Napa Valley Chardonnay 2005,Beringer,United States,3.8,5364,"48,128",https://www.vivino.com/beringer-napa-valley-chardonnay/w/1142704?year=2005&price_id=2754417
+37,Private Bin Sauvignon Blanc 2022,Villa Maria,New Zealand,4.0,5182,"35,835",https://www.vivino.com/villa-maria-auckland-private-bin-sauvignon-blanc/w/39034?year=2022&price_id=35900889
+38,I Frati Lugana 2022,Cà dei Frati,Italy,4.3,4976,"22,259",https://www.vivino.com/ca-dei-frati-i-frati-lugana/w/1136902?year=2022&price_id=36485562
+39,Sauvignon Blanc 2015,Cloudy Bay,New Zealand,4.1,4926,"52,086",https://www.vivino.com/cloudy-bay-sauvignon-blanc/w/18978?year=2015&price_id=4550240
+40,Max Reserva Chardonnay 2004,Errazuriz,Chile,3.7,4732,"50,419",https://www.vivino.com/errazuriz-max-reserva-chardonnay/w/1994?year=2004&price_id=2895175
+41,Sauvignon Blanc 2014,Cloudy Bay,New Zealand,4.1,4650,"50,003",https://www.vivino.com/cloudy-bay-sauvignon-blanc/w/18978?year=2014&price_id=2754212
+42,Graacher Himmelreich Riesling Kabinett 2004,Joh. Jos. Prüm,Germany,4.1,4642,"83,338",https://www.vivino.com/joh-jos-prum-graacher-himmelreich-riesling-kabinett/w/1604769?year=2004&price_id=14550341
+43,Bin 311 Chardonnay 2004,Penfolds,Australia,3.8,4407,"83,338",https://www.vivino.com/penfolds-bin-311-chardonnay/w/1249?year=2004&price_id=2804702
+44,Sauvignon Blanc 2007,Woodbridge by Robert Mondavi,United States,3.2,4311,"25,001",https://www.vivino.com/woodbridge-by-robert-mondavi-sauvignon-blanc/w/1647468?year=2007&price_id=2895233
+45,Sancerre La Bourgeoise Blanc 2004,Henri Bourgeois,France,4.1,4154,"70,837",https://www.vivino.com/henri-bourgeois-sancerre-la-bourgeoise-blanc/w/1478314?year=2004&price_id=7944207
+46,Grünlack Riesling Spätlese 2005,Schloss Johannisberg,Germany,4.2,4107,"75,004",https://www.vivino.com/schloss-johannisberg-grunlack-riesling-spatlese/w/1608522?year=2005&price_id=15466397
+47,Riesling Alsace 2005,Cave de Turckheim,France,3.5,3746,"39,586",https://www.vivino.com/cave-de-turckheim-riesling-alsace/w/1207214?year=2005&price_id=14541465
+48,Riesling Alsace 2001,Cave de Turckheim,France,3.5,3746,"62,503",https://www.vivino.com/cave-de-turckheim-riesling-alsace/w/1207214?year=2001&price_id=14541924
+49,Riesling Alsace 2003,Cave de Turckheim,France,3.5,3746,"68,754",https://www.vivino.com/cave-de-turckheim-riesling-alsace/w/1207214?year=2003&price_id=14541460
+50,Chablis 1er Cru 'Mont de Milieu' 2004,La Chablisienne,France,4.1,3681,"58,337",https://www.vivino.com/la-chablisienne-chablis-1er-cru-mont-de-milieu/w/16614?year=2004&price_id=7953666
+51,Chablis 1er Cru 'Mont de Milieu' 2021,La Chablisienne,France,4.1,3681,"43,034",https://www.vivino.com/la-chablisienne-chablis-1er-cru-mont-de-milieu/w/16614?year=2021&price_id=35345630
+52,Green Label Dry Riesling 2006,Deinhard,Germany,3.8,3611,"18,751",https://www.vivino.com/deinhard-green-label-dry-riesling/w/1138068?year=2006&price_id=2895010
+53,Scharzhofberger Riesling Kabinett 2002,Egon Müller - Scharzhof,Germany,4.4,3548,"79,171",https://www.vivino.com/egon-muller-scharzhof-scharzhofberger-riesling-kabinett/w/86685?year=2002&price_id=2804967
+54,Viña Esmeralda 2021,Familia Torres,Spain,3.9,3508,"25,835",https://www.vivino.com/familia-torres-vina-esmeralda/w/2628?year=2021&price_id=34692544
+55,Fumaio (Sauvignon Blanc - Chardonnay) 2005,Banfi,Italy,3.6,3496,"32,502",https://www.vivino.com/banfi-fumaio-sauvignon-blanc-chardonnay/w/1133680?year=2005&price_id=2873670
+56,Pinot Grigio Friuli Grave 2005,Pighin,Italy,3.6,3432,"31,252",https://www.vivino.com/fernando-pighin-pinot-grigio-friuli-grave/w/22558?year=2005&price_id=2873851
+57,Pinot Gris 2008,Elk Cove,United States,3.9,3371,"45,836",https://www.vivino.com/elk-cove-pinot-gris/w/1719290?year=2008&price_id=14650532
+58,Eaglehawk Chardonnay 2007,Wolf Blass,Australia,3.3,3359,"20,834",https://www.vivino.com/wolf-blass-eaglehawk-chardonnay/w/1130007?year=2007&price_id=2754245
+59,Chardonnay 2005,Beringer,United States,3.6,3349,"27,293",https://www.vivino.com/beringer-california-chardonnay/w/1535?year=2005&price_id=2754520
+60,Altkirch Chardonnay 2005,Colterenzio (Schreckbichl),Italy,3.7,3173,"40,836",https://www.vivino.com/colterenzio-schreckbichl-altkirch-chardonnay/w/11208?year=2005&price_id=14541138
+61,Levarie Soave Classico 2003,Masi,Italy,3.4,3167,"29,168",https://www.vivino.com/masi-veneto-levarie-soave-classico/w/21984?year=2003&price_id=2895119
+62,Pinot Grigio 2005,Colterenzio (Schreckbichl),Italy,3.7,3131,"41,669",https://www.vivino.com/colterenzio-schreckbichl-pinot-grigio/w/1197810?year=2005&price_id=15657809
+63,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 1994,Château Latour-Martillac,France,4.0,2969,"84,094",https://www.vivino.com/fr-chateau-latour-martillac-pessac-leognan-blanc-grand-cru-classe-de-graves/w/2080908?year=1994&price_id=36851233
+64,Von Buhl Riesling 2010,Reichsrat von Buhl,Germany,3.7,2961,"45,836",https://www.vivino.com/von-buhl-von-buhl-riesling/w/1430726?year=2010&price_id=14650459
+65,Castillo Ygay Gran Reserva Especial Blanco 1998,Marqués de Murrieta,Spain,4.6,2898,"66,670",https://www.vivino.com/marques-de-murrieta-castillo-ygay-gran-reserva-especial-blanco/w/5177761?year=1998&price_id=14549868
+66,Vouvray Clos du Bourg Sec 1971,Domaine Huet,France,4.1,2836,"630,665",https://www.vivino.com/domaine-huet-vouvray-clos-du-bourg-sec/w/17523?year=1971&price_id=25799936
+67,Clos Mireille Blanc de Blancs 2023,Domaines Ott,France,4.1,2799,"59,282",https://www.vivino.com/domaines-ott-clos-mireille-blanc-de-blancs/w/1721379?year=2023&price_id=36822837
+68,Twin Oaks Chardonnay 2005,Robert Mondavi Winery,United States,3.5,2716,"25,835",https://www.vivino.com/robert-mondavi-winery-twin-oaks-chardonnay/w/2553203?year=2005&price_id=14539414
+69,Sémillon 2006,Brokenwood,Australia,3.7,2700,"32,918",https://www.vivino.com/au-brokenwood-semillon/w/1843911?year=2006&price_id=2754403
+70,Riesling Trocken Brauneberger Juffer Sonnenuhr GG 2007,Fritz Haag,Germany,4.1,2480,"104,172",https://www.vivino.com/fritz-haag-riesling-trocken-brauneberger-juffer-sonnenuhr-gg/w/2242419?year=2007&price_id=2894905
+71,Libaio Chardonnay 2004,Ruffino,Italy,3.5,2409,"26,251",https://www.vivino.com/ruffino-libaio-chardonnay/w/2193?year=2004&price_id=2804609
+72,Chardonnay 2017,Alamos,Argentina,3.6,2371,"28,752",https://www.vivino.com/alamos-chardonnay/w/69694?year=2017&price_id=18930004
+73,Chardonnay 2021,Planeta,Italy,4.2,2364,"46,105",https://www.vivino.com/planeta-chardonnay/w/4987?year=2021&price_id=36485481
+74,Castello della Sala Bramìto Chardonnay 2017,Antinori,Italy,3.9,2321,"31,904",https://www.vivino.com/antinori-tuscany-castello-della-sala-bramito-chardonnay/w/1692?year=2017&price_id=36485513
+75,Sauvignon Blanc 2023,Cloudy Bay,New Zealand,4.2,2316,"42,461",https://www.vivino.com/cloudy-bay-sauvignon-blanc/w/18978?year=2023&price_id=34540050
+76,Blanc 1986,Château-Grillet,France,4.4,2291,"438,987",https://www.vivino.com/domaine-neyret-gachet-blanc/w/1776233?year=1986&price_id=36831569
+77,Bordeaux Sauvignon 2003,Château Mezain,France,3.8,2060,"26,668",https://www.vivino.com/mezain-bordeaux-sauvignon/w/2286545?year=2003&price_id=8649870
+78,Bannockburn Chardonnay 2023,Felton Road,New Zealand,4.0,2025,"59,367",https://www.vivino.com/felton-road-bannockburn-chardonnay/w/1136718?year=2023&price_id=36297607
+79,Chardonnay 2022,Greywacke,New Zealand,4.0,1952,"37,101",https://www.vivino.com/greywacke-kevin-judd-chardonnay/w/1130871?year=2022&price_id=36539709
+80,Sauvignon - Sémillon 2021,Pegasus Bay,New Zealand,3.9,1883,"23,082",https://www.vivino.com/pegasus-bay-winery-sauvignon-semillon/w/16114?year=2021&price_id=36378976
+81,Louis Mel Sauvignon Blanc 2003,Wente Vineyards,United States,3.6,1826,"25,001",https://www.vivino.com/wente-vineyards-louis-mel-sauvignon-blanc/w/1901171?year=2003&price_id=2895137
+82,Sauvignon Blanc 2012,Nobilo,New Zealand,3.8,1816,"37,502",https://www.vivino.com/nobilo-sauvignon-blanc-marlborough-white-wine-v/w/6120398?year=2012&price_id=15108258
+83,Furmint 2008,Royal Tokaji,Hungary,3.7,1781,"57,503",https://www.vivino.com/royal-tokaji-furmint-tokaj/w/2194866?year=2008&price_id=14541789
+84,Sanct Valentin Sauvignon 2016,St. Michael-Eppan,Italy,4.2,1701,"44,888",https://www.vivino.com/st-michael-eppan-sanct-valentin-sauvignon/w/1644452?year=2016&price_id=36485637
+85,Pioneer Block 1 Foundation Sauvignon Blanc 2022,Saint Clair Family Estate,New Zealand,4.1,1674,"27,205",https://www.vivino.com/saint-clair-family-estate-pioneer-block-1-foundation-sauvignon-blanc/w/3261371?year=2022&price_id=36378981
+86,To Kalon Vineyard Reserve Fumé Blanc 2007,Robert Mondavi Winery,United States,4.1,1674,"94,172",https://www.vivino.com/robert-mondavi-winery-to-kalon-vineyard-reserve-fume-blanc/w/2439?year=2007&price_id=14540610
+87,Château-Chalon 1990,Berthet Bondet,France,4.1,1671,"185,490",https://www.vivino.com/berthet-bondet-chateau-chalon/w/1186030?year=1990&price_id=36237454
+88,Château-Chalon 1995,Berthet Bondet,France,4.1,1671,"259,686",https://www.vivino.com/berthet-bondet-chateau-chalon/w/1186030?year=1995&price_id=31286961
+89,Chardonnay 2003,Merryvale,United States,4.1,1666,"43,752",https://www.vivino.com/merryvale-vineyards-chardonnay/w/3085?year=2003&price_id=2895118
+90,Madonna Liebfraumilch 2010,P. J. Valckenberg,Germany,3.5,1634,"16,668",https://www.vivino.com/pj-valckenberg-gmbh-madonna-liebfraumilch/w/1735621?year=2010&price_id=14650415
+91,Sanct Valentin Sauvignon 2017,St. Michael-Eppan,Italy,4.1,1594,"70,837",https://www.vivino.com/st-michael-eppan-sanct-valentin-sauvignon/w/1644452?year=2017&price_id=18803727
+92,Brolettino Lugana 2021,Cà dei Frati,Italy,4.2,1583,"29,604",https://www.vivino.com/ca-dei-frati-brolettino-lugana/w/1221332?year=2021&price_id=36485491
+93,Lugana 2017,S. Cristina,Italy,4.0,1580,"50,691",https://www.vivino.com/it-s-cristina-lugana-lugana-white-wine-v/w/1127731?year=2017&price_id=36736904
+94,Côtes-du-Rhône Blanc 2011,E. Guigal,France,3.6,1550,"32,502",https://www.vivino.com/e-guigal-cotes-du-rhone-blanc/w/7775?year=2011&price_id=7953771
+95,Sauvignon Blanc 2008,Coopers Creek,New Zealand,3.9,1535,"35,002",https://www.vivino.com/coopers-creek-sauvignon-blanc/w/36814?year=2008&price_id=14539894
+96,Réserve Entre-deux-Mers 2004,Château Sainte-Marie,France,3.6,1464,"22,918",https://www.vivino.com/chateau-sainte-marie-reserve-entre-deux-mers/w/735838?year=2004&price_id=15108244
+97,Torrontes 2017,Crios,Argentina,3.7,1422,"35,419",https://www.vivino.com/crios-torrontes/w/1161922?year=2017&price_id=16829991
+98,Varietal Chardonnay 2008,Indomita,Chile,3.3,1389,"22,293",https://www.vivino.com/indomita-varietal-chardonnay/w/1220903?year=2008&price_id=2895138
+99,Châteauneuf-du-Pape Blanc 2007,Domaine Chante Cigale,France,3.9,1388,"41,669",https://www.vivino.com/domaine-chante-cigale-chateauneuf-du-pape-blanc/w/2075912?year=2007&price_id=7944138
+100,Racines et Terroir Riesling 2010,Cave du Roi Dagobert,France,3.6,1383,"37,085",https://www.vivino.com/roi-dagobert-racines-terroir-riesling/w/1594433?year=2010&price_id=7953602
+101,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 1988,Château Haut-Brion,France,4.5,1359,"1,261,330",https://www.vivino.com/haut-brion-pessac-leognan-blanc-grand-cru-classe-de-graves/w/1148846?year=1988&price_id=36841189
+102,Riesling 2005,Schmitt Söhne,Germany,3.7,1348,"20,834",https://www.vivino.com/schmitt-sohne-gmbh-weinkellerei-riesling-mosel-saar-ruwer/w/14782?year=2005&price_id=8637348
+103,Bordeaux Blanc Sec 2003,Dulong,France,3.3,1302,"26,668",https://www.vivino.com/dulong-bordeaux-blanc-sec/w/1444618?year=2003&price_id=14550184
+104,Private Collection Sauvignon Blanc 2006,Saxenburg,South Africa,3.8,1277,"33,335",https://www.vivino.com/saxenburg-private-collection-sauvignon-blanc/w/1636020?year=2006&price_id=2895358
+105,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 2010,Château La Mission Haut-Brion,France,4.3,1266,"1,230,420",https://www.vivino.com/la-mission-haut-brion-pessac-leognan-blanc-grand-cru-classe-de-graves/w/4402538?year=2010&price_id=29198051
+106,Chardonnay Diamond Label 2003,Rosemount,Australia,3.3,1238,"30,835",https://www.vivino.com/rosemount-chardonnay-diamond-label/w/68254?year=2003&price_id=14541390
+107,Pinot Gris 2023,Greywacke,New Zealand,3.9,1236,"26,381",https://www.vivino.com/greywacke-kevin-judd-pinot-gris/w/1130872?year=2023&price_id=36685400
+108,Diamond Label Traminer - Riesling 2004,Rosemount,Australia,3.8,1224,"22,918",https://www.vivino.com/rosemount-diamond-label-traminer-riesling/w/67844?year=2004&price_id=14540549
+109,La Fuga Chardonnay Contessa Entellina 2021,Donnafugata,Italy,3.9,1213,"23,060",https://www.vivino.com/donnafugata-la-fuga-chardonnay-contessa-entellina/w/4787?year=2021&price_id=36485608
+110,Chardonnay Bourbon Barrel Aged 2016,Vint by Robert Mondavi Private Selection,United States,4.0,1207,"41,669",https://www.vivino.com/vint-by-robert-mondavi-private-selection-chardonnay-bourbon-barrel-aged/w/5404705?year=2016&price_id=16730107
+111,Arneis Roero 2018,Vietti,Italy,3.9,1202,"41,669",https://www.vivino.com/vietti-arneis-roero/w/77438?year=2018&price_id=23060268
+112,Chardonnay 2001,Gallo Signature Series,United States,3.9,1192,"58,337",https://www.vivino.com/gallo-signature-series-chardonnay/w/1196226?year=2001&price_id=14549972
+113,Toscana Bianco 2021,Ornellaia,Italy,4.5,1176,"408,077",https://www.vivino.com/ornellaia-toscana-bianco/w/4344177?year=2021&price_id=36840227
+114,Basa Blanco 2016,Telmo Rodriguez,Spain,3.8,1170,"33,335",https://www.vivino.com/telmo-rodriguez-basa-blanco/w/63154?year=2016&price_id=20543733
+115,Chardonnay 2006,Stone Cellars,United States,3.4,1169,"28,335",https://www.vivino.com/stone-cellars-chardonnay-california/w/73786?year=2006&price_id=2895124
+116,Orvieto 2004,Sensi,Italy,3.1,1167,"24,168",https://www.vivino.com/sensi-orvieto/w/85042?year=2004&price_id=14541778
+117,Soave Classico Colombara 2010,Zenato,Italy,3.7,1121,"33,335",https://www.vivino.com/zenato-soave-classico-colombara/w/1210722?year=2010&price_id=2804851
+118,Fantini Edizione Bianco N.V.,Fantini,Italy,4.1,1118,"28,120",https://www.vivino.com/fantini-fantini-edizione-bianco/w/8532359?price_id=34814464
+119,Moutere Chardonnay 2021,Neudorf Vineyards,New Zealand,4.2,1108,"107,197",https://www.vivino.com/neudorf-moutere-chardonnay/w/42584?year=2021&price_id=36481082
+120,Riverbank Riesling 2006,Wente Vineyards,United States,3.7,1073,"25,835",https://www.vivino.com/wente-vineyards-riverbank-riesling/w/1736524?year=2006&price_id=2895325
+121,Sauvignon Blanc 2010,Bidoli,Italy,3.6,1062,"75,004",https://www.vivino.com/bidoli-sauvignon-blanc/w/1193932?year=2010&price_id=14006695
+122,Castello della Sala San Giovanni della Sala Classico Superiore 2019,Antinori,Italy,4.1,1044,"21,250",https://www.vivino.com/antinori-tuscany-castello-della-sala-san-giovanni-della-sala-classico-superiore/w/1693?year=2019&price_id=22697482
+123,Masianco 2021,Masi,Italy,3.7,1038,"42,919",https://www.vivino.com/masi-veneto-masianco/w/21950?year=2021&price_id=33312599
+124,Chardonnay 2004,Xanadu,Australia,3.9,1033,"41,252",https://www.vivino.com/xanadu-wines-chardonnay/w/1629737?year=2004&price_id=15135160
+125,Riesling 2005,Best's,Australia,3.8,1010,"50,003",https://www.vivino.com/bests-riesling/w/96184?year=2005&price_id=2895169
+126,Vintner's Collection Chardonnay 2015,Sterling Vineyards,United States,3.5,957,"37,502",https://www.vivino.com/sterling-vineyards-vintner-s-collection-chardonnay/w/1124954?year=2015&price_id=15803527
+127,Bel Canto Dry Riesling 2023,Pegasus Bay,New Zealand,4.0,947,"32,978",https://www.vivino.com/pegasus-bay-winery-bel-canto-dry-riesling/w/1261670?year=2023&price_id=36363005
+128,Feteasca Regala Sec 2011,Château Vartely,Moldova,3.6,926,"25,001",https://www.vivino.com/chateau-vartely-feteasca-regala-sec-md-moldova/w/4630427?year=2011&price_id=2804943
+129,Pioneer Block 10 Twin Hills Chardonnay 2021,Saint Clair Family Estate,New Zealand,3.9,926,"28,855",https://www.vivino.com/saint-clair-family-estate-pioneer-block-10-twin-hills-chardonnay/w/1100184?year=2021&price_id=36363003
+130,Wild Sauvignon 2015,Greywacke,New Zealand,4.2,920,"36,276",https://www.vivino.com/greywacke-kevin-judd-wild-sauvignon/w/1756010?year=2015&price_id=14005193
+131,Chardonnay 2003,Cousiño-Macul,Chile,3.4,919,"31,252",https://www.vivino.com/cousino-macul-chardonnay/w/48414?year=2003&price_id=2895321
+132,Dry Riesling 2023,Amisfield,New Zealand,3.9,918,"26,793",https://www.vivino.com/amisfield-dry-riesling/w/86253?year=2023&price_id=36237489
+133,Domaene Gobelsburg Grüner Veltliner 2019,Schloss Gobelsburg,Austria,3.8,914,"36,669",https://www.vivino.com/schloss-gobelsburg-domaene-gobelsburg-gruner-veltliner/w/20131?year=2019&price_id=23660422
+134,Estoras Grüner Veltliner 2011,Esterházy,Austria,3.8,913,"89,588",https://www.vivino.com/esterhazy-estoras-gruner-veltliner/w/4058411?year=2011&price_id=14650414
+135,Lugana 2022,S. Cristina,Italy,4.2,909,"24,707",https://www.vivino.com/it-s-cristina-lugana-lugana-white-wine-v/w/1127731?year=2022&price_id=36736914
+136,Riesling Spätlese 2005,Robert Weil,Germany,3.9,886,"70,837",https://www.vivino.com/robert-weil-riesling-spatlese/w/1183724?year=2005&price_id=16216705
+137,Malvasia Salina Capofaro 2010,Tenuta Regaleali,Italy,4.2,877,"93,755",https://www.vivino.com/tenuta-regaleali-malvasia-salina-capofaro/w/1209688?year=2010&price_id=28072537
+138,Pinot Gris 2007,Firesteed,United States,3.6,858,"34,377",https://www.vivino.com/firesteed-cellars-pinot-gris/w/15704?year=2007&price_id=14650508
+139,The Winemaster's Sauvignon Blanc 2016,Nederburg,South Africa,3.5,849,"14,542",https://www.vivino.com/nederburg-estate-the-winemaster-s-sauvignon-blanc-coastal-region/w/1548031?year=2016&price_id=16860347
+140,Sanct Valentin Chardonnay 2016,St. Michael-Eppan,Italy,4.2,830,"50,053",https://www.vivino.com/st-michael-eppan-sanct-valentin-chardonnay/w/2398590?year=2016&price_id=36485667
+141,Baroness Nadine 2018,Rupert & Rothschild,South Africa,4.3,829,"81,255",https://www.vivino.com/rupert-and-rothschild-vignerons-baroness-nadine/w/12437?year=2018&price_id=23138369
+142,Sauvignon Blanc 2023,Greywacke,New Zealand,4.1,815,"23,494",https://www.vivino.com/greywacke-kevin-judd-sauvignon-blanc/w/1128346?year=2023&price_id=34460470
+143,Riesling Kabinett Armand 2004,Reichsrat von Buhl,Germany,3.8,810,"37,502",https://www.vivino.com/von-buhl-riesling-kabinett-armand/w/1403793?year=2004&price_id=2895103
+144,Lugana 2019,Ottella,Italy,3.9,809,"19,573",https://www.vivino.com/ottella-lugana/w/1122030?year=2019&price_id=36485574
+145,Mâcon-Villages 2013,Trénel,France,3.7,792,"41,669",https://www.vivino.com/trenel-fils-macon-villages/w/78504?year=2013&price_id=7953679
+146,Châteauneuf-du-Pape Réservé Blanc 2012,Château Rayas,France,4.4,780,"927,448",https://www.vivino.com/chateau-rayas-chateauneuf-du-pape-reserve-blanc/w/87554?year=2012&price_id=36237475
+147,Pinot Grigio 2017,Mastri Vernacoli,Italy,3.5,769,"31,252",https://www.vivino.com/mastri-vernacoli-pinot-grigio/w/8916?year=2017&price_id=19336675
+148,Reserve Chardonnay 2000,Robert Mondavi Winery,United States,4.0,762,"94,172",https://www.vivino.com/robert-mondavi-winery-reserve-chardonnay/w/2441?year=2000&price_id=14541575
+149,Rotenberg La Colline Rouge 2008,Marcel Deiss,France,4.1,750,"170,650",https://www.vivino.com/marcel-deiss-rotenberg-la-colline-rouge/w/93835?year=2008&price_id=35372053
+150,Rotenberg La Colline Rouge 1994,Marcel Deiss,France,4.1,750,"296,783",https://www.vivino.com/marcel-deiss-rotenberg-la-colline-rouge/w/93835?year=1994&price_id=35329514
+151,Rotenberg La Colline Rouge 2006,Marcel Deiss,France,4.1,750,"179,302",https://www.vivino.com/marcel-deiss-rotenberg-la-colline-rouge/w/93835?year=2006&price_id=35723431
+152,Organic Chardonnay 2022,Greystone,New Zealand,4.1,733,"45,348",https://www.vivino.com/greystone-organic-chardonnay-waipara/w/2105666?year=2022&price_id=35938637
+153,Anthìlia 2022,Donnafugata,Italy,3.9,728,"20,137",https://www.vivino.com/donnafugata-anthilia/w/7662?year=2022&price_id=36485565
+154,Grigorescu Gewürztraminer Demisec 2010,Jidvei,Romania,3.6,714,"29,168",https://www.vivino.com/jidvei-grigorescu-gewurztraminer-demisec-tarnave-white-wine/w/1498181?year=2010&price_id=14650386
+155,Sibilla Langhe Arneis 2022,Molino,Italy,3.8,707,"19,009",https://www.vivino.com/molino-104975-sibilla-langhe-arneis/w/2210663?year=2022&price_id=36485550
+156,Chardonnay 2020,Jermann,Italy,3.9,706,"37,795",https://www.vivino.com/jermann-chardonnay/w/2342369?year=2020&price_id=36485559
+157,Domaene Gobelsburg Grüner Veltliner 2021,Schloss Gobelsburg,Austria,3.9,699,"80,004",https://www.vivino.com/schloss-gobelsburg-domaene-gobelsburg-gruner-veltliner/w/20131?year=2021&price_id=35673574
+158,Costamolino Vermentino di Sardegna 2021,Argiolas,Italy,3.9,688,"23,016",https://www.vivino.com/argiolas-costamolino-vermentino-di-sardegna/w/82192?year=2021&price_id=36485568
+159,Ronco Bernizza Chardonnay 2022,Venica & Venica,Italy,3.8,684,"39,472",https://www.vivino.com/venica-venica-ronco-bernizza-chardonnay/w/1460570?year=2022&price_id=36485509
+160,Pinot Grigio 2006,Dorigo,Italy,3.7,674,"43,752",https://www.vivino.com/alessio-dorigo-pinot-grigio/w/83992?year=2006&price_id=14539754
+161,Classic Riesling 2016,Hugel,France,3.8,655,"47,919",https://www.vivino.com/hugel-classic-riesling-alsace/w/4417837?year=2016&price_id=21678414
+162,San Vincenzo 2022,Anselmi,Italy,3.9,652,"25,360",https://www.vivino.com/anselmi-san-vincenzo/w/91463?year=2022&price_id=36485492
+163,Gold Label Riesling 2005,Wolf Blass,Australia,3.5,649,"52,086",https://www.vivino.com/wolf-blass-gold-label-riesling/w/1974?year=2005&price_id=2754207
+164,Section 94 Sauvignon Blanc 2017,Dog Point,New Zealand,3.9,645,"41,224",https://www.vivino.com/dog-point-section-94-sauvignon-blanc/w/79391?year=2017&price_id=34540037
+165,Sauvignon Blanc 2011,Monkey Bay,New Zealand,3.5,637,"39,377",https://www.vivino.com/monkey-bay-sauvignon-blanc/w/1133970?year=2011&price_id=2754294
+166,Chardonnay 2020,Cloudy Bay,New Zealand,4.0,636,"42,461",https://www.vivino.com/cloudy-bay-chardonnay/w/18979?year=2020&price_id=31600419
+167,Sanct Valentin Gewürztraminer 2015,St. Michael-Eppan,Italy,4.1,633,"50,097",https://www.vivino.com/st-michael-eppan-sanct-valentin-gewurztraminer/w/10107?year=2015&price_id=36485558
+168,Riesling Kabinett 2005,Robert Weil,Germany,4.0,625,"50,003",https://www.vivino.com/robert-weil-riesling-kabinett/w/1476551?year=2005&price_id=16156677
+169,Maximum Grüner Veltliner 2007,Hiedler,Austria,4.2,621,"75,004",https://www.vivino.com/weingut-hiedler-maximum-gruner-veltliner/w/1203167?year=2007&price_id=2894903
+170,Osteiner 2022,Rippon,New Zealand,3.8,619,"28,855",https://www.vivino.com/rippon-osteiner/w/1725863?year=2022&price_id=33193572
+171,Riesling 2008,St Hallett,Australia,3.5,618,"45,836",https://www.vivino.com/st-hallett-riesling/w/1938618?year=2008&price_id=14650359
+172,The Starlet Sauvignon Blanc 2022,Misha's Vineyard,New Zealand,3.8,614,"27,205",https://www.vivino.com/mishas-the-starlet-central-otago-sauvignon-blanc/w/1624318?year=2022&price_id=33589753
+173,Slow Chenin Blanc 2022,False Bay,South Africa,3.8,612,"10,313",https://www.vivino.com/false-bay-slow-chenin-blanc-stellenbosch/w/5799675?year=2022&price_id=32785219
+174,Te Koko Sauvignon Blanc 2020,Cloudy Bay,New Zealand,4.3,602,"66,541",https://www.vivino.com/cloudy-bay-te-koko-sauvignon-blanc/w/1126958?year=2020&price_id=33293825
+175,Gewurztraminer 2021,Rippon,New Zealand,3.7,600,"46,997",https://www.vivino.com/rippon-gewurztraminer/w/2263454?year=2021&price_id=34771420
+176,Electio Xarel-lo 2006,Parés Baltà,Spain,4.0,583,"100,006",https://www.vivino.com/pares-balta-electio-xarel-lo/w/1262317?year=2006&price_id=14650399
+177,Chablis 2012,Domaine William Fèvre,France,3.8,582,"60,420",https://www.vivino.com/domaine-william-fevre-chablis/w/7255299?year=2012&price_id=14549842
+178,Reserva Privada Chardonnay 2009,Aromo,Chile,3.6,581,"31,252",https://www.vivino.com/aromo-reserva-privada-chardonnay-maule-valley/w/42284?year=2009&price_id=2804824
+179,Riesling 2013,Norman Hardie,Canada,3.9,568,"53,336",https://www.vivino.com/norman-hardie-riesling/w/2413981?year=2013&price_id=14540841
+180,Puligny-Montrachet 1er Cru Les Pucelles 2006,Olivier Leflaive,France,4.3,566,"890,350",https://www.vivino.com/olivier-leflaive-puligny-montrachet-1er-cru-les-pucelles/w/1456236?year=2006&price_id=35329474
+181,Riesling Feinherb 2017,Balthasar Ress,Germany,3.9,555,"32,502",https://www.vivino.com/balthasar-ress-riesling-feinherb/w/1306612?year=2017&price_id=22384551
+182,Maximin Grünhäuser Abtsberg Riesling Auslese 2005,Maximin Grünhaus,Germany,4.3,554,"55,420",https://www.vivino.com/maximin-grunhaus-maximin-grunhauser-abtsberg-riesling-auslese/w/736427?year=2005&price_id=14650474
+183,Pinot Grigio 2022,Livio Felluga,Italy,4.1,552,"40,719",https://www.vivino.com/livio-felluga-pinot-grigio/w/15098?year=2022&price_id=36485665
+184,Cometa 2021,Planeta,Italy,4.1,548,"40,734",https://www.vivino.com/planeta-cometa/w/4985?year=2021&price_id=36485552
+185,Dry Riesling 2022,Prophet's Rock,New Zealand,4.1,544,"32,153",https://www.vivino.com/prophet-s-rock-dry-riesling/w/1287432?year=2022&price_id=36397972
+186,Sauvignon Blanc 2023,Peregrine,New Zealand,4.0,539,"26,381",https://www.vivino.com/peregrine-wines-central-otago-limited-sauvignon-blanc/w/1837249?year=2023&price_id=34528791
+187,Chassagne-Montrachet 1976,Remoissenet Père & Fils,France,4.3,538,"154,580",https://www.vivino.com/remoissenet-pere-fils-chassagne-montrachet/w/2617028?year=1976&price_id=36831584
+188,Chassagne-Montrachet 1985,Remoissenet Père & Fils,France,4.3,538,"739,480",https://www.vivino.com/remoissenet-pere-fils-chassagne-montrachet/w/2617028?year=1985&price_id=19838015
+189,Loureiro Sur Lies Fines 2012,Royal Palmeira,Portugal,4.1,538,"53,336",https://www.vivino.com/royal-palmeira-loureiro-sur-lies-fines/w/1252936?year=2012&price_id=17601250
+190,Guinea Fowl Chenin Blanc 2006,Saxenburg,South Africa,3.6,536,"22,918",https://www.vivino.com/saxenburg-guinea-fowl-chenin-blanc/w/1530821?year=2006&price_id=2895195
+191,Le Creete 2015,Ottella,Italy,4.1,532,"26,072",https://www.vivino.com/ottella-le-creete/w/1239926?year=2015&price_id=36485597
+192,Vieilles Vignes Riesling Alsace Grand Cru Altenberg de Bergheim 2017,Gustave Lorentz,France,4.2,522,"48,969",https://www.vivino.com/gustave-lorentz-vieilles-vignes-riesling-alsace-grand-cru-altenberg-de-bergheim/w/1177803?year=2017&price_id=31050306
+193,Sauvignon Blanc 2006,Porta,Chile,3.5,521,"22,918",https://www.vivino.com/porta-sauvignon-blanc/w/1139517?year=2006&price_id=2895193
+194,Pinot Grigio 2017,St. Michael-Eppan,Italy,3.9,511,"23,535",https://www.vivino.com/st-michael-eppan-pinot-grigio/w/10086?year=2017&price_id=36485649
+195,Fiano Di Avellino Pietracalda 2021,Feudi di San Gregorio,Italy,4.0,507,"24,989",https://www.vivino.com/feudi-di-san-gregorio-fiano-di-avellino-pietracalda/w/5091?year=2021&price_id=36736891
+196,Craighall Vineyard Riesling 2022,Dry River,New Zealand,4.0,492,"47,822",https://www.vivino.com/dry-river-wines-limited-craighall-vineyard-riesling/w/1103675?year=2022&price_id=33554792
+197,Craighall Vineyard Riesling 2023,Dry River,New Zealand,4.0,492,"47,822",https://www.vivino.com/dry-river-wines-limited-craighall-vineyard-riesling/w/1103675?year=2023&price_id=36685404
+198,Gewürztraminer 2014,St. Michael-Eppan,Italy,3.8,482,"27,497",https://www.vivino.com/st-michael-eppan-gewurztraminer/w/10089?year=2014&price_id=36485660
+199,Merì Vermentino di Sardegna 2017,Argiolas,Italy,3.8,482,"35,419",https://www.vivino.com/argiolas-meri-vermentino-di-sardegna/w/1272816?year=2017&price_id=20945508
+200,Lahn Sauvignon 2017,St. Michael-Eppan,Italy,3.9,476,"29,085",https://www.vivino.com/st-michael-eppan-lahn-sauvignon/w/1655321?year=2017&price_id=36485569
+201,Birdman Series Sauvignon Blanc 2016,Anakena,Chile,3.5,472,"20,418",https://www.vivino.com/anakena-winery-birdman-series-sauvignon-blanc-central-valley/w/5376523?year=2016&price_id=28552992
+202,Chardonnay Toscana Collezione Privata 2019,Isole e Olena,Italy,4.4,469,"89,035",https://www.vivino.com/isole-e-olena-chardonnay-toscana-collezione-privata/w/1240491?year=2019&price_id=29936557
+203,Secreto Sauvignon Blanc 2015,Viu Manent,Chile,3.7,467,"39,586",https://www.vivino.com/viu-manent-secreto-sauvignon-blanc/w/2454?year=2015&price_id=10548767
+204,Giallo d'Arles Greco di Tufo 2017,Quintodecimo,Italy,4.2,462,"95,839",https://www.vivino.com/quintodecimo-giallo-d-arles-greco-di-tufo/w/1211299?year=2017&price_id=24839149
+205,Falanghina Serrocielo 2021,Feudi di San Gregorio,Italy,3.8,457,"23,594",https://www.vivino.com/feudi-di-san-gregorio-falanghina-serrocielo/w/1631655?year=2021&price_id=36485557
+206,Soave Classico 2004,Villa Girardi,Italy,3.6,457,"21,668",https://www.vivino.com/villa-girardi-soave-classico/w/92385?year=2004&price_id=2804792
+207,Sauvignon Blanc II 2015,Von Winning,Germany,3.9,455,"49,961",https://www.vivino.com/de-von-winning-sauvignon-blanc-ii/w/2412168?year=2015&price_id=14541866
+208,Pinot Grigio 2006,Swanson,United States,3.8,451,"70,004",https://www.vivino.com/swanson-vineyards-pinot-grigio/w/3823740?year=2006&price_id=2804786
+209,China Terrace Chardonnay 2022,Gibbston Valley,New Zealand,3.9,449,"40,400",https://www.vivino.com/gibbston-valley-china-terrace-chardonnay/w/2620722?year=2022&price_id=32222010
+210,Pinot Grigio 2022,Jermann,Italy,4.0,447,"36,030",https://www.vivino.com/jermann-pinot-grigio/w/1989135?year=2022&price_id=36485498
+211,La Joya Reserve Sauvignon Blanc 2006,Bisquertt Family Vineyards,Chile,3.4,445,"18,751",https://www.vivino.com/bisquertt-la-joya-reserve-sauvignon-blanc/w/1591165?year=2006&price_id=14650491
+212,Bourgogne Chardonnay 2013,Francois Martenot,France,3.5,444,"36,669",https://www.vivino.com/francois-martenot-bourgogne-chardonnay-va767/w/6481137?year=2013&price_id=33409680
+213,Vinnae (Servus Cella) Ribolla Gialla 2022,Jermann,Italy,4.0,434,"37,662",https://www.vivino.com/jermann-vinnae-servus-cella-ribolla-gialla/w/79495?year=2022&price_id=36485515
+214,Les Princes Abbés Pinot Gris Alsace 2014,Domaines Schlumberger,France,3.8,431,"39,586",https://www.vivino.com/domaines-schlumberger-les-princes-abbes-pinot-gris-alsace/w/12329?year=2014&price_id=10282874
+215,Sauvignon Blanc 2017,Prophecy,New Zealand,3.6,431,"35,419",https://www.vivino.com/prophecy-sauvignon-blanc/w/3504438?year=2017&price_id=19190703
+216,Sauvignon Blanc 2020,Invivo,New Zealand,4.1,426,"27,085",https://www.vivino.com/invivo-sauvignon-blanc/w/1219785?year=2020&price_id=26456003
+217,Foundation Chardonnay 2006,Nederburg,South Africa,3.5,426,"20,626",https://www.vivino.com/nederburg-estate-foundation-chardonnay/w/1152973?year=2006&price_id=7944036
+218,Domaine Sainte Claire Chablis 2013,Jean-Marc Brocard,France,3.6,421,"45,836",https://www.vivino.com/jean-marc-brocard-domaine-sainte-claire-chablis/w/1180709?year=2013&price_id=7944026
+219,Bordeaux Sauvignon Blanc 2016,Mouton Cadet,France,3.3,418,"31,668",https://www.vivino.com/mouton-cadet-bordeaux-sauvignon-blanc/w/2461238?year=2016&price_id=35516599
+220,Riesling 2022,Peregrine,New Zealand,3.8,417,"26,381",https://www.vivino.com/peregrine-wines-central-otago-limited-riesling/w/93280?year=2022&price_id=35544904
+221,Sauvignon Blanc 2022,Cable Bay,New Zealand,3.5,416,"22,257",https://www.vivino.com/cable-bay-vineyards-sauvignon-blanc/w/17085?year=2022&price_id=36430188
+222,Origin Sauvignon Blanc 2013,Saint Clair Family Estate,New Zealand,4.1,415,"56,253",https://www.vivino.com/saint-clair-family-estate-origin-sauvignon-blanc-marlborough/w/1884747?year=2013&price_id=2873865
+223,Chardonnay Central Coast 2005,Cycles Gladiator,United States,3.6,413,"25,001",https://www.vivino.com/cycles-gladiator-chardonnay-central-coast/w/9875?year=2005&price_id=2894915
+224,Heartwood Chardonnay 2022,Tony Bish,New Zealand,4.1,411,"33,803",https://www.vivino.com/tony-bish-heartwood-chardonnay/w/5483315?year=2022&price_id=35630999
+225,Wairau Reserve Sauvignon Blanc 2022,Saint Clair Family Estate,New Zealand,4.0,409,"29,679",https://www.vivino.com/saint-clair-family-estate-wairau-reserve-sauvignon-blanc/w/1147263?year=2022&price_id=31315727
+226,Late Harvest Series Moscato 2014,Bodega Norton,Argentina,4.1,404,"20,834",https://www.vivino.com/bodega-norton-late-harvest-series-moscato/w/2277388?year=2014&price_id=2895106
+227,Sul Vulcano Etna Bianco 2017,Donnafugata,Italy,4.2,401,"66,670",https://www.vivino.com/donnafugata-sul-vulcano-etna-bianco-etna/w/6334373?year=2017&price_id=24839155
+228,Single Vineyard Sauvignon Blanc 2020,Yealands,New Zealand,4.1,396,"33,335",https://www.vivino.com/yealands-single-vineyard-sauvignon-blanc-marlborough-white-wine/w/5962585?year=2020&price_id=26455998
+229,Chardonnay 2012,Pelee Island Winery,Canada,3.4,394,"33,335",https://www.vivino.com/pelee-island-winery-chardonnay/w/1753380?year=2012&price_id=14550048
+230,Finca Els Camps Macabeu 2002,Jané Ventura,Spain,3.8,391,"54,170",https://www.vivino.com/jane-ventura-finca-els-camps-macabeu/w/96984?year=2002&price_id=2895223
+231,Pinot Gris 2023,Maude,New Zealand,3.9,390,"24,731",https://www.vivino.com/maude-pinot-gris/w/1923102?year=2023&price_id=35488247
+232,Riesling 2022,Sato,New Zealand,3.8,390,"37,101",https://www.vivino.com/sato-riesling/w/1576731?year=2022&price_id=34881122
+233,Los Cardos Sauvignon Blanc 2017,Doña Paula,Argentina,3.4,389,"22,918",https://www.vivino.com/dona-paula-los-cardos-sauvignon-blanc/w/24207?year=2017&price_id=23138363
+234,GV Collecion Pinot Gris 2023,Gibbston Valley,New Zealand,3.7,388,"24,731",https://www.vivino.com/gibbston-valley-gv-collecion-pinot-gris/w/1145555?year=2023&price_id=36463755
+235,Trebbiano d'Abruzzo 2014,Masciarelli,Italy,3.5,381,"31,252",https://www.vivino.com/masciarelli-abruzzo-trebbiano-d-abruzzo/w/93059?year=2014&price_id=14550080
+236,S'Elegas Nuragus di Cagliari 2021,Argiolas,Italy,3.9,381,"18,831",https://www.vivino.com/argiolas-s-elegas-nuragus-di-cagliari/w/1180743?year=2021&price_id=36485518
+237,Sauvignon Blanc Klassik 2009,Peter Skoff,Austria,3.8,377,"50,003",https://www.vivino.com/peter-skoff-sauvignon-blanc-klassik-sudsteiermark/w/3143624?year=2009&price_id=14549867
+238,Sauvignon Blanc 2002,Redwood Creek,United States,3.5,376,"25,001",https://www.vivino.com/redwood-creek-sauvignon-blanc/w/83726?year=2002&price_id=2895123
+239,Chardonnay Reserva 2006,Hugo Casanova,Chile,3.6,374,"27,085",https://www.vivino.com/hugo-casanova-chardonnay-reserva/w/1225231?year=2006&price_id=2804900
+240,Gewürztraminer 2022,Elena Walch,Italy,4.1,369,"28,951",https://www.vivino.com/elena-walch-gewurztraminer/w/92650?year=2022&price_id=36485489
+241,Branco 2016,Quinta da Alorna,Portugal,3.4,366,"24,960",https://www.vivino.com/quinta-da-alorna-branco/w/1195763?year=2016&price_id=17633393
+242,Bergkelder Selection Sauvignon Blanc 2013,Fleur du Cap,South Africa,3.4,365,"34,377",https://www.vivino.com/fleur-du-cap-bergkelder-selection-sauvignon-blanc/w/24209?year=2013&price_id=12264268
+243,Chardonnay 2022,Domaine Rewa,New Zealand,4.1,363,"43,698",https://www.vivino.com/domaine-rewa-chardonnay/w/3681444?year=2022&price_id=35630997
+244,Reserva Chardonnay 2014,Tarapacá,Chile,3.7,357,"33,127",https://www.vivino.com/tarapaca-reserva-chardonnay-casablanca-valley/w/6009490?year=2014&price_id=16654840
+245,Sauvignon Blanc 2018,Arboleda,Chile,3.8,355,"50,003",https://www.vivino.com/arboleda-sauvignon-blanc/w/1268304?year=2018&price_id=24742576
+246,Pinot Gris 2023,Nautilus,New Zealand,3.6,354,"24,731",https://www.vivino.com/nautilus-estate-pinot-gris/w/1724359?year=2023&price_id=35157552
+247,Kővágó Single Vineyard Furmint 2013,Grand Tokaj,Hungary,3.7,353,"53,336",https://www.vivino.com/grand-tokaj-kovago-single-vineyard-furmint-dry/w/4544097?year=2013&price_id=9156618
+248,Millésia Sancerre 2022,Serge Laporte,France,4.0,351,"25,227",https://www.vivino.com/serge-laporte-millesia-sancerre/w/1371644?year=2022&price_id=33696561
+249,Reserva Especial Chardonnay 2013,Tabali,Chile,3.7,347,"45,002",https://www.vivino.com/tabali-reserva-especial-chardonnay/w/779335?year=2013&price_id=16730324
+250,Lowburn Terrace Riesling 2022,Amisfield,New Zealand,4.1,346,"32,978",https://www.vivino.com/amisfield-lowburn-terrace-riesling/w/86254?year=2022&price_id=35544903
+251,Inmácula 2013,Bodega Tandem,Spain,3.8,345,"49,169",https://www.vivino.com/bodega-tandem-inmacula/w/1918373?year=2013&price_id=14540737
+252,Classic Riesling 2013,Hugel,France,3.6,345,"47,919",https://www.vivino.com/hugel-classic-riesling-alsace/w/4417837?year=2013&price_id=15175910
+253,Chablis Grand Cru 'Blanchot' 2003,La Chablisienne,France,4.2,343,"129,174",https://www.vivino.com/la-chablisienne-blanchot-chablis-grand-cru/w/16632?year=2003&price_id=7953916
+254,Pessac-Léognan Blanc 2003,Château Picque Caillou,France,3.8,342,"70,837",https://www.vivino.com/chateau-picque-caillou-pessac-leognan-blanc-pessac-leognan/w/3857014?year=2003&price_id=7944035
+255,Sauvignon Blanc 2005,Merryvale,United States,3.9,339,"38,335",https://www.vivino.com/merryvale-vineyards-sauvignon-blanc/w/1752367?year=2005&price_id=2895252
+256,Ermitage l'Ermite Blanc 2009,M. Chapoutier,France,4.5,338,"772,869",https://www.vivino.com/m-chapoutier-ermitage-l-ermite-blanc/w/2508940?year=2009&price_id=35878066
+257,Ermitage l'Ermite Blanc 2007,M. Chapoutier,France,4.5,338,"927,448",https://www.vivino.com/m-chapoutier-ermitage-l-ermite-blanc/w/2508940?year=2007&price_id=35329566
+258,Ermitage l'Ermite Blanc 2003,M. Chapoutier,France,4.5,338,"1,082,028",https://www.vivino.com/m-chapoutier-ermitage-l-ermite-blanc/w/2508940?year=2003&price_id=35878076
+259,Blanc 2005,Beau-Rivage,France,3.2,335,"22,918",https://www.vivino.com/beau-rivage-bordeaux-blanc/w/1172104?year=2005&price_id=14541468
+260,Pinot Gris 2022,Quartz Reef,New Zealand,3.7,332,"30,092",https://www.vivino.com/quartz-reef-pinot-gris/w/1259465?year=2022&price_id=31180736
+261,Pinot Gris 2023,Quartz Reef,New Zealand,3.7,332,"30,092",https://www.vivino.com/quartz-reef-pinot-gris/w/1259465?year=2023&price_id=35848277
+262,Ronco delle Cime Friulano 2018,Venica & Venica,Italy,4.1,330,"50,869",https://www.vivino.com/venica-venica-ronco-delle-cime-friulano/w/1210531?year=2018&price_id=36485530
+263,Willowglen Sémillon - Chardonnay 2006,De Bortoli,Australia,3.3,329,"22,918",https://www.vivino.com/de-bortoli-willowglen-semillon-chardonnay/w/1215574?year=2006&price_id=2894886
+264,Sanct Valentin Pinot Grigio 2014,St. Michael-Eppan,Italy,4.0,327,"50,053",https://www.vivino.com/st-michael-eppan-sanct-valentin-pinot-grigio/w/10108?year=2014&price_id=36485591
+265,Old Vine Sémillon 2006,Kaesler,Australia,3.5,327,"31,252",https://www.vivino.com/kaesler-old-vine-semillon/w/1457995?year=2006&price_id=14549856
+266,Chardonnay 2022,Peregrine,New Zealand,4.1,327,"41,224",https://www.vivino.com/peregrine-wines-central-otago-limited-chardonnay/w/1751061?year=2022&price_id=34771405
+267,Meursault-Perrieres 1er Cru 2008,Domaine Jacques Prieur,France,4.3,324,"1,112,938",https://www.vivino.com/domaine-jacques-prieur-meursault-perrieres-1er-cru/w/16546?year=2008&price_id=36237467
+268,Pinot Grigio 2015,Placido,Italy,3.6,321,"27,085",https://www.vivino.com/conte-placido-pinot-grigio/w/2310838?year=2015&price_id=10655730
+269,Moscato 2019,Banrock Station,Australia,4.1,319,"12,501",https://www.vivino.com/banrock-station-moscato/w/84331?year=2019&price_id=24559051
+270,Vipers Vineyard Riesling 2023,Chard Farm,New Zealand,3.9,319,"22,257",https://www.vivino.com/chard-farm-vipers-vineyard-riesling/w/2208488?year=2023&price_id=35630998
+271,Dry Riesling 2023,Felton Road,New Zealand,3.9,319,"46,997",https://www.vivino.com/felton-road-dry-riesling/w/88312?year=2023&price_id=34494769
+272,Virolet Xarel-lo 2013,Oriol Rossell,Spain,3.5,316,"40,836",https://www.vivino.com/oriol-rossell-virolet/w/1270325?year=2013&price_id=14650377
+273,Viognier 2020,Hans Herzog - Hans Family Estate,New Zealand,4.0,315,"53,594",https://www.vivino.com/hans-herzog-hans-family-estate-viognier/w/1846408?year=2020&price_id=34079253
+274,Domaene Gobelsburg Grüner Veltliner 2022,Schloss Gobelsburg,Austria,3.9,313,"41,252",https://www.vivino.com/schloss-gobelsburg-domaene-gobelsburg-gruner-veltliner/w/20131?year=2022&price_id=35900883
+275,Pioneer Block 9 Big John Riesling 2023,Saint Clair Family Estate,New Zealand,4.0,312,"24,731",https://www.vivino.com/saint-clair-family-estate-pioneer-block-9-big-john-riesling/w/1100185?year=2023&price_id=35488255
+276,Where Dreams have no end (W... Dreams...) 2020,Jermann,Italy,4.3,312,"93,591",https://www.vivino.com/jermann-where-dreams-have-no-end-w-dreams/w/79520?year=2020&price_id=36485522
+277,Ronco delle Mele Sauvignon 2022,Venica & Venica,Italy,4.3,312,"73,320",https://www.vivino.com/venica-venica-ronco-delle-mele-sauvignon/w/1257879?year=2022&price_id=36485619
+278,Estate Chardonnay 2012,Cave Spring,Canada,3.5,311,"61,670",https://www.vivino.com/cave-springs-cellars-estate-chardonnay/w/8169?year=2012&price_id=14541688
+279,Les Preuses Chablis Grand Cru 2020,Patrick Piuze,France,4.4,307,"178,070",https://www.vivino.com/patrick-piuze-les-preuses-chablis-grand-cru/w/1607424?year=2020&price_id=31136857
+280,Terecrèa 2021,Pilandro,Italy,4.1,303,"16,857",https://www.vivino.com/pilandro-lugana-terecrea/w/1177372?year=2021&price_id=36485609
+281,Müller Thurgau 2017,St. Michael-Eppan,Italy,3.6,301,"25,167",https://www.vivino.com/st-michael-eppan-muller-thurgau/w/10087?year=2017&price_id=36485670
+282,Pinot Gris 2023,Rockburn,New Zealand,3.8,297,"23,082",https://www.vivino.com/rockburn-pinot-gris/w/2068417?year=2023&price_id=35624786
+283,Meursault 2007,Morey-Blanc,France,4.2,296,"704,861",https://www.vivino.com/maison-morey-blanc-meursault/w/2414192?year=2007&price_id=35329455
+284,Chardonnay 2023,Novum,New Zealand,4.0,294,"41,224",https://www.vivino.com/novum-marlborough-chardonnay/w/6645154?year=2023&price_id=36685399
+285,Barrel Fermented Chardonnay 2023,Black Barn,New Zealand,3.9,293,"39,575",https://www.vivino.com/black-barn-barrel-fermented-chardonnay/w/1533269?year=2023&price_id=35703050
+286,Lion's Tooth Chardonnay 2020,Pyramid Valley Vineyards,New Zealand,4.1,290,"103,073",https://www.vivino.com/pyramid-valley-vineyards-lion-s-tooth-chardonnay/w/2018706?year=2020&price_id=30767853
+287,Sauvignon 2022,Jermann,Italy,4.1,289,"39,175",https://www.vivino.com/jermann-sauvignon/w/1591133?year=2022&price_id=36485613
+288,Cru Heretaunga Chardonnay 2021,Smith Sheth,New Zealand,4.1,288,"32,978",https://www.vivino.com/smith-sheth-cru-heretaunga-chardonnay/w/6306317?year=2021&price_id=35157546
+289,Chablis Sainte Claire Vieilles Vignes 2013,Jean-Marc Brocard,France,3.9,287,"58,337",https://www.vivino.com/jean-marc-brocard-chablis-sainte-claire-vieilles-vignes/w/1374713?year=2013&price_id=7944083
+290,Judge & Jury Chardonnay 2023,Chard Farm,New Zealand,3.9,284,"35,452",https://www.vivino.com/chard-farm-judge-jury-chardonnay/w/2142996?year=2023&price_id=36498087
+291,Judge & Jury Chardonnay 2022,Chard Farm,New Zealand,3.9,284,"35,452",https://www.vivino.com/chard-farm-judge-jury-chardonnay/w/2142996?year=2022&price_id=32222006
+292,Tradition Gewürztraminer 2018,Michel Fonné,France,3.7,280,"58,337",https://www.vivino.com/michel-fonne-tradition-gewurztraminer/w/1699422?year=2018&price_id=23071845
+293,Dress Circle Pinot Gris 2021,Misha's Vineyard,New Zealand,3.7,278,"28,030",https://www.vivino.com/mishas-dress-circle-pinot-gris/w/1278160?year=2021&price_id=32695401
+294,Gelber Muskateller 2009,Skoff Original,Austria,3.6,277,"41,669",https://www.vivino.com/walter-skoff-gelber-muskateller/w/21815?year=2009&price_id=14550051
+295,Cool Coast Sauvignon Blanc 2012,Casa Silva,Chile,3.8,275,"45,836",https://www.vivino.com/casa-silva-cool-coast-sauvignon-blanc/w/1261199?year=2012&price_id=3680217
+296,Waitaki Vineyard Riesling 2022,Valli,New Zealand,4.0,275,"32,153",https://www.vivino.com/valli-waitaki-vineyard-riesling/w/4900956?year=2022&price_id=35643385
+297,Signos de Origen La Vinilla Chardonnay - Roussanne 2016,Emiliana,Chile,4.0,275,"56,253",https://www.vivino.com/emiliana-signos-de-origen-la-vinilla-chardonnay-roussanne/w/1286095?year=2016&price_id=17465424
+298,Cru Heretaunga Albariño 2023,Smith Sheth,New Zealand,3.9,273,"32,978",https://www.vivino.com/smith-sheth-cru-heretaunga-albarino/w/7100455?year=2023&price_id=36363014
+299,Sauvignon Blanc 2023,Domain Road Vineyard,New Zealand,3.9,270,"22,257",https://www.vivino.com/domain-road-sauvignon-blanc/w/78168?year=2023&price_id=34540046
+300,Cooper Hill Pinot Gris 2011,Cooper Mountain,United States,3.7,269,"41,627",https://www.vivino.com/cooper-mountain-cooper-hill-pinot-gris/w/1758613?year=2011&price_id=7944063
+301,The Lodge Hill Riesling 2016,Jim Barry,Australia,3.6,266,"47,919",https://www.vivino.com/jim-barry-the-lodge-hill-riesling/w/1721764?year=2016&price_id=15164041
+302,Marlborough Sauvignon Blanc 2023,Craggy Range,New Zealand,4.1,265,"23,907",https://www.vivino.com/craggy-range-marlborough-sauvignon-blanc/w/5388702?year=2023&price_id=34079252
+303,Pinot Gris 2021,Mt Rosa,New Zealand,3.8,263,"24,731",https://www.vivino.com/mt-rosa-pinot-gris/w/2372305?year=2021&price_id=34102277
+304,Tempranillo Blanco 2022,Monte Real,Spain,3.9,262,"17,733",https://www.vivino.com/monte-real-la-rioja-tempranillo-blanco/w/10109580?year=2022&price_id=36579456
+305,Skeetfield Chardonnay 2022,Tony Bish,New Zealand,4.2,260,"67,613",https://www.vivino.com/tony-bish-skeetfield-chardonnay/w/4715540?year=2022&price_id=33589767
+306,Picnic Riesling 2022,Two Paddocks,New Zealand,3.7,259,"26,381",https://www.vivino.com/two-paddocks-picnic-riesling/w/1574803?year=2022&price_id=32775635
+307,Sauvignon Blanc 2017,Twomey,United States,3.9,258,"74,171",https://www.vivino.com/twomey-sauvignon-blanc/w/14902?year=2017&price_id=17957571
+308,Pinot Grigio 2005,Cycles Gladiator,United States,3.5,258,"25,001",https://www.vivino.com/cycles-gladiator-pinot-grigio/w/9887?year=2005&price_id=2754570
+309,Pioneer Block 12 Lone Gum Gewürztraminer 2023,Saint Clair Family Estate,New Zealand,3.9,258,"27,205",https://www.vivino.com/saint-clair-family-estate-pioneer-block-12-lone-gum-gewurztraminer/w/1100189?year=2023&price_id=36397971
+310,Blackwood Park Riesling 2008,Mitchelton,Australia,3.7,254,"45,836",https://www.vivino.com/mitchelton-blackwood-park-riesling/w/1212235?year=2008&price_id=2754502
+311,Blackwood Park Riesling 2006,Mitchelton,Australia,3.7,254,"45,836",https://www.vivino.com/mitchelton-blackwood-park-riesling/w/1212235?year=2006&price_id=2873746
+312,Würzburger Silvaner Trocken 2012,Juliusspital,Germany,3.6,253,"57,503",https://www.vivino.com/juliusspital-wurzburger-silvaner-trocken/w/1216140?year=2012&price_id=2873735
+313,Niederhäuser Felsensteyer Riesling Trocken 2022,Jakob Schneider,Germany,3.8,252,"23,668",https://www.vivino.com/weingut-jakob-schneider-niederhauser-felsensteyer-riesling-trocken/w/3756275?year=2022&price_id=35951479
+314,Tokaji Muscat Lunel Semi Dry 2013,Pannon,Hungary,3.7,250,"35,002",https://www.vivino.com/tokaji-semi-sweet-white-muscat-lunel/w/1817796?year=2013&price_id=14650371
+315,Greco Di Tufo Cutizzi 2022,Feudi di San Gregorio,Italy,4.0,250,"24,099",https://www.vivino.com/feudi-di-san-gregorio-greco-di-tufo-cutizzi/w/1226616?year=2022&price_id=36736875
+316,Lovat Vineyard Gewürztraminer 2022,Dry River,New Zealand,4.1,249,"51,945",https://www.vivino.com/dry-river-wines-limited-lovat-vineyard-gewurztraminer/w/1651985?year=2022&price_id=33554780
+317,Dry Furmint 2012,Grand Tokaj,Hungary,3.7,249,"49,169",https://www.vivino.com/grand-tokaj-dry-furmint/w/9442331?year=2012&price_id=24227228
+318,Pinot Blanc 2022,Mt Rosa,New Zealand,4.0,248,"32,978",https://www.vivino.com/mt-rosa-pinot-blanc/w/1914961?year=2022&price_id=33347473
+319,Blanc de Noir 2023,Te Kano,New Zealand,4.0,248,"27,205",https://www.vivino.com/te-kano-blanc-de-noir/w/7022751?year=2023&price_id=35157549
+320,Sauvignon Blanc 2023,Mudbrick Vineyard,New Zealand,4.0,247,"32,153",https://www.vivino.com/mudbrick-marlborough-sauvignon-blanc/w/1526401?year=2023&price_id=36237485
+321,Les Monts Damnés Sancerre 2014,Pascal Cotat,France,4.1,246,"111,294",https://www.vivino.com/pascal-cotat-les-monts-damnes-sancerre/w/100777?year=2014&price_id=36650292
+322,Bin 311 Chardonnay 2015,Penfolds,Australia,3.8,246,"100,006",https://www.vivino.com/penfolds-bin-311-chardonnay/w/1249?year=2015&price_id=30195053
+323,Bourgogne Chardonnay 2001,La Buxynoise,France,3.6,244,"25,001",https://www.vivino.com/la-buxynoise-bourgogne-chardonnay/w/2045988?year=2001&price_id=7953610
+324,Tralivio 2020,Sartarelli,Italy,3.8,244,"30,717",https://www.vivino.com/sartarelli-tralivio/w/85567?year=2020&price_id=36485656
+325,Domaene Gobelsburg Riesling 2018,Schloss Gobelsburg,Austria,4.0,243,"41,252",https://www.vivino.com/schloss-gobelsburg-domaene-gobelsburg-riesling/w/20132?year=2018&price_id=24742558
+326,Higueruela Sauvignon Blanc - Verdejo 2013,Bodegas Tintoralba,Spain,3.3,243,"23,751",https://www.vivino.com/bodegas-tintoralba-higueruela-sauvignon-blanc-verdejo/w/1829741?year=2013&price_id=7953830
+327,Chenin Blanc 2018,Protea,South Africa,3.7,242,"27,085",https://www.vivino.com/za-protea-chenin-blanc-coastal-region/w/2714672?year=2018&price_id=19011281
+328,Cardellino Chardonnay 2022,Elena Walch,Italy,4.0,242,"38,567",https://www.vivino.com/elena-walch-cardellino-chardonnay/w/1762972?year=2022&price_id=36485684
+329,Pinot Gris 2023,Dry River,New Zealand,4.1,241,"59,367",https://www.vivino.com/dry-river-wines-limited-pinot-gris/w/1852046?year=2023&price_id=36685398
+330,Pinot Gris 2022,Dry River,New Zealand,4.1,241,"59,367",https://www.vivino.com/dry-river-wines-limited-pinot-gris/w/1852046?year=2022&price_id=33554803
+331,Reserve Chardonnay 2007,Barkan,Israel,3.6,240,"53,336",https://www.vivino.com/barkan-reserve-chardonnay/w/2259009?year=2007&price_id=14541188
+332,Inspiration Liebfraumilch 2015,HXM,Germany,3.5,240,"20,834",https://www.vivino.com/hxm-inspiration-liebfraumilch/w/2119605?year=2015&price_id=10084582
+333,Talinay Coastal Limestone Vineyard Sauvignon Blanc 2013,Tabali,Chile,3.8,238,"61,670",https://www.vivino.com/tabali-talinay-coastal-limestone-vineyard-sauvignon-blanc/w/1611997?year=2013&price_id=16730250
+334,Madonna Kabinett 2004,P. J. Valckenberg,Germany,3.8,238,"31,252",https://www.vivino.com/pj-valckenberg-gmbh-madonna-kabinett/w/65644?year=2004&price_id=10940308
+335,Montefalco Bianco 2022,Arnaldo-Caprai,Italy,3.7,237,"16,249",https://www.vivino.com/arnaldo-caprai-montefalco-bianco/w/3392615?year=2022&price_id=33877160
+336,Chardonnay 2020,Dog Point,New Zealand,4.0,237,"41,224",https://www.vivino.com/dog-point-chardonnay/w/79392?year=2020&price_id=32576084
+337,Chardonnay 2005,Eos Estate,United States,3.5,235,"37,502",https://www.vivino.com/eos-estate-winery-chardonnay/w/1671035?year=2005&price_id=2873793
+338,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 2011,Château Couhins-Lurton,France,3.8,235,"131,257",https://www.vivino.com/chateau-couhins-lurton-pessac-leognan-blanc-grand-cru-classe-de-graves/w/2011856?year=2011&price_id=7953678
+339,Home Chardonnay 2021,Black Estate,New Zealand,3.9,235,"37,101",https://www.vivino.com/black-estate-home-chardonnay/w/4227746?year=2021&price_id=30571663
+340,Gavi 2006,Cascina Degli Ulivi,Italy,3.6,235,"41,669",https://www.vivino.com/cascina-degli-ulivi-gavi/w/1147765?year=2006&price_id=2895060
+341,Cuvée L. C. Chablis 2000,La Chablisienne,France,3.7,235,"31,668",https://www.vivino.com/la-chablisienne-cuvee-l-c-chablis/w/1200207?year=2000&price_id=7944029
+342,Platinum Riesling 2016,Peter Mertes,Germany,3.8,233,"22,918",https://www.vivino.com/peter-mertes-platinum-riesling/w/1148807?year=2016&price_id=14650490
+343,Falanghina Serrocielo 2014,Feudi di San Gregorio,Italy,3.7,232,"61,670",https://www.vivino.com/feudi-di-san-gregorio-falanghina-serrocielo/w/1631655?year=2014&price_id=7943983
+344,Winemakers Reserve Chardonnay 2019,Esk Valley,New Zealand,4.0,231,"36,276",https://www.vivino.com/esk-valley-winemakers-reserve-chardonnay/w/2396292?year=2019&price_id=28582636
+345,Ungeheuer GG 2015,Von Winning,Germany,4.3,229,"95,797",https://www.vivino.com/de-von-winning-ungeheuer-gg/w/2639855?year=2015&price_id=14541891
+346,Chablis Premier Cru 'Vau de Vey' 2013,Jean-Marc Brocard,France,4.0,228,"70,837",https://www.vivino.com/jean-marc-brocard-chablis-premier-cru-vau-de-vey/w/1385279?year=2013&price_id=7943981
+347,Pinot Gris 2022,Mudbrick Vineyard,New Zealand,3.8,226,"32,153",https://www.vivino.com/mudbrick-marlborough-pinot-gris/w/1967068?year=2022&price_id=33589765
+348,Gimblett Gravels Les Beaux Cailloux 2019,Craggy Range,New Zealand,4.3,225,"164,922",https://www.vivino.com/craggy-range-gimblett-gravels-les-beaux-cailloux/w/79638?year=2019&price_id=25478344
+349,Portrait Dry Riesling 2016,Peter Lehmann,Australia,3.5,225,"31,252",https://www.vivino.com/peter-lehmann-portrait-dry-riesling/w/1866649?year=2016&price_id=15542079
+350,Gimblett Gravels Les Beaux Cailloux 2018,Craggy Range,New Zealand,4.3,225,"164,922",https://www.vivino.com/craggy-range-gimblett-gravels-les-beaux-cailloux/w/79638?year=2018&price_id=22579435
+351,Duffers Creek Riesling 2019,Domain Road Vineyard,New Zealand,3.7,225,"22,257",https://www.vivino.com/domain-road-duffers-creek-riesling/w/1291883?year=2019&price_id=31388364
+352,Pedregoso Gran Reserva Sauvignon Blanc 2017,Tabali,Chile,3.5,225,"31,252",https://www.vivino.com/tabali-pedregoso-gran-reserva-sauvignon-blanc/w/5087741?year=2017&price_id=16730105
+353,Brookdale Sémillon 2012,Tyrrell's,Australia,3.5,224,"50,003",https://www.vivino.com/tyrrell-s-brookdale-semillon/w/2537136?year=2012&price_id=2754246
+354,Madonna Auslese 2005,P. J. Valckenberg,Germany,3.7,223,"39,586",https://www.vivino.com/pj-valckenberg-gmbh-madonna-auslese/w/1264645?year=2005&price_id=2804928
+355,June's Vineyard Riesling 2012,13th Street,Canada,3.5,222,"45,002",https://www.vivino.com/thirteen-th-street-niagara-peninsula-june-s-vineyard-riesling/w/1115199?year=2012&price_id=14541940
+356,Chardonnay 2011,Marina Cvetić,Italy,4.1,220,"93,755",https://www.vivino.com/marina-cvetic-chardonnay/w/93051?year=2011&price_id=14541509
+357,Contessa Entellina Chiarandà 2018,Donnafugata,Italy,4.1,219,"53,406",https://www.vivino.com/donnafugata-contessa-entellina-chiaranda/w/4788?year=2018&price_id=36485682
+358,Pinot Gris Sur Lie 2022,Chard Farm,New Zealand,3.8,218,"23,082",https://www.vivino.com/chard-farm-pinot-gris-sur-lie/w/83452?year=2022&price_id=31314071
+359,Pinot Gris Sur Lie 2023,Chard Farm,New Zealand,3.8,218,"23,082",https://www.vivino.com/chard-farm-pinot-gris-sur-lie/w/83452?year=2023&price_id=34789813
+360,Sauvignon Blanc 2023,Dog Point,New Zealand,3.9,216,"24,731",https://www.vivino.com/dog-point-sauvignon-blanc/w/79385?year=2023&price_id=34540052
+361,Inspiration Riesling 2015,HXM,Germany,3.7,216,"25,001",https://www.vivino.com/hxm-inspiration-riesling/w/2400664?year=2015&price_id=10084553
+362,Chardonnay 2022,Carrick,New Zealand,3.8,216,"32,153",https://www.vivino.com/carrick-wines-chardonnay-bannockburn/w/95033?year=2022&price_id=36362999
+363,Moutere Pinot Gris 2022,Neudorf Vineyards,New Zealand,3.9,215,"27,205",https://www.vivino.com/neudorf-moutere-pinot-gris/w/42784?year=2022&price_id=32222003
+364,Sonoma County Sauvignon Blanc 2015,Château St. Jean,United States,3.5,213,"45,002",https://www.vivino.com/chateau-st-jean-sonoma-county-sauvignon-blanc/w/4303192?year=2015&price_id=17465453
+365,Monarch Vidal 2012,Pelee Island Winery,Canada,3.4,211,"28,335",https://www.vivino.com/pelee-island-winery-monarch-vidal/w/2224037?year=2012&price_id=4394312
+366,Zomborka Furmint 2013,Gróf Degenfeld,Hungary,3.9,211,"61,670",https://www.vivino.com/degenfeld-zomborka-furmint/w/3922357?year=2013&price_id=9094627
+367,Riserva Trebbiano 2020,Marina Cvetić,Italy,4.2,211,"53,273",https://www.vivino.com/marina-cvetic-riserva-trebbiano/w/2526510?year=2020&price_id=36485512
+368,Reserva Viognier 2014,Tabali,Chile,3.7,210,"31,252",https://www.vivino.com/tabali-reserva-viognier/w/1676503?year=2014&price_id=7944071
+369,Chardonnay 2017,Jacob's Creek,Australia,3.1,210,"18,293",https://www.vivino.com/jacob-s-creek-chardonnay/w/2706?year=2017&price_id=16375730
+370,Aurel Blanc 2017,Domaine Les Aurelles,France,4.2,209,"191,678",https://www.vivino.com/fr-domaine-les-aurelles-aurel-blanc/w/2424533?year=2017&price_id=35429542
+371,Chardonnay Friuli Grave 2004,Pighin,Italy,3.7,209,"31,252",https://www.vivino.com/fernando-pighin-chardonnay-friuli-grave/w/22559?year=2004&price_id=2873860
+372,Gewürztraminer 2018,Blue Nun,Germany,3.9,207,"25,001",https://www.vivino.com/blue-nun-gewurztraminer/w/1247743?year=2018&price_id=32072761
+373,Riesling 2019,Gibbston Valley,New Zealand,3.9,206,"24,731",https://www.vivino.com/gibbston-valley-riesling/w/1145550?year=2019&price_id=35494607
+374,Feinherb Riesling 2014,Abtei Himmerod,Germany,3.5,206,"29,168",https://www.vivino.com/abtei-himmerod-feinherb-riesling/w/1270826?year=2014&price_id=10084564
+375,Capo Martino 2013,Jermann,Italy,4.2,205,"97,627",https://www.vivino.com/jermann-capo-martino/w/79526?year=2013&price_id=36485540
+376,The Paper Nautilus Sauvignon Blanc 2022,Nautilus,New Zealand,4.1,205,"29,679",https://www.vivino.com/nautilus-estate-the-paper-nautilus-sauvignon-blanc/w/4967287?year=2022&price_id=36378979
+377,Virtuoso Chardonnay 2019,Pegasus Bay,New Zealand,4.1,203,"98,950",https://www.vivino.com/pegasus-bay-winery-virtuoso-chardonnay/w/1553970?year=2019&price_id=28932319
+378,Riesling Alsace Signature 2018,Wolfberger,France,3.7,202,"43,752",https://www.vivino.com/wolfberger-riesling-alsace-signature/w/1145223?year=2018&price_id=21687582
+379,Vitral Reserva Sauvignon Blanc 2015,Viña Maipo,Chile,3.4,202,"24,168",https://www.vivino.com/vina-maipo-vitral-reserva-sauvignon-blanc/w/68074?year=2015&price_id=8239067
+380,Quercus Pouilly-Fumé 2021,Tinel-Blondelet,France,4.2,202,"51,937",https://www.vivino.com/tinel-blondelet-quercus-pouilly-fume/w/1992562?year=2021&price_id=33696582
+381,Cenaja Vermentino 2007,Torre a Cenaia,Italy,3.7,201,"43,752",https://www.vivino.com/torre-cenaia-cenaja-vermentino-costa-toscana/w/1755203?year=2007&price_id=2873684
+382,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 2017,Domaine de Chevalier,France,4.2,201,"126,133",https://www.vivino.com/domaine-de-chevalier-pessac-leognan-blanc-grand-cru-classe-de-graves/w/1197479?year=2017&price_id=35422956
+383,Cavallo Delle Fate Grillo 2013,Tenuta Regaleali,Italy,3.5,200,"45,836",https://www.vivino.com/tenuta-regaleali-cavallo-delle-fate-grillo/w/1630182?year=2013&price_id=13611928
+384,Pinot Blanc 2003,P. J. Valckenberg,Germany,3.8,198,"25,001",https://www.vivino.com/pj-valckenberg-gmbh-pinot-blanc/w/2143166?year=2003&price_id=2804919
+385,Chablis Premier Cru 'Butteaux' 2015,Raveneau,France,4.5,198,"756,798",https://www.vivino.com/raveneau-chablis-premier-cru-butteaux/w/1196505?year=2015&price_id=30571769
+386,50 Reasons Sauvignon Blanc 2014,Neleman,Spain,3.3,197,"36,669",https://www.vivino.com/neleman-fifty-reasons-sauvignon-blanc/w/5368488?year=2014&price_id=14539410
+387,Wild Sauvignon 2022,Greywacke,New Zealand,4.1,197,"32,153",https://www.vivino.com/greywacke-kevin-judd-wild-sauvignon/w/1756010?year=2022&price_id=35938638
+388,Nussberg Wiener Gemischter Satz 2016,Wieninger,Austria,3.8,195,"66,670",https://www.vivino.com/wieninger-nussberg-wiener-gemischter-satz/w/1128168?year=2016&price_id=23033799
+389,Toscana Spartito di Castellare 2014,Castellare,Italy,3.7,195,"62,503",https://www.vivino.com/castellare-di-castellina-toscana-spartito-di-castellare/w/1925698?year=2014&price_id=14539554
+390,Serriger Schloss Saarsteiner Riesling Auslese 2011,Schloss Saarstein,Germany,4.2,194,"104,172",https://www.vivino.com/weingut-schloss-saarstein-serriger-schloss-saarsteiner-riesling-auslese/w/5181193?year=2011&price_id=14650547
+391,Gran Reserva Chardonnay 2018,Tarapacá,Chile,3.8,194,"41,252",https://www.vivino.com/tarapaca-gran-reserva-chardonnay/w/1162632?year=2018&price_id=23660425
+392,Pinot Gris 2023,Akarua,New Zealand,3.7,193,"24,731",https://www.vivino.com/akarua-pinot-gris/w/1386810?year=2023&price_id=34771437
+393,Ruppertsberger Reiterpfad Riesling 2015,Von Winning,Germany,4.1,193,"66,629",https://www.vivino.com/de-von-winning-ruppertsberger-reiterpfad-riesling/w/1577058?year=2015&price_id=14539674
+394,Defiance Chardonnay 2022,Domain Road Vineyard,New Zealand,3.9,193,"28,855",https://www.vivino.com/domain-road-defiance-chardonnay/w/5215868?year=2022&price_id=35630996
+395,North Canterbury Orange 2022,Pyramid Valley Vineyards,New Zealand,3.8,192,"32,978",https://www.vivino.com/pyramid-valley-vineyards-north-canterbury-orange/w/7184786?year=2022&price_id=33888369
+396,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 2012,Domaine de Chevalier,France,4.1,192,"118,713",https://www.vivino.com/domaine-de-chevalier-pessac-leognan-blanc-grand-cru-classe-de-graves/w/1197479?year=2012&price_id=35422951
+397,Chardonnay 2022,Akarua,New Zealand,3.7,190,"24,731",https://www.vivino.com/akarua-chardonnay/w/96646?year=2022&price_id=33589766
+398,Custoza 2022,Cavalchina,Italy,3.9,188,"14,008",https://www.vivino.com/cavalchina-custoza/w/51484?year=2022&price_id=36485586
+399,Quarter Acre Chardonnay 2021,Te Awanga Estate,New Zealand,3.9,188,"32,978",https://www.vivino.com/te-awanga-estate-quarter-acre-chardonnay/w/3439431?year=2021&price_id=35150960
+400,Madonna Spätlese 2005,P. J. Valckenberg,Germany,3.6,188,"35,419",https://www.vivino.com/pj-valckenberg-gmbh-madonna-spatlese/w/1768472?year=2005&price_id=14541845
+401,Estate Chardonnay 2022,Kumeu River,New Zealand,4.0,187,"37,101",https://www.vivino.com/kumeu-river-winery-estate-chardonnay/w/76137?year=2022&price_id=32705943
+402,Soave 2016,Pasqua Vigneti e Cantine,Italy,3.5,186,"22,918",https://www.vivino.com/pasqua-vigneti-e-cantine-soave-soave/w/3215610?year=2016&price_id=15574736
+403,Max Reserva Sauvignon Blanc 2017,Errazuriz,Chile,3.8,186,"52,086",https://www.vivino.com/errazuriz-max-reserva-sauvignon-blanc/w/1240932?year=2017&price_id=17957523
+404,Les Cerveres 2012,Oriol Rossell,Spain,4.0,186,"111,673",https://www.vivino.com/oriol-rossell-les-cerveres/w/2698353?year=2012&price_id=14650479
+405,Graves Blanc 2009,Grand Enclos du Château de Cérons,France,3.7,186,"87,505",https://www.vivino.com/grand-enclos-du-chateau-de-cerons-graves-blanc/w/1158707?year=2009&price_id=10462351
+406,L'Arret Buffatte Pouilly-Fumé 2021,Tinel-Blondelet,France,4.1,186,"32,646",https://www.vivino.com/tinel-blondelet-l-arret-buffatte-pouilly-fume/w/1170990?year=2021&price_id=33696565
+407,Pouilly-Fuissé 2008,Louis Jadot,France,4.0,185,"290,596",https://www.vivino.com/louis-jadot-pouilly-fuisse/w/2991?year=2008&price_id=35329486
+408,Furmint Mézes Mály 2003,Royal Tokaji,Hungary,4.0,184,"315,017",https://www.vivino.com/royal-tokaji-furmint-mezes-maly/w/2161935?year=2003&price_id=28072553
+409,Les Princes Abbés Pinot Blanc Alsace 2012,Domaines Schlumberger,France,3.7,184,"31,252",https://www.vivino.com/domaines-schlumberger-les-princes-abbes-pinot-blanc-alsace/w/12323?year=2012&price_id=14650435
+410,Albariño 2014,Gotas de Mar,Spain,3.7,183,"30,002",https://www.vivino.com/gotas-de-mar-albarino/w/3692236?year=2014&price_id=7953583
+411,Chablis Premier Cru 'Butteaux' 2016,Raveneau,France,4.6,183,"816,154",https://www.vivino.com/raveneau-chablis-premier-cru-butteaux/w/1196505?year=2016&price_id=30571775
+412,Bois de Blagny Meursault 2019,Domaine Saint Marc,France,4.1,182,"68,260",https://www.vivino.com/saint-marc-112669-bois-de-blagny-meursault/w/2331294?year=2019&price_id=33696575
+413,Riesling 2020,Pegasus Bay,New Zealand,4.0,182,"24,731",https://www.vivino.com/pegasus-bay-winery-riesling/w/16115?year=2020&price_id=32222007
+414,Lugana 2005,Tommasi,Italy,3.4,182,"31,252",https://www.vivino.com/tommasi-lugana/w/1588919?year=2005&price_id=14540450
+415,Shed Red Pinot Blanc 2022,Gibbston Valley,New Zealand,3.7,181,"34,627",https://www.vivino.com/gibbston-valley-shed-red-pinot-blanc/w/3815168?year=2022&price_id=32855503
+416,Chardonnay 2000,Dorigo,Italy,4.0,180,"104,172",https://www.vivino.com/alessio-dorigo-chardonnay/w/83981?year=2000&price_id=14540176
+417,Sauvignon Blanc 2017,Invivo,New Zealand,3.8,179,"31,252",https://www.vivino.com/invivo-sauvignon-blanc/w/1219785?year=2017&price_id=16314954
+418,Chardonnay (N.S.A Organic) 2011,Badger Mountain,United States,3.4,177,"37,502",https://www.vivino.com/badger-mountain-chardonnay-n-s-a-organic/w/1865705?year=2011&price_id=2895159
+419,Rosie's Block Moutere Albariño 2023,Neudorf Vineyards,New Zealand,4.0,177,"27,205",https://www.vivino.com/neudorf-rosie-s-block-moutere-albarino/w/4300544?year=2023&price_id=35937260
+420,Le Montrachet Grand Cru 2018,Vincent Girardin,France,4.6,176,"1,632,309",https://www.vivino.com/vincent-girardin-le-montrachet-grand-cru-montrachet-grand-cru/w/1217056?year=2018&price_id=29936550
+421,Chablis Premier Cru 'Butteaux' 2012,Raveneau,France,4.4,175,"667,763",https://www.vivino.com/raveneau-chablis-premier-cru-butteaux/w/1196505?year=2012&price_id=30343402
+422,Riverbank Riesling 2018,Wente Vineyards,United States,3.7,174,"32,502",https://www.vivino.com/wente-vineyards-riverbank-riesling/w/1736524?year=2018&price_id=21678416
+423,Riesling 2023,Hawkshead,New Zealand,3.9,174,"29,679",https://www.vivino.com/hawkshead-riesling/w/1472520?year=2023&price_id=34520358
+424,The Wingwalker Viognier 2022,Alpha Domus,New Zealand,3.8,174,"27,123",https://www.vivino.com/alpha-domus-the-wingwalker-viognier/w/1112188?year=2022&price_id=33222819
+425,Riserva Trebbiano 2010,Marina Cvetić,Italy,4.1,172,"93,755",https://www.vivino.com/marina-cvetic-riserva-trebbiano/w/2526510?year=2010&price_id=7944099
+426,Florentine Chenin Blanc 2016,Kalleske,Australia,3.5,171,"62,503",https://www.vivino.com/kalleske-florentine-chenin-blanc/w/16363?year=2016&price_id=21687583
+427,Dry Riesling 2020,Carrick,New Zealand,3.5,170,"26,381",https://www.vivino.com/carrick-wines-dry-riesling/w/2744346?year=2020&price_id=28780766
+428,Trumpeter Sauvignon Blanc 2015,Rutini,Argentina,3.6,169,"28,335",https://www.vivino.com/rutini-trumpeter-sauvignon-blanc/w/1690107?year=2015&price_id=8392664
+429,Bussiador 2013,Aldo Conterno,Italy,4.2,169,"139,591",https://www.vivino.com/aldo-conterno-bussiador/w/1407984?year=2013&price_id=14541978
+430,Anthium Bellone 2018,Casale del Giglio,Italy,3.7,167,"39,586",https://www.vivino.com/casale-del-giglio-anthium-bellone-lazio-white-wine/w/4424541?year=2018&price_id=21280993
+431,DJL Sauvignon Blanc - Sémillon 2013,Xanadu,Australia,3.7,167,"50,003",https://www.vivino.com/xanadu-wines-djl-sauvignon-blanc-semillon/w/5972771?year=2013&price_id=18418747
+432,Xino-Xano Blanco 2013,Oriol Rossell,Spain,3.1,164,"36,669",https://www.vivino.com/oriol-rossell-xino-xano-blanco/w/1504050?year=2013&price_id=14650475
+433,Sauvignon Blanc 2008,Tatachilla,Australia,3.3,164,"27,085",https://www.vivino.com/tatachilla-sauvignon-blanc/w/4144791?year=2008&price_id=14550152
+434,Gewürztraminer Vigna Kastelaz 2021,Elena Walch,Italy,4.2,164,"71,688",https://www.vivino.com/elena-walch-gewurztraminer-vigna-kastelaz/w/92624?year=2021&price_id=36485529
+435,1794 Riesling - Moscato 2017,Deinhard,Germany,3.6,162,"27,085",https://www.vivino.com/deinhard-seventeen-ninetyfour-riesling-moscato/w/2274791?year=2017&price_id=18914903
+436,Sauvignon Blanc 2022,Carrick,New Zealand,3.4,161,"26,381",https://www.vivino.com/carrick-wines-sauvignon-blanc/w/95046?year=2022&price_id=33554778
+437,Lepus 2016,Franz Haas,Italy,3.8,161,"47,919",https://www.vivino.com/franz-haas-lepus/w/3147014?year=2016&price_id=24499684
+438,Chardonnay 2001,Best's,Australia,3.6,161,"54,170",https://www.vivino.com/bests-chardonnay/w/3053487?year=2001&price_id=2895267
+439,Clayvin Vineyard Chardonnay 2020,Fromm Winery,New Zealand,3.9,159,"47,822",https://www.vivino.com/fromm-winery-clayvin-vineyard-chardonnay/w/1106214?year=2020&price_id=32444658
+440,Chardonnay 2020,Hans Herzog - Hans Family Estate,New Zealand,4.1,159,"53,594",https://www.vivino.com/hans-herzog-hans-family-estate-chardonnay/w/84494?year=2020&price_id=33333406
+441,Pinot Gris 2023,Domain Road Vineyard,New Zealand,4.0,158,"24,731",https://www.vivino.com/domain-road-pinot-gris/w/1540500?year=2023&price_id=35648067
+442,Chardonnay 2017,St. Michael-Eppan,Italy,3.5,158,"22,600",https://www.vivino.com/st-michael-eppan-chardonnay/w/10088?year=2017&price_id=36485514
+443,Saint-Véran 2010,Domaine de la Bâtie,France,3.6,158,"33,335",https://www.vivino.com/domaine-de-la-batie-saint-veran-saint-veran/w/1169283?year=2010&price_id=7944124
+444,Vintner's Reserve Chardonnay 2008,Kendall-Jackson,United States,3.7,158,"43,752",https://www.vivino.com/kendall-jackson-vintner-s-reserve-chardonnay/w/2132?year=2008&price_id=3680220
+445,Swiftburn Sauvignon Blanc 2023,Chard Farm,New Zealand,4.0,157,"21,433",https://www.vivino.com/chard-farm-swiftburn-sauvignon-blanc/w/83456?year=2023&price_id=33589755
+446,Tigermoth Riesling 2022,Rockburn,New Zealand,4.0,157,"32,153",https://www.vivino.com/rockburn-tigermoth-riesling/w/1426104?year=2022&price_id=34233505
+447,Moscato Brisa 2017,Vistamar,Chile,3.5,156,"20,001",https://www.vivino.com/vistamar-moscato-brisa/w/2886605?year=2017&price_id=16873882
+448,Moscato Brisa 2015,Vistamar,Chile,3.5,156,"20,001",https://www.vivino.com/vistamar-moscato-brisa/w/2886605?year=2015&price_id=14650434
+449,Sélection Riesling 2019,Bollenberg,France,4.2,156,"23,743",https://www.vivino.com/bollenberg-clos-ste-apolline-selection-riesling/w/5439392?year=2019&price_id=33741497
+450,Moscato Brisa 2019,Vistamar,Chile,3.5,156,"20,834",https://www.vivino.com/vistamar-moscato-brisa/w/2886605?year=2019&price_id=23983638
+451,Sulzfelder Roter Silvaner Trocken 2022,Zehnthof Luckert,Germany,3.9,156,"19,291",https://www.vivino.com/zehnthof-luckert-sulzfelder-roter-silvaner-trocken/w/4662687?year=2022&price_id=35951493
+452,Chenin Blanc 2015,Bellingham,South Africa,3.6,155,"33,335",https://www.vivino.com/za-bellingham-chenin-blanc/w/1195266?year=2015&price_id=14541766
+453,Sauvignon Blanc 2023,Maude,New Zealand,3.8,155,"23,082",https://www.vivino.com/maude-sauvignon-blanc/w/1526498?year=2023&price_id=33554799
+454,Arilica 2016,Pilandro,Italy,4.0,154,"19,721",https://www.vivino.com/pilandro-lugana-arilica/w/1219376?year=2016&price_id=36485634
+455,Pinot Blanc 2023,Hawkshead,New Zealand,3.9,154,"28,030",https://www.vivino.com/hawkshead-pinot-blanc/w/9049960?year=2023&price_id=36685403
+456,Saint-Aubin 1er Cru 'Le Villages' 1946,Blondeau-Danne,France,4.0,153,"575,018",https://www.vivino.com/blondeau-danne-saint-aubin-1er-cru-le-villages-saint-aubin/w/1951699?year=1946&price_id=17455062
+457,Sauvignon Blanc 500 2012,Von Winning,Germany,4.3,152,"112,465",https://www.vivino.com/de-von-winning-sauvignon-blanc-500/w/2041250?year=2012&price_id=11056152
+458,Mysterious Diggings Pinot Gris 2022,Terra Sancta,New Zealand,3.9,152,"22,257",https://www.vivino.com/terra-sancta-mysterious-diggings-pinot-gris/w/1435815?year=2022&price_id=30876534
+459,Mysterious Diggings Pinot Gris 2023,Terra Sancta,New Zealand,3.9,152,"22,257",https://www.vivino.com/terra-sancta-mysterious-diggings-pinot-gris/w/1435815?year=2023&price_id=34460471
+460,Bin 51 Riesling 2022,Penfolds,Australia,3.8,151,"75,004",https://www.vivino.com/penfolds-bin-51-riesling/w/24057?year=2022&price_id=30195058
+461,Bannockburn Pinot Gris 2019,Carrick,New Zealand,3.6,150,"26,381",https://www.vivino.com/carrick-wines-bannockburn-pinot-gris/w/2587367?year=2019&price_id=31314069
+462,Pedregoso Gran Reserva Viognier 2018,Tabali,Chile,3.7,150,"31,252",https://www.vivino.com/tabali-pedregoso-gran-reserva-viognier-limari-valley-white-wine/w/5458971?year=2018&price_id=26551637
+463,Bannockburn Pinot Gris 2020,Carrick,New Zealand,3.6,150,"26,381",https://www.vivino.com/carrick-wines-bannockburn-pinot-gris/w/2587367?year=2020&price_id=35937258
+464,Classico 2021,Sartarelli,Italy,3.7,149,"20,270",https://www.vivino.com/sartarelli-classico/w/85566?year=2021&price_id=36485534
+465,Pecorello 2017,Ippolito 1845,Italy,3.9,149,"37,502",https://www.vivino.com/ippolito-pecorello/w/2565725?year=2017&price_id=19042796
+466,Bourgogne Aligoté 2022,Philippe Girard,France,3.8,148,"17,807",https://www.vivino.com/philippe-girard-bourgogne-aligote/w/1156257?year=2022&price_id=35365878
+467,Mistral 2018,Hans Herzog - Hans Family Estate,New Zealand,4.0,146,"53,594",https://www.vivino.com/hans-herzog-hans-family-estate-mistral/w/1420233?year=2018&price_id=31014829
+468,Les Crêches Saint-Véran 2018,Domaine des Poncetys,France,4.1,146,"32,646",https://www.vivino.com/domaine-des-poncetys-saint-veran-les-creches/w/3194761?year=2018&price_id=33696564
+469,Riesling 2023,Two Paddocks,New Zealand,4.2,146,"29,679",https://www.vivino.com/two-paddocks-riesling/w/3703852?year=2023&price_id=36378974
+470,Muscat Demidulce Alb 2011,Château Vartely,Moldova,3.6,145,"18,751",https://www.vivino.com/chateau-vartely-muscat-demidulce-alb/w/2497921?year=2011&price_id=2873631
+471,Muscat Demidulce Alb 2010,Château Vartely,Moldova,3.6,145,"30,002",https://www.vivino.com/chateau-vartely-muscat-demidulce-alb/w/2497921?year=2010&price_id=2804584
+472,Riesling 2012,Cave Spring,Canada,3.5,145,"49,169",https://www.vivino.com/cave-springs-cellars-riesling/w/8165?year=2012&price_id=14541986
+473,Langenlois Grüner Veltliner 2016,Schloss Gobelsburg,Austria,4.0,144,"54,170",https://www.vivino.com/schloss-gobelsburg-langenlois-gruner-veltliner/w/5941966?year=2016&price_id=17970315
+474,Petite Arvine 2022,Les Crêtes,Italy,3.9,144,"27,512",https://www.vivino.com/les-cretes-petite-arvine/w/95232?year=2022&price_id=36485626
+475,Godfrey's Creek Reserve Gewürztraminer 2021,Saint Clair Family Estate,New Zealand,4.0,143,"26,381",https://www.vivino.com/saint-clair-family-estate-godfrey-s-creek-reserve-gewurztraminer/w/1434397?year=2021&price_id=32695407
+476,Sauvignon Blanc 2007,Cloudy Bay,New Zealand,4.1,143,"50,003",https://www.vivino.com/cloudy-bay-sauvignon-blanc/w/18978?year=2007&price_id=2754569
+477,Pálava Výber z Hrozna 2013,Château Topoľčianky,Slovakia,4.1,143,"35,419",https://www.vivino.com/chateau-topolcianky-palava-vyber-z-hrozna/w/1230104?year=2013&price_id=28072558
+478,Morrison Vineyard Grüner Veltliner 2018,Mount Edward,New Zealand,3.8,143,"28,030",https://www.vivino.com/mount-edward-morrison-vineyard-gruner-veltliner/w/5292349?year=2018&price_id=35810760
+479,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 2013,Domaine de Chevalier,France,4.1,142,"118,713",https://www.vivino.com/domaine-de-chevalier-pessac-leognan-blanc-grand-cru-classe-de-graves/w/1197479?year=2013&price_id=35422936
+480,Vermentino (Etichetta Nera/Black Label) 2022,Lunae,Italy,4.0,141,"30,955",https://www.vivino.com/lunae-liguria-vermentino-etichetta-nera-black-label/w/1150732?year=2022&price_id=36485535
+481,Tradition Muscat 2012,Michel Fonné,France,3.8,141,"48,336",https://www.vivino.com/michel-fonne-tradition-muscat/w/1604822?year=2012&price_id=14650430
+482,SEA Limited Edition Chablis 2018,William Fèvre,France,3.8,140,"57,503",https://www.vivino.com/william-fevre-chablis-sea-limited-edition-chablis/w/9024084?year=2018&price_id=23300330
+483,Chardonnay 2014,Morgan Bay Cellars,United States,3.8,139,"24,168",https://www.vivino.com/morgan-bay-cellars-chardonnay/w/2018222?year=2014&price_id=8410418
+484,Le Chêne Sancerre 2013,Lucien Crochet,France,4.2,139,"68,754",https://www.vivino.com/lucien-crochet-le-chene-sancerre/w/1686861?year=2013&price_id=7953580
+485,Reserve Chardonnay 2020,Obsidian,New Zealand,4.0,138,"44,523",https://www.vivino.com/obsidian-reserve-chardonnay/w/2284702?year=2020&price_id=31315719
+486,'Rippon' Mature Vine Riesling 2020,Rippon,New Zealand,3.9,138,"46,997",https://www.vivino.com/rippon-rippon-mature-vine-riesling-otago/w/2059976?year=2020&price_id=29520183
+487,Duo Chenin - Chardonnay 2009,Beltran,Argentina,3.2,137,"15,834",https://www.vivino.com/beltran-duo-chenin-chardonnay/w/1145656?year=2009&price_id=14650361
+488,Bourgogne Blanc 2011,Trénel,France,3.7,137,"24,168",https://www.vivino.com/trenel-fils-bourgogne-blanc/w/1999460?year=2011&price_id=14550020
+489,Sweet White 1999,Woodbridge by Robert Mondavi,United States,3.7,135,"48,128",https://www.vivino.com/woodbridge-by-robert-mondavi-sweet-white/w/1376453?year=1999&price_id=25051530
+490,Sauvignon Blanc 2011,Framingham,New Zealand,3.9,135,"41,669",https://www.vivino.com/framingham-sauvignon-blanc/w/1123133?year=2011&price_id=2754275
+491,Sweet White 2004,Woodbridge by Robert Mondavi,United States,3.7,135,"25,001",https://www.vivino.com/woodbridge-by-robert-mondavi-sweet-white/w/1376453?year=2004&price_id=25051510
+492,Les Preuses Chablís Grand Cru 2015,Vincent Dauvissat,France,4.6,135,"430,336",https://www.vivino.com/vincent-dauvissat-les-preuses-chablis-grand-cru/w/1707497?year=2015&price_id=36592886
+493,Furmint Nagy Eged Grand Cru 2011,Kovács Nimród,Hungary,4.2,134,"133,341",https://www.vivino.com/kovacs-nimrod-furmint-nagy-eged-grand-cru/w/4969815?year=2011&price_id=9156611
+494,Pioneer Block 3 43 Degrees Sauvignon Blanc 2021,Saint Clair Family Estate,New Zealand,3.9,134,"24,731",https://www.vivino.com/saint-clair-family-estate-pioneer-block-3-43-degrees-sauvignon-blanc/w/3261379?year=2021&price_id=26610917
+495,Uco Torrontés 2011,Urban,Argentina,3.2,133,"27,085",https://www.vivino.com/cl-urban-uco-torrontes/w/1516700?year=2011&price_id=2804730
+496,Chardonnay 2019,Greywacke,New Zealand,4.0,131,"34,627",https://www.vivino.com/greywacke-kevin-judd-chardonnay/w/1130871?year=2019&price_id=28869334
+497,Opou Vineyard Riesling 2022,Millton,New Zealand,3.9,131,"23,082",https://www.vivino.com/millton-opou-vineyard-riesling/w/1122461?year=2022&price_id=31983991
+498,Longos Vales Alvarinho 2012,Quinta da Pedra,Portugal,3.7,130,"40,419",https://www.vivino.com/quinta-da-pedra-longos-vales-alvarinho/w/2392324?year=2012&price_id=17609970
+499,Safràn Pinot Grigio 2020,La Bollina,Italy,3.8,130,"14,765",https://www.vivino.com/la-bollina-safran-pinot-grigio/w/6712765?year=2020&price_id=23889367
+500,Sauvignon Blanc 2023,Nautilus,New Zealand,4.1,130,"19,783",https://www.vivino.com/nautilus-estate-sauvignon-blanc/w/86751?year=2023&price_id=34540043
+501,Côtes du Rhône Blanc 2022,Domaine de l'Espigouette,France,3.7,129,"19,291",https://www.vivino.com/bernard-latour-cotes-du-rhone-blanc/w/5760397?year=2022&price_id=35442865
+502,Crisp Pinot Grigio - Riesling 2012,Forward,Canada,3.5,129,"33,335",https://www.vivino.com/forward-crisp-pinot-grigio-riesling/w/3691350?year=2012&price_id=14550420
+503,Châteauneuf-du-Pape Réservé Blanc 2007,Château Rayas,France,4.5,128,"1,431,980",https://www.vivino.com/chateau-rayas-chateauneuf-du-pape-reserve-blanc/w/87554?year=2007&price_id=30593136
+504,Reserva Chardonnay (Classic) 2008,Montes,Chile,3.3,128,"25,001",https://www.vivino.com/montes-reserva-chardonnay-classic/w/1151903?year=2008&price_id=14550249
+505,Bright & Fresh Sémillon - Sauvignon Blanc 2005,Rosemount,Australia,3.2,127,"22,918",https://www.vivino.com/rosemount-bright-fresh-semillon-sauvignon-blanc/w/67814?year=2005&price_id=14541902
+506,Goldmuskateller (Moscato Giallo) 2017,St. Michael-Eppan,Italy,3.9,127,"26,681",https://www.vivino.com/st-michael-eppan-moscato-giallo-sudtirol-alto-adige-goldmuskateller/w/1766999?year=2017&price_id=36485610
+507,Sauvignon Blanc 2014,Marea,Chile,3.6,127,"45,836",https://www.vivino.com/marea-sauvignon-blanc/w/1252463?year=2014&price_id=7944105
+508,1827 Pinot Grigio de Purcari 2014,Chateau Purcari,Moldova,4.0,126,"33,335",https://www.vivino.com/chateau-purcari-eighteen-twentyseven-pinot-grigio-de-purcari/w/3142523?year=2014&price_id=10352038
+509,Estate Sauvignon Blanc 2013,Doña Paula,Argentina,3.5,125,"29,168",https://www.vivino.com/dona-paula-estate-sauvignon-blanc/w/24195?year=2013&price_id=14541820
+510,Pinot Grigio 2019,Borgo Magredo,Italy,3.8,124,"35,419",https://www.vivino.com/borgo-magredo-pinot-grigio/w/1467211?year=2019&price_id=28232809
+511,Capitel Foscarino 2022,Anselmi,Italy,4.0,123,"35,718",https://www.vivino.com/anselmi-capitel-foscarino/w/1208298?year=2022&price_id=36485560
+512,Rawen Reserva Chardonnay 2008,Ravanal,Chile,3.3,122,"33,335",https://www.vivino.com/ravanal-rawen-reserva-chardonnay/w/1505697?year=2008&price_id=2895364
+513,Riesling Kabinett 2005,Schmitt Söhne,Germany,3.6,122,"25,001",https://www.vivino.com/schmitt-sohne-gmbh-weinkellerei-riesling-kabinett/w/1536783?year=2005&price_id=14550298
+514,Pessac-Léognan Blanc 2012,Château Pape Clément,France,4.1,122,"401,889",https://www.vivino.com/fr-chateau-pape-clement-pessac-leognan-blanc/w/2149320?year=2012&price_id=36614358
+515,Gavi 2006,Guasti Clemente,Italy,3.8,122,"39,377",https://www.vivino.com/guasti-clemente-and-figli-gavi/w/1100724?year=2006&price_id=2804865
+516,Ma René Pigato Riviera Ligure di Ponente 2022,Vio Giobatta - BioVio,Italy,3.9,122,"30,955",https://www.vivino.com/vio-giobatta-biovio-ma-rene-pigato-riviera-ligure-di-ponente/w/1171486?year=2022&price_id=36485544
+517,Chablis 2019,Françoise Chauvenet,France,3.8,121,"67,504",https://www.vivino.com/francoise-chauvenet-chablis-ha589/w/2048652?year=2019&price_id=26506377
+518,Chardonnay 2007,Montes,Chile,3.9,121,"39,586",https://www.vivino.com/montes-chardonnay-casablanca-valley/w/1244627?year=2007&price_id=14650559
+519,Reserve Chardonnay 2019,Passage Rock,New Zealand,4.1,121,"41,224",https://www.vivino.com/passage-rock-reserve-chardonnay/w/4110839?year=2019&price_id=31315733
+520,Chardonnay 2011,Silver Buckle,United States,3.9,121,"31,252",https://www.vivino.com/silver-buckle-chardonnay/w/1768149?year=2011&price_id=2805039
+521,Riesling 2011,Bethany,Australia,3.6,120,"50,003",https://www.vivino.com/bethany-riesling/w/33144?year=2011&price_id=2895065
+522,Mâcon-Villages Nouveau 2003,Pierre Ferraud & Fils,France,3.6,120,"26,251",https://www.vivino.com/p-ferraud-and-fils-macon-villages-nouveau/w/1987947?year=2003&price_id=14539951
+523,Rueda Verdejo 2014,Viña Altamar,Spain,3.4,120,"20,001",https://www.vivino.com/altamar-rueda-verdejo/w/4803701?year=2014&price_id=14550424
+524,Rueda Verdejo 2012,Viña Altamar,Spain,3.4,120,"22,501",https://www.vivino.com/altamar-rueda-verdejo/w/4803701?year=2012&price_id=14550104
+525,Vieilles Vignes Chablis 2021,Alain Gautheron,France,4.1,119,"29,678",https://www.vivino.com/alain-gautheron-vieilles-vignes-chablis/w/1382584?year=2021&price_id=34433574
+526,Trebbiano d'Abruzzo 2022,Masciarelli,Italy,3.6,119,"12,940",https://www.vivino.com/masciarelli-abruzzo-trebbiano-d-abruzzo/w/93059?year=2022&price_id=36485612
+527,Pinot Gris 2022,Cable Bay,New Zealand,3.5,117,"22,257",https://www.vivino.com/cable-bay-vineyards-pinot-gris/w/2210952?year=2022&price_id=36805707
+528,Le Cardinal Bordeaux Cristal 2006,Dourthe,France,3.5,117,"17,918",https://www.vivino.com/dourthe-le-cardinal-bordeaux-cristal/w/1881394?year=2006&price_id=14539906
+529,Bourgogne Chardonnay 2016,Jean Loron,France,3.6,116,"40,836",https://www.vivino.com/jean-loron-bourgogne-chardonnay/w/2875963?year=2016&price_id=17652178
+530,Riesling 2014,Bree,Germany,3.7,115,"20,834",https://www.vivino.com/bree-riesling/w/2573781?year=2014&price_id=2894993
+531,Chardonnay 2010,Bethany,Australia,3.3,114,"58,337",https://www.vivino.com/bethany-chardonnay/w/1177411?year=2010&price_id=2754625
+532,Hawke's Bay Reserve Chardonnay 2020,Villa Maria,New Zealand,3.9,114,"32,978",https://www.vivino.com/villa-maria-auckland-hawke-s-bay-reserve-chardonnay/w/23972?year=2020&price_id=28582626
+533,Chardonnay 2011,Bethany,Australia,3.3,114,"58,337",https://www.vivino.com/bethany-chardonnay/w/1177411?year=2011&price_id=2754238
+534,Reserva Gewürztraminer 2019,Luis Felipe Edwards,Chile,3.5,113,"28,335",https://www.vivino.com/luis-felipe-edwards-reserva-gewurztraminer/w/2245468?year=2019&price_id=23138364
+535,Reserva Gewürztraminer 2015,Luis Felipe Edwards,Chile,3.5,113,"28,335",https://www.vivino.com/luis-felipe-edwards-reserva-gewurztraminer/w/2245468?year=2015&price_id=8392484
+536,Arcurìa Etna Bianco 2016,Graci,Italy,4.0,112,"102,089",https://www.vivino.com/graci-arcuria-etna-bianco/w/2486745?year=2016&price_id=19070158
+537,Reserve Viognier 2023,Mudbrick Vineyard,New Zealand,4.0,112,"56,893",https://www.vivino.com/mudbrick-reserve-viognier/w/1428773?year=2023&price_id=35966655
+538,Alfa Centauri Sauvignon Blanc 2009,O. Fournier,Chile,3.8,109,"45,836",https://www.vivino.com/o-fournier-alfa-centauri-sauvignon-blanc/w/1207004?year=2009&price_id=2754517
+539,Riesling 2018,Blue Nun,Germany,3.6,109,"22,918",https://www.vivino.com/blue-nun-riesling/w/47054?year=2018&price_id=21678402
+540,Cairnmuir Terraces EBM Chardonnay 2021,Carrick,New Zealand,4.0,109,"42,049",https://www.vivino.com/carrick-wines-cairnmuir-terraces-ebm-chardonnay/w/95036?year=2021&price_id=36237492
+541,Chardonnay 2002,R. H. Phillips,United States,3.4,107,"24,168",https://www.vivino.com/rh-phillips-chardonnay/w/1133087?year=2002&price_id=11000428
+542,Cru Sauvignon Blanc 2022,Smith Sheth,New Zealand,4.1,107,"24,731",https://www.vivino.com/smith-sheth-cru-sauvignon-blanc/w/6306318?year=2022&price_id=33700122
+543,Vermentino 2014,Chalk Hill,Australia,3.6,107,"45,836",https://www.vivino.com/chalk-hill-vermentino/w/6024391?year=2014&price_id=26783523
+544,Vermentino 2012,Chalk Hill,Australia,3.6,107,"41,669",https://www.vivino.com/chalk-hill-vermentino/w/6024391?year=2012&price_id=26783522
+545,Riesling 2020,Greywacke,New Zealand,4.2,105,"25,968",https://www.vivino.com/greywacke-kevin-judd-riesling/w/1130874?year=2020&price_id=30018824
+546,Châteauneuf-du-Pape Réservé Blanc 2006,Château Rayas,France,4.3,105,"1,261,330",https://www.vivino.com/chateau-rayas-chateauneuf-du-pape-reserve-blanc/w/87554?year=2006&price_id=30593130
+547,Zen Chardonnay 2020,Tony Bish,New Zealand,4.3,105,"130,287",https://www.vivino.com/tony-bish-zen-chardonnay/w/7203338?year=2020&price_id=31198173
+548,Clos Sainte Hune Riesling Alsace 2000,Trimbach,France,4.4,105,"488,461",https://www.vivino.com/trimbach-alsace-clos-sainte-hune-riesling-alsace/w/1182677?year=2000&price_id=32124649
+549,Bin 51 Riesling 2012,Penfolds,Australia,3.5,104,"72,921",https://www.vivino.com/penfolds-bin-51-riesling/w/24057?year=2012&price_id=30195054
+550,Pinot Gris 2017,Joseph Cattin,France,3.8,104,"39,586",https://www.vivino.com/joseph-cattin-pinot-gris/w/1160783?year=2017&price_id=24499688
+551,Sauvignon (Selezione) 2022,Elena Walch,Italy,4.0,104,"26,072",https://www.vivino.com/elena-walch-sauvignon-selezione/w/1294074?year=2022&price_id=36485576
+552,Brauneberger Juffer Sonnenuhr Riesling Spätlese 2019,Fritz Haag,Germany,4.1,103,"34,872",https://www.vivino.com/fritz-haag-brauneberger-juffer-sonnenuhr-riesling-spatlese/w/1140873?year=2019&price_id=26994835
+553,Trebbiano d'Abruzzo 2010,Castello di Semivicoli,Italy,3.6,103,"75,004",https://www.vivino.com/castello-di-semivicoli-trebbiano-d-abruzzo/w/1240102?year=2010&price_id=7943993
+554,Escheburg 2018,Immich-Batterieberg,Germany,4.0,103,"45,259",https://www.vivino.com/immich-batterieberg-escheburg/w/1668526?year=2018&price_id=23020583
+555,Bel Canto Dry Riesling 2020,Pegasus Bay,New Zealand,4.1,102,"32,978",https://www.vivino.com/pegasus-bay-winery-bel-canto-dry-riesling/w/1261670?year=2020&price_id=29802468
+556,Two Princes Riesling 2017,Prinz Salm,Germany,4.1,102,"53,336",https://www.vivino.com/prinz-salm-two-princes-riesling/w/2705003?year=2017&price_id=18945583
+557,Rotenberg La Colline Rouge 2020,Marcel Deiss,France,4.0,102,"118,713",https://www.vivino.com/marcel-deiss-rotenberg-la-colline-rouge/w/93835?year=2020&price_id=35429541
+558,Old Vines Chardonnay 2017,Casa Mayor,Chile,3.1,101,"20,001",https://www.vivino.com/casa-mayor-old-vines-chardonnay/w/2231146?year=2017&price_id=16730241
+559,White Palette 2012,13th Street,Canada,3.7,101,"36,669",https://www.vivino.com/thirteen-th-street-niagara-peninsula-white-palette/w/1617396?year=2012&price_id=14542048
+560,3 Cepas Reserva Selected Series White 2012,Casa Silva,Chile,3.7,101,"35,419",https://www.vivino.com/casa-silva-3-cepas-reserva-selected-series-white/w/6484813?year=2012&price_id=16741834
+561,Te Arai Vineyard Chenin Blanc 2021,Millton,New Zealand,4.0,100,"34,627",https://www.vivino.com/millton-te-arai-vineyard-chenin-blanc/w/1122469?year=2021&price_id=30702974
+562,Chardonnay 2008,Beaucanon,United States,3.6,100,"45,836",https://www.vivino.com/beaucanon-estate-chardonnay/w/2031193?year=2008&price_id=2894985
+563,Reserve Chardonnay 2020,Takapoto Estate,New Zealand,4.2,99,"41,224",https://www.vivino.com/takapoto-estate-reserve-chardonnay/w/6904669?year=2020&price_id=33589760
+564,Opera Bianco 2017,Mamete Prevostini,Italy,3.8,98,"70,837",https://www.vivino.com/mamete-prevostini-opera-bianco/w/75720?year=2017&price_id=25868598
+565,Côtes De Gascogne Dernières Grives 2011,Domaine du Tariquet,France,4.2,98,"75,004",https://www.vivino.com/domaine-du-tariquet-cotes-de-gascogne-dernieres-grives/w/2173899?year=2011&price_id=7944183
+566,Campanaro 2021,Feudi di San Gregorio,Italy,4.1,98,"45,126",https://www.vivino.com/feudi-di-san-gregorio-campanaro/w/5092?year=2021&price_id=36485488
+567,Woodthorpe Vineyard Sauvignon Blanc 2006,Te Mata,New Zealand,4.1,98,"39,586",https://www.vivino.com/te-mata-estate-winery-limited-woodthorpe-vineyard-sauvignon-blanc/w/1436788?year=2006&price_id=2894931
+568,Chardonnay 2015,Aromo,Chile,3.2,98,"22,918",https://www.vivino.com/aromo-chardonnay/w/42404?year=2015&price_id=7944108
+569,Gewürztraminer Alsace Grand Cru 'Kessler' 2010,Domaines Schlumberger,France,4.2,98,"62,503",https://www.vivino.com/domaines-schlumberger-gewurztraminer-alsace-grand-cru-kessler/w/1162442?year=2010&price_id=14650534
+570,Côtes du Jura Vin Jaune 2011,Caveau des Byards,France,3.8,97,"80,384",https://www.vivino.com/caveau-des-byards-cotes-du-jura-vin-jaune/w/2250730?year=2011&price_id=36841171
+571,Kirchenstück GG 2015,Von Winning,Germany,4.4,96,"208,303",https://www.vivino.com/de-von-winning-kirchenstuck-gg/w/1678789?year=2015&price_id=14550128
+572,Keir Ansonica 2020,Tua Rita,Italy,3.8,96,"87,505",https://www.vivino.com/tua-rita-keir-ansonica/w/9330793?year=2020&price_id=29691123
+573,Ermitage Ex-Voto Blanc 2009,E. Guigal,France,4.5,96,"430,336",https://www.vivino.com/e-guigal-ermitage-ex-voto-blanc/w/36474?year=2009&price_id=32960286
+574,Valhalla 2020,Man O' War,New Zealand,4.1,94,"41,224",https://www.vivino.com/man-o-war-valhalla/w/1125555?year=2020&price_id=30069525
+575,Festivo Torrontés 2015,Monteviejo,Argentina,3.3,94,"24,168",https://www.vivino.com/monteviejo-festivo-torrontes-la-rioja/w/1531905?year=2015&price_id=18814631
+576,Il Gentile Marche Bianco 2018,Di Giulia,Italy,3.6,94,"31,014",https://www.vivino.com/di-giulia-il-gentile-marche-bianco/w/3784717?year=2018&price_id=27032883
+577,Chablis Premier Cru 'Fourchaume' 2011,Jean-Marc Brocard,France,3.8,91,"79,171",https://www.vivino.com/jean-marc-brocard-chablis-premier-cru-fourchaume/w/43654?year=2011&price_id=7944151
+578,Sauvignon Blanc 2021,Amisfield,New Zealand,3.9,90,"41,224",https://www.vivino.com/amisfield-sauvignon-blanc/w/86257?year=2021&price_id=28713830
+579,Pinot Bianco (Selezione) 2022,Elena Walch,Italy,3.9,90,"24,099",https://www.vivino.com/elena-walch-pinot-bianco-selezione/w/1720575?year=2022&price_id=36485594
+580,Trio 2021,Brennan,New Zealand,3.7,90,"28,030",https://www.vivino.com/brennan-trio/w/2910643?year=2021&price_id=31851178
+581,Abstract Three Rows Sauvignon Blanc 2019,Blank Canvas,New Zealand,4.0,89,"37,101",https://www.vivino.com/blank-canvas-nz-abstract-three-rows-sauvignon-blanc/w/11163165?year=2019&price_id=35639568
+582,Ronco del Cerò Sauvignon 2022,Venica & Venica,Italy,4.1,89,"43,850",https://www.vivino.com/venica-venica-ronco-del-cero-sauvignon/w/91023?year=2022&price_id=36485480
+583,Cuvée Aux Antipodes Blanc 2022,Prophet's Rock,New Zealand,4.4,89,"94,827",https://www.vivino.com/prophet-s-rock-cuvee-aux-antipodes-blanc/w/8341584?year=2022&price_id=35624803
+584,Sauvignon Blanc 2014,Manu,New Zealand,3.9,89,"31,252",https://www.vivino.com/manu-sauvignon-blanc/w/1758323?year=2014&price_id=15542166
+585,Moscato 2013,Chalk Hill,Australia,4.0,89,"41,669",https://www.vivino.com/chalk-hill-moscato/w/1118558?year=2013&price_id=2754602
+586,Angialis Isola dei Nuraghi 2014,Argiolas,Italy,4.1,89,"67,711",https://www.vivino.com/argiolas-angialis-isola-dei-nuraghi/w/1678436?year=2014&price_id=36485675
+587,Grains de Génie 2016,Michel Fonné,France,3.6,88,"36,252",https://www.vivino.com/michel-fonne-grains-de-genie/w/1261502?year=2016&price_id=30371345
+588,Chardonnay 2023,Nanny Goat,New Zealand,3.9,85,"34,627",https://www.vivino.com/nanny-goat-chardonnay/w/3909407?year=2023&price_id=36237487
+589,il Pozzetto 2018,Pilandro,Italy,4.0,85,"15,388",https://www.vivino.com/pilandro-il-pozzetto/w/5399793?year=2018&price_id=36736893
+590,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 2006,Domaine de Chevalier,France,4.4,85,"185,490",https://www.vivino.com/domaine-de-chevalier-pessac-leognan-blanc-grand-cru-classe-de-graves/w/1197479?year=2006&price_id=36851243
+591,Chardonnay 2006,Cloudy Bay,New Zealand,3.9,84,"54,170",https://www.vivino.com/cloudy-bay-chardonnay/w/18979?year=2006&price_id=2754487
+592,Meursault du Château 2013,Château de Meursault,France,4.2,84,"364,791",https://www.vivino.com/chateau-de-meursault-meursault-du-chateau/w/86494?year=2013&price_id=35329491
+593,Nozze D'Oro 2010,Tenuta Regaleali,Italy,3.8,84,"58,337",https://www.vivino.com/tenuta-regaleali-nozze-d-oro-sicilia/w/1123337?year=2010&price_id=14650526
+594,Art Series Sauvignon Blanc 2012,Leeuwin Estate,Australia,3.7,84,"62,503",https://www.vivino.com/leeuwin-estate-art-series-sauvignon-blanc/w/2053013?year=2012&price_id=2894963
+595,Hochheim Riesling Classic 2010,Domdechant Werner,Germany,4.0,83,"66,670",https://www.vivino.com/domdechant-wernersches-weingut-hochheim-riesling-classic/w/1163767?year=2010&price_id=14650394
+596,Josephine Riesling 2023,Carrick,New Zealand,3.9,83,"34,627",https://www.vivino.com/carrick-wines-josephine-riesling/w/95041?year=2023&price_id=34771399
+597,Genetin Pouilly-Fumé 2021,Tinel-Blondelet,France,4.1,83,"31,162",https://www.vivino.com/tinel-blondelet-genetin-pouilly-fume/w/1383703?year=2021&price_id=33696570
+598,Nerola Blanco 2003,Familia Torres,Spain,3.4,83,"27,085",https://www.vivino.com/familia-torres-nerola-blanco/w/1254380?year=2003&price_id=2873819
+599,Bianco 2016,Frus,Italy,3.9,82,"37,098",https://www.vivino.com/frus-bianco/w/6560191?year=2016&price_id=23020585
+600,Portrait Dry Riesling 2014,Peter Lehmann,Australia,3.0,82,"31,252",https://www.vivino.com/peter-lehmann-portrait-dry-riesling/w/1866649?year=2014&price_id=15542125
+601,Gewürztraminer Alsace Grand Cru Brand 2013,Cave de Turckheim,France,4.3,81,"75,004",https://www.vivino.com/cave-de-turckheim-gewurztraminer-alsace-grand-cru-brand/w/87967?year=2013&price_id=19160033
+602,Waitaki Vineyard Chardonnay 2022,Valli,New Zealand,4.3,81,"78,334",https://www.vivino.com/valli-waitaki-vineyard-chardonnay/w/4901000?year=2022&price_id=35630994
+603,Gold Label President's Selection Chardonnay 2005,Wolf Blass,Australia,3.5,81,"47,919",https://www.vivino.com/wolf-blass-gold-label-president-s-selection-chardonnay/w/2516344?year=2005&price_id=2754482
+604,Sauvignon Blanc 2023,Starborough,New Zealand,3.8,81,"18,959",https://www.vivino.com/starborough-sauvignon-blanc/w/1679387?year=2023&price_id=34460465
+605,Clos de Ste. Anne La Bas Chenin Blanc 2021,Millton,New Zealand,4.2,80,"86,580",https://www.vivino.com/millton-clos-de-ste-anne-la-bas-chenin-blanc/w/1674806?year=2021&price_id=32721530
+606,Old Vines Chardonnay 2019,Casa Mayor,Chile,3.6,79,"20,001",https://www.vivino.com/casa-mayor-old-vines-chardonnay/w/2231146?year=2019&price_id=24449273
+607,Tradition Sylvaner 2011,Michel Fonné,France,3.7,79,"32,502",https://www.vivino.com/michel-fonne-tradition-sylvaner/w/2465086?year=2011&price_id=14023246
+608,Sauvignon Blanc 2019,Hans Herzog - Hans Family Estate,New Zealand,4.1,79,"46,172",https://www.vivino.com/hans-herzog-hans-family-estate-sauvignon-blanc/w/7961263?year=2019&price_id=32855508
+609,Reserve Viognier 2018,Obsidian,New Zealand,3.8,79,"44,523",https://www.vivino.com/obsidian-reserve-viognier/w/2209198?year=2018&price_id=32217832
+610,Meursault 'Clos des Ambres' 2013,Arnaud Ente,France,4.6,79,"1,106,750",https://www.vivino.com/arnaud-ente-meursault-clos-des-ambres/w/1100482?year=2013&price_id=36831582
+611,Tiritiri Pinot Gris 2023,Neudorf Vineyards,New Zealand,4.1,78,"22,257",https://www.vivino.com/neudorf-tiritiri-pinot-gris/w/8451302?year=2023&price_id=35639569
+612,Chardonnay 2022,Dry River,Australia,3.5,77,"62,665",https://www.vivino.com/weingut-philipp-lauter-erben-chardonnay/w/1106018?year=2022&price_id=35639566
+613,Frais et Plaisant Blanc 2011,Baron d'Arignac,France,3.1,77,"14,584",https://www.vivino.com/baron-d-arignac-frais-et-plaisant-blanc/w/2467489?year=2011&price_id=7943988
+614,Chardonnay 2023,Black Barn,New Zealand,3.7,76,"23,907",https://www.vivino.com/black-barn-chardonnay/w/6709991?year=2023&price_id=35488248
+615,Pinot Gris 2022,Prophet's Rock,New Zealand,4.3,75,"31,329",https://www.vivino.com/prophet-s-rock-pinot-gris/w/2426675?year=2022&price_id=34207227
+616,Les Clos Chablís Grand Cru 2018,Vincent Dauvissat,France,4.6,75,"593,567",https://www.vivino.com/vincent-dauvissat-les-clos-chablis-grand-cru/w/1974097?year=2018&price_id=31731703
+617,Riesling Kabinett Trocken 2005,Joh. Jos. Prüm,Germany,4.0,74,"73,337",https://www.vivino.com/joh-jos-prum-riesling-kabinett-trocken/w/2483978?year=2005&price_id=14541256
+618,Les Clos Chablís Grand Cru 2006,Vincent Dauvissat,France,4.4,74,"562,657",https://www.vivino.com/vincent-dauvissat-les-clos-chablis-grand-cru/w/1974097?year=2006&price_id=35573202
+619,Bin 311 Chardonnay 2021,Penfolds,Australia,3.8,74,"75,004",https://www.vivino.com/penfolds-bin-311-chardonnay/w/1249?year=2021&price_id=30195057
+620,Gewürztraminer Alsace Grand Cru 'Marckrain' 2013,Michel Fonné,France,3.9,74,"97,505",https://www.vivino.com/michel-fonne-gewurztraminer-alsace-grand-cru-marckrain/w/2032600?year=2013&price_id=16835273
+621,Symposium 2023,Domain Road Vineyard,New Zealand,4.3,73,"27,205",https://www.vivino.com/domain-road-symposium/w/6991119?year=2023&price_id=36463751
+622,Chardonnay 2008,Fallbrook,United States,3.7,72,"25,835",https://www.vivino.com/fallbrook-winery-chardonnay/w/1989475?year=2008&price_id=2873792
+623,Sauvignon Blanc 2023,Kimura Cellars,New Zealand,3.8,72,"20,608",https://www.vivino.com/kimura-cellars-sauvignon-blanc/w/1530663?year=2023&price_id=34540051
+624,Premiat Dry Riesling 2011,Jidvei,Romania,3.2,72,"27,085",https://www.vivino.com/jidvei-premiat-dry-riesling/w/2194587?year=2011&price_id=14650424
+625,Montagny 1er Cru 'Les Coères' 2022,Domaine Feuillat-Juillot,France,4.2,71,"41,550",https://www.vivino.com/feuillat-juillot-montagny-1er-cru-les-coeres/w/1385386?year=2022&price_id=35345629
+626,Grüner Veltliner 2003,House of Hafner Family Estate,Austria,3.3,71,"41,669",https://www.vivino.com/hafner-weiber-burgunder/w/1581266?year=2003&price_id=14650551
+627,Grüner Veltliner 2004,House of Hafner Family Estate,Austria,3.3,71,"20,834",https://www.vivino.com/hafner-weiber-burgunder/w/1581266?year=2004&price_id=2895218
+628,Les Preuses Chablís Grand Cru 2008,Vincent Dauvissat,France,4.4,70,"615,826",https://www.vivino.com/vincent-dauvissat-les-preuses-chablis-grand-cru/w/1707497?year=2008&price_id=30768089
+629,Jesera Pinot Grigio 2022,Venica & Venica,Italy,4.0,70,"39,472",https://www.vivino.com/venica-venica-jesera-pinot-grigio/w/91004?year=2022&price_id=36485567
+630,Loibner Klostersatz Grüner Veltliner Federspiel 2013,F.X. Pichler,Austria,3.7,70,"75,004",https://www.vivino.com/f-x-pichler-loibner-klostersatz-gruner-veltliner-federspiel/w/1272378?year=2013&price_id=14650439
+631,Sauvignon Blanc 2013,Little Beauty,New Zealand,4.2,69,"64,587",https://www.vivino.com/little-beauty-sauvignon-blanc/w/1758778?year=2013&price_id=15466425
+632,Sauvignon - Sémillon 2020,Pegasus Bay,New Zealand,3.8,69,"28,030",https://www.vivino.com/pegasus-bay-winery-sauvignon-semillon/w/16114?year=2020&price_id=33193568
+633,Passetto Trebbiano - Chardonnay Marche 2010,Umani Ronchi,Italy,3.3,68,"22,085",https://www.vivino.com/umani-ronchi-passetto-trebbiano-chardonnay-marche/w/3499?year=2010&price_id=2804695
+634,Southern Clays Vineyard Single Vineyard Sauvignon Blanc 2020,Villa Maria,New Zealand,4.0,68,"24,731",https://www.vivino.com/villa-maria-auckland-southern-clays-vineyard-single-vineyard-sauvignon-blanc/w/1273885?year=2020&price_id=30069532
+635,Crozes-Hermitage Blanc 2021,Pradelle,France,3.6,68,"31,162",https://www.vivino.com/pradelle-crozes-hermitage-blanc/w/5392591?year=2021&price_id=33741510
+636,Vermentino (Etichetta Grigia/Grey Label) 2022,Lunae,Italy,3.9,68,"21,814",https://www.vivino.com/lunae-liguria-vermentino-etichetta-grigia-grey-label/w/1145850?year=2022&price_id=36485616
+637,Hermitage Le Chevalier de Sterimberg 2007,Domaine de La Chapelle,France,4.1,67,"160,753",https://www.vivino.com/domaine-de-la-chapelle-rhone-hermitage-le-chevalier-de-sterimberg/w/10925?year=2007&price_id=20661968
+638,Proprietor's Reserve Sauvignon Blanc 2022,Coal Pit,New Zealand,4.0,67,"37,101",https://www.vivino.com/coal-pit-proprietor-s-reserve-sauvignon-blanc/w/7201364?year=2022&price_id=33683757
+639,Proprietor's Reserve Sauvignon Blanc 2023,Coal Pit,New Zealand,4.0,67,"37,101",https://www.vivino.com/coal-pit-proprietor-s-reserve-sauvignon-blanc/w/7201364?year=2023&price_id=36363007
+640,Airstrip White Blend 2005,Mitchelton,Australia,3.7,67,"50,419",https://www.vivino.com/mitchelton-airstrip-white-blend/w/1451011?year=2005&price_id=2895258
+641,Maté's Vineyard Chardonnay 2022,Kumeu River,New Zealand,4.3,67,"86,580",https://www.vivino.com/kumeu-river-winery-mate-s-vineyard-chardonnay/w/76132?year=2022&price_id=33564985
+642,Monopole Bordeaux Blanc 2010,Kressmann,France,3.2,66,"20,834",https://www.vivino.com/kressmann-monopole-bordeaux-blanc/w/1614548?year=2010&price_id=7953574
+643,Minus Five Riesling 2007,Argyle,United States,4.1,65,"60,420",https://www.vivino.com/argyle-minus-five-riesling/w/6417?year=2007&price_id=14650427
+644,Sancerre Blanc 2010,Lucien Crochet,France,3.9,65,"58,337",https://www.vivino.com/lucien-crochet-sancerre-blanc/w/16678?year=2010&price_id=14650461
+645,Holdaway Vineyard Sauvignon Blanc 2023,Blank Canvas,New Zealand,4.1,65,"24,731",https://www.vivino.com/blank-canvas-nz-holdaway-vineyard-sauvignon-blanc-marlborough-white-wine/w/10809175?year=2023&price_id=33209297
+646,Riesling Kabinett 2018,Kessler-Zink,Germany,3.8,64,"24,168",https://www.vivino.com/kessler-zink-riesling-kabinett/w/3172902?year=2018&price_id=23130037
+647,La Solatia Chardonnay 1998,Ruffino,Italy,3.8,64,"104,172",https://www.vivino.com/ruffino-la-solatia-chardonnay/w/1499586?year=1998&price_id=2804582
+648,School House Pinot Gris 2022,Gibbston Valley,New Zealand,3.9,64,"34,627",https://www.vivino.com/gibbston-valley-school-house-pinot-gris-gac11/w/6569347?year=2022&price_id=35488246
+649,School House Pinot Gris 2021,Gibbston Valley,New Zealand,3.9,64,"34,627",https://www.vivino.com/gibbston-valley-school-house-pinot-gris-gac11/w/6569347?year=2021&price_id=30069528
+650,Marius Unico Blanco 2012,Bodegas Piqueras,Spain,4.1,64,"33,335",https://www.vivino.com/bodegas-piqueras-sa-marius-unico-blanco/w/5294970?year=2012&price_id=15198790
+651,Tokaji Furmint 2012,Dobogó,Hungary,3.8,63,"64,170",https://www.vivino.com/dobogo-tokaji-furmint/w/1865809?year=2012&price_id=14650457
+652,Chardonnay 2007,Coopers Creek,New Zealand,3.5,63,"35,002",https://www.vivino.com/coopers-creek-chardonnay/w/1679584?year=2007&price_id=14540603
+653,Chardonnay 2021,Dog Point,New Zealand,4.0,63,"41,224",https://www.vivino.com/dog-point-chardonnay/w/79392?year=2021&price_id=35938634
+654,Reméage Blanc 2015,Les Vins de Vienne - Cuilleron-Gaillard-Villard,France,3.4,62,"29,168",https://www.vivino.com/les-vins-de-vienne-remeage-blanc/w/1105959?year=2015&price_id=15786241
+655,Chardonnay 2022,Rockburn,New Zealand,3.7,61,"26,381",https://www.vivino.com/rockburn-chardonnay/w/1374573?year=2022&price_id=34771428
+656,Cachette Reserve 2019,Tantalus,New Zealand,4.1,61,"86,580",https://www.vivino.com/tantalus-waiheke-island-cachette-reserve/w/5175235?year=2019&price_id=24412106
+657,Riesling 2012,Best's,Australia,3.9,61,"62,503",https://www.vivino.com/bests-riesling/w/96184?year=2012&price_id=21678413
+658,Clos de Ste. Anne Les Arbres Viognier 2021,Millton,New Zealand,4.2,60,"70,087",https://www.vivino.com/millton-clos-de-ste-anne-les-arbres-viognier/w/3769161?year=2021&price_id=32721528
+659,Show Reserve Chardonnay 2006,Rosemount,Australia,3.6,59,"45,419",https://www.vivino.com/rosemount-show-reserve-chardonnay/w/1640750?year=2006&price_id=2873788
+660,DB Family Selection Traminer - Riesling 2012,De Bortoli,Australia,3.6,59,"20,834",https://www.vivino.com/de-bortoli-db-family-selection-traminer-riesling/w/19059?year=2012&price_id=2895144
+661,Chardonnay II 2015,Von Winning,Germany,3.9,59,"58,295",https://www.vivino.com/de-von-winning-chardonnay-ii-pfalz/w/5290719?year=2015&price_id=15032662
+662,Omaka Reserve Chardonnay 2022,Saint Clair Family Estate,New Zealand,4.0,59,"34,627",https://www.vivino.com/saint-clair-family-estate-omaka-reserve-chardonnay/w/1443972?year=2022&price_id=34789817
+663,Reserva Sauvignon Blanc (Classic) 2008,Montes,Chile,3.6,58,"25,001",https://www.vivino.com/montes-reserva-sauvignon-blanc-classic/w/1149590?year=2008&price_id=14650541
+664,Gato Blanco Sauvignon Blanc 2005,San Pedro,Chile,3.1,58,"17,501",https://www.vivino.com/san-pedro-central-valley-gato-blanco-sauvignon-blanc-lontue-valley/w/4384769?year=2005&price_id=15291849
+665,Chardonnay - Sémillon 2017,Casa Silva,Chile,3.6,58,"20,001",https://www.vivino.com/casa-silva-chardonnay-semillon/w/1296652?year=2017&price_id=34060981
+666,Monte dei Frati 2019,La Felce,Italy,3.6,58,"26,711",https://www.vivino.com/la-felce-monte-dei-frati/w/1633949?year=2019&price_id=23002949
+667,Tradițional Fetească Regală Demisec 2012,Jidvei,Romania,3.7,57,"22,918",https://www.vivino.com/jidvei-traditional-feteasca-regala-demisec/w/54414?year=2012&price_id=14650507
+668,Hattenheim Schützenhaus Riesling Kabinett 2013,Balthasar Ress,Germany,3.7,57,"35,419",https://www.vivino.com/balthasar-ress-hattenheim-schutzenhaus-riesling-kabinett/w/2004112?year=2013&price_id=14539931
+669,Wehlener Sonnenuhr Riesling Kabinett 2004,Joh. Jos. Prüm,Germany,3.9,56,"83,338",https://www.vivino.com/joh-jos-prum-wehlener-sonnenuhr-riesling-kabinett/w/1208450?year=2004&price_id=14550291
+670,Bannockburn Riesling 2022,Felton Road,New Zealand,3.9,56,"46,997",https://www.vivino.com/felton-road-bannockburn-riesling/w/1253004?year=2022&price_id=30876546
+671,Le Merle Blanc de Château Clarke Bordeaux Blanc 2013,Château Clarke,France,4.0,55,"50,003",https://www.vivino.com/chateau-clarke-le-merle-blanc-de-chateau-clarke-bordeaux-blanc/w/2140736?year=2013&price_id=2754609
+672,Traveller's Riesling 2014,Nomad at Hinterbrook,Canada,4.3,55,"79,129",https://www.vivino.com/nomad-at-hinterbrook-traveller-s-riesling/w/4896036?year=2014&price_id=14550159
+673,Müller Thurgau 2012,St. Michael-Eppan,Italy,3.2,54,"70,709",https://www.vivino.com/st-michael-eppan-muller-thurgau/w/10087?year=2012&price_id=36485666
+674,Illivio 2021,Livio Felluga,Italy,4.2,54,"57,576",https://www.vivino.com/livio-felluga-illivio/w/15093?year=2021&price_id=36485664
+675,Dry Riesling 2022,Amisfield,New Zealand,4.0,54,"26,793",https://www.vivino.com/amisfield-dry-riesling/w/86253?year=2022&price_id=32716137
+676,Pinot Noir Blanc 2022,Akitu,New Zealand,4.0,54,"33,803",https://www.vivino.com/akitu-pinot-noir-blanc/w/9029144?year=2022&price_id=32222021
+677,Reserva Sauvignon Blanc 2013,Casa Silva,Chile,3.5,52,"35,419",https://www.vivino.com/casa-silva-reserva-sauvignon-blanc/w/18306?year=2013&price_id=16698863
+678,Tradition Pinot Blanc 2011,Michel Fonné,France,3.7,52,"35,419",https://www.vivino.com/michel-fonne-tradition-pinot-blanc/w/1991936?year=2011&price_id=14650531
+679,Gravestone 2019,Man O' War,New Zealand,3.9,52,"24,731",https://www.vivino.com/man-o-war-gravestone/w/1125557?year=2019&price_id=32705940
+680,Viognier 2021,Stonecroft,New Zealand,3.5,52,"25,144",https://www.vivino.com/stonecroft-viognier/w/3375731?year=2021&price_id=29410408
+681,Moscato Sensuale 2018,Vigneti del Vulture,Italy,4.2,52,"31,252",https://www.vivino.com/vigneti-del-vulture-moscato-sensuale/w/2192739?year=2018&price_id=19011285
+682,Kidnappers Vineyard Chardonnay 2022,Craggy Range,New Zealand,3.8,51,"27,205",https://www.vivino.com/craggy-range-kidnappers-vineyard-chardonnay/w/87011?year=2022&price_id=34540041
+683,Hunting Hill Chardonnay 2022,Kumeu River,New Zealand,4.2,51,"79,983",https://www.vivino.com/kumeu-river-winery-hunting-hill-chardonnay/w/76129?year=2022&price_id=33564983
+684,Pinot Grigio 2017,Protea,South Africa,3.1,51,"25,835",https://www.vivino.com/za-protea-pinot-grigio/w/4919232?year=2017&price_id=16865469
+685,Moscato 2012,Chalk Hill,Australia,4.0,51,"39,586",https://www.vivino.com/chalk-hill-moscato/w/1118558?year=2012&price_id=2895270
+686,Victoria Series Chardonnay 2007,Mitchelton,Australia,3.5,50,"37,919",https://www.vivino.com/mitchelton-preece-chardonnay/w/1227618?year=2007&price_id=14541216
+687,Pur Mineral Riesling 2016,Fürst,Germany,4.0,50,"50,003",https://www.vivino.com/furst-franken-pur-mineral-riesling/w/1117563?year=2016&price_id=17623606
+688,Pinot Blanc 2022,Hawkshead,New Zealand,4.0,50,"28,030",https://www.vivino.com/hawkshead-pinot-blanc/w/9049960?year=2022&price_id=31198176
+689,Gimblett Gravels Chardonnay 2021,Trinity Hill,New Zealand,4.1,49,"32,978",https://www.vivino.com/trinity-hill-gimblett-gravels-chardonnay/w/2240133?year=2021&price_id=31600428
+690,Lowburn Single Vineyard Chardonnay 2022,Matt Connell,New Zealand,4.0,48,"34,627",https://www.vivino.com/matt-connell-lowburn-single-vineyard-chardonnay/w/6837483?year=2022&price_id=35631000
+691,Chablis Grand Cru 'Valmur' 2018,Raveneau,France,4.7,48,"927,448",https://www.vivino.com/raveneau-chablis-grand-cru-valmur/w/1198994?year=2018&price_id=36592878
+692,SL Riesling Feinherb 2014,Schloss Lieser,Germany,3.8,48,"45,794",https://www.vivino.com/schloss-lieser-sl-riesling-feinherb/w/1207305?year=2014&price_id=23168854
+693,L' Atypique Riesling 2022,Sato,New Zealand,4.0,48,"37,926",https://www.vivino.com/sato-l-atypique-riesling/w/10773320?year=2022&price_id=33483710
+694,Scharzhofberger Riesling Spätlese 2003,Egon Müller - Scharzhof,Germany,4.3,47,"158,342",https://www.vivino.com/egon-muller-scharzhof-scharzhofberger-riesling-spatlese/w/86686?year=2003&price_id=2873663
+695,Uco Chardonnay 2011,Urban,Argentina,3.7,47,"27,085",https://www.vivino.com/cl-urban-uco-chardonnay/w/1360453?year=2011&price_id=2804852
+696,Riesling 2018,Hans Herzog - Hans Family Estate,New Zealand,3.6,47,"46,172",https://www.vivino.com/hans-herzog-hans-family-estate-riesling/w/1677842?year=2018&price_id=32855504
+697,Rays Road Chardonnay 2022,Kumeu River,New Zealand,4.0,47,"37,101",https://www.vivino.com/kumeu-river-winery-rays-road-chardonnay/w/7477063?year=2022&price_id=33863490
+698,Weissburgunder (Pinot Bianco) 2017,St. Michael-Eppan,Italy,3.8,46,"28,358",https://www.vivino.com/st-michael-eppan-weissburgunder-pinot-bianco/w/10084?year=2017&price_id=36485680
+699,Colline Teatine Bianco 2012,Villa Gemma,Italy,3.8,46,"45,836",https://www.vivino.com/villa-gemma-abruzzo-colline-teatine-bianco/w/1895638?year=2012&price_id=7944016
+700,Sauvignon Blanc 2016,Casa Silva,Chile,3.5,46,"17,918",https://www.vivino.com/casa-silva-sauvignon-blanc/w/1257021?year=2016&price_id=16730289
+701,Les Clos Chablís Grand Cru 2004,Vincent Dauvissat,France,4.3,46,"476,085",https://www.vivino.com/vincent-dauvissat-les-clos-chablis-grand-cru/w/1974097?year=2004&price_id=35573199
+702,Macon-Villages Blanc 2012,L . Tramier & Fils,France,3.6,46,"35,835",https://www.vivino.com/tramier-l-and-fils-macon-villages-blanc/w/1108438?year=2012&price_id=14650545
+703,Chardonnay 2011,Barratt,Australia,4.1,46,"83,338",https://www.vivino.com/barratt-chardonnay/w/2265965?year=2011&price_id=21687579
+704,Keltern Vineyard Single Vineyard Chardonnay 2016,Villa Maria,New Zealand,3.9,46,"70,912",https://www.vivino.com/villa-maria-auckland-keltern-vineyard-single-vineyard-chardonnay/w/1663980?year=2016&price_id=28582634
+705,Alpine Rift Sauvignon Blanc 2022,Daylight Wine & Spirits,New Zealand,4.0,46,"19,783",https://www.vivino.com/daylight-wine-spirits-alpine-rift-sauvignon-blanc/w/10872888?year=2022&price_id=35631003
+706,Chardonnay 2018,Solar de Urbezo,Spain,3.6,46,"29,168",https://www.vivino.com/solar-de-urbezo-chardonnay/w/1192332?year=2018&price_id=34860507
+707,Sauvignon B 2022,Bastianich,Italy,4.0,46,"26,161",https://www.vivino.com/bastianich-sauvignon-b/w/82566?year=2022&price_id=36485642
+708,Rotenberg La Colline Rouge 2017,Marcel Deiss,France,4.2,45,"85,325",https://www.vivino.com/marcel-deiss-rotenberg-la-colline-rouge/w/93835?year=2017&price_id=35372052
+709,Graacher Himmelreich Riesling Spätlese 2005,Joh. Jos. Prüm,Germany,4.2,45,"116,673",https://www.vivino.com/joh-jos-prum-graacher-himmelreich-riesling-spatlese/w/1480361?year=2005&price_id=14549873
+710,Pessac-Léognan Blanc 2003,Château Pape Clément,France,4.2,44,"179,302",https://www.vivino.com/fr-chateau-pape-clement-pessac-leognan-blanc/w/2149320?year=2003&price_id=27344238
+711,Falanghina Biorganic 2022,Di Majo Norante,Italy,3.6,43,"15,566",https://www.vivino.com/di-majo-norante-falanghina-biorganic/w/2574836?year=2022&price_id=36485496
+712,Tiritiri Chardonnay 2022,Neudorf Vineyards,New Zealand,3.8,43,"23,907",https://www.vivino.com/neudorf-tiritiri-chardonnay/w/9269253?year=2022&price_id=33008360
+713,Chardonnay Unfiltered 2005,Newton,United States,3.8,42,"100,006",https://www.vivino.com/newton-chardonnay-unfiltered/w/1618879?year=2005&price_id=14539697
+714,SOLdeSOL Chardonnay 2007,Viña Aquitania,Chile,4.2,42,"77,088",https://www.vivino.com/vina-aquitania-soldesol-chardonnay/w/1251945?year=2007&price_id=2894968
+715,Special Reserve Feteasca Regala 2012,Domeniile Alexandrion Rhein 1892,Romania,3.3,42,"28,335",https://www.vivino.com/domeniile-alexandrion-rhein-1892-special-reserve-feteasca-regala/w/20898?year=2012&price_id=14650385
+716,Chardonnay 2016,Casa Mayor,Chile,3.1,42,"19,168",https://www.vivino.com/casa-mayor-chardonnay/w/1155706?year=2016&price_id=16730342
+717,Blanco 2004,Gorrebusto Torre San Millán,Spain,3.3,42,"243,764",https://www.vivino.com/torre-san-millan-blanco/w/2554407?year=2004&price_id=14550162
+718,Saint-Jean Santenay 2022,Domaine Saint Marc,France,3.9,42,"43,034",https://www.vivino.com/saint-marc-112669-saint-jean-santenay/w/6547988?year=2022&price_id=35345633
+719,Valhalla 2021,Man O' War,New Zealand,4.1,42,"41,224",https://www.vivino.com/man-o-war-valhalla/w/1125555?year=2021&price_id=35624790
+720,Chablis 1er Cru 'Les Fourneaux' 2022,Alain Gautheron,France,4.2,42,"40,066",https://www.vivino.com/alain-gautheron-chablis-1er-cru-les-fourneaux/w/1228155?year=2022&price_id=35345632
+721,Sauvignon Blanc 2022,Eaton,New Zealand,3.7,42,"33,390",https://www.vivino.com/eaton-sauvignon-blanc/w/8787320?year=2022&price_id=35979196
+722,Albariño 2023,Nautilus,New Zealand,4.0,41,"27,205",https://www.vivino.com/nautilus-estate-albarino/w/4422739?year=2023&price_id=34460461
+723,Bokréta Cuvée 2014,Thummerer,Hungary,3.8,40,"36,669",https://www.vivino.com/thummerer-egri-csillag-vedett-eredetu-birtok/w/1893958?year=2014&price_id=9156610
+724,Bourgogne Aligoté 2019,Domaine Coche-Dury,France,4.3,40,"474,854",https://www.vivino.com/domaine-coche-dury-bourgogne-aligote/w/85913?year=2019&price_id=30571770
+725,Red Shed Riesling 2022,Gibbston Valley,New Zealand,4.0,40,"34,627",https://www.vivino.com/gibbston-valley-red-shed-riesling/w/8098367?year=2022&price_id=34233511
+726,Carmel Ridge White ( בשרצקך רןגעק 'יןאק אזורית) 2012,Carmel (יקבי כרמל),Israel,3.3,39,"37,085",https://www.vivino.com/il-carmel-carmel-ridge-white-bshrtsqk-rng-q-ynq-zvryt/w/1474776?year=2012&price_id=14650464
+727,Chardonnay 2019,Cable Bay,New Zealand,3.7,39,"39,575",https://www.vivino.com/cable-bay-vineyards-chardonnay/w/17087?year=2019&price_id=24599673
+728,Les Preuses Chablís Grand Cru 2018,Vincent Dauvissat,France,4.2,39,"460,014",https://www.vivino.com/vincent-dauvissat-les-preuses-chablis-grand-cru/w/1707497?year=2018&price_id=31719215
+729,Maker's Table Unwooded Chardonnay 2006,Saltram,Australia,3.3,39,"34,377",https://www.vivino.com/saltram-maker-s-table-unwooded-chardonnay/w/64214?year=2006&price_id=14650446
+730,Sauvignon Blanc Grande Duchesse 2019,Hans Herzog - Hans Family Estate,New Zealand,3.9,39,"73,386",https://www.vivino.com/hans-herzog-hans-family-estate-sauvignon-blanc-grande-duchesse/w/5412289?year=2019&price_id=32855506
+731,Meta Riesling 2018,Blank Canvas,New Zealand,4.2,39,"37,101",https://www.vivino.com/blank-canvas-nz-meta-riesling/w/7132406?year=2018&price_id=27451833
+732,Winemaker Series Dijon Clone Chardonnay 2007,Stag's Leap Wine Cellars,United States,3.9,38,"70,837",https://www.vivino.com/stag-s-leap-wine-cellars-winemaker-series-dijon-clone-chardonnay/w/2420499?year=2007&price_id=14541181
+733,Muscat Canelli 2010,Powers,United States,3.6,38,"29,127",https://www.vivino.com/powers-winery-muscat-canelli/w/2650908?year=2010&price_id=2895315
+734,Il Bianco di Ciccio (Tralcetto) 2009,Cantina Zaccagnini,Italy,3.1,37,"36,669",https://www.vivino.com/cantina-zaccagnini-il-bianco-di-ciccio-tralcetto/w/1321427?year=2009&price_id=2895337
+735,Weissburgunder (Pinot Bianco) 2016,St. Michael-Eppan,Italy,3.7,37,"50,053",https://www.vivino.com/st-michael-eppan-weissburgunder-pinot-bianco/w/10084?year=2016&price_id=36485617
+736,Tradition Riesling 2015,Michel Fonné,France,3.7,37,"44,586",https://www.vivino.com/michel-fonne-tradition-riesling/w/1249353?year=2015&price_id=16835272
+737,Chardonnay 2009,Anvers,Australia,3.8,37,"72,921",https://www.vivino.com/anvers-chardonnay/w/1122304?year=2009&price_id=31545273
+738,Réserve des Chartrons Bordeaux Blanc 2005,Arnozan,France,3.2,36,"18,751",https://www.vivino.com/arnozan-bordeaux-reserve-des-chartrons-blanc/w/5874438?year=2005&price_id=14550181
+739,Gewurztraminer 2022,Johanneshof Cellars,New Zealand,4.1,36,"30,504",https://www.vivino.com/johanneshof-gewurztraminer/w/1959104?year=2022&price_id=30505681
+740,Sauvignon Blanc 2023,Amisfield,New Zealand,4.1,36,"26,793",https://www.vivino.com/amisfield-sauvignon-blanc/w/86257?year=2023&price_id=34897276
+741,Sauvignon Blanc 2005,Eos Estate,United States,3.5,35,"37,502",https://www.vivino.com/eos-estate-winery-sauvignon-blanc/w/4128?year=2005&price_id=2804667
+742,Sauvignon Blanc 2022,Leveret Estate,New Zealand,3.3,35,"18,134",https://www.vivino.com/leveret-estate-sauvignon-blanc/w/5799068?year=2022&price_id=33222824
+743,Riesling 2020,Mount Edward,New Zealand,3.9,35,"28,030",https://www.vivino.com/mount-edward-riesling/w/3198184?year=2020&price_id=32444667
+744,Te Koko Sauvignon Blanc 2005,Cloudy Bay,New Zealand,4.1,35,"75,004",https://www.vivino.com/cloudy-bay-te-koko-sauvignon-blanc/w/1126958?year=2005&price_id=2754315
+745,Chardonnay 2005,Skyside,United States,4.0,34,"50,003",https://www.vivino.com/skyside-chardonnay/w/1689731?year=2005&price_id=14541851
+746,Riesling Kabinett 2006,Schloss Johannisberg,Germany,4.0,34,"60,837",https://www.vivino.com/schloss-johannisberg-riesling-kabinett/w/6795525?year=2006&price_id=30730933
+747,The Batten Chardonnay 2022,Alpha Domus,New Zealand,4.1,34,"35,369",https://www.vivino.com/alpha-domus-the-batten-chardonnay/w/8578270?year=2022&price_id=32444669
+748,Maker's Table Chardonnay 2006,Saltram,Australia,3.3,34,"31,627",https://www.vivino.com/saltram-maker-s-table-chardonnay/w/64224?year=2006&price_id=2895149
+749,The Batten Chardonnay 2019,Alpha Domus,New Zealand,4.1,34,"35,369",https://www.vivino.com/alpha-domus-the-batten-chardonnay/w/8578270?year=2019&price_id=30876538
+750,Le Clos des Poncetys Saint-Véran 2020,Domaine des Poncetys,France,4.1,34,"31,162",https://www.vivino.com/domaine-des-poncetys-saint-veran-le-clos-des-poncetys/w/1942671?year=2020&price_id=33696562
+751,Chenin Blanc 2022,Amisfield,New Zealand,3.9,33,"45,348",https://www.vivino.com/amisfield-chenin-blanc/w/4365594?year=2022&price_id=34771422
+752,Steinbruch Riesling 2013,Bethany,Australia,3.4,33,"43,752",https://www.vivino.com/bethany-steinbruch-riesling/w/1679768?year=2013&price_id=2894966
+753,Closeburn Chardonnay 2022,Chard Farm,New Zealand,3.7,33,"27,205",https://www.vivino.com/chard-farm-closeburn-chardonnay/w/83458?year=2022&price_id=31315736
+754,Podium Verdicchio dei Castelli di Jesi Classico Superiore 2003,Garofoli,Italy,3.8,32,"47,919",https://www.vivino.com/casa-vinicola-gioacchino-garofoli-spa-podium-verdicchio-dei-castelli-di-jesi-classico-superiore/w/1809428?year=2003&price_id=14650433
+755,Opou Vineyard Chardonnay 2020,Millton,New Zealand,4.1,32,"31,329",https://www.vivino.com/millton-opou-vineyard-chardonnay/w/1122463?year=2020&price_id=31395524
+756,Les Clos Chablís Grand Cru 2003,Vincent Dauvissat,France,4.4,32,"562,657",https://www.vivino.com/vincent-dauvissat-les-clos-chablis-grand-cru/w/1974097?year=2003&price_id=35573197
+757,Chardonnay 2016,Lamberti,Italy,3.4,32,"24,960",https://www.vivino.com/lamberti-chardonnay/w/9213615?year=2016&price_id=23532677
+758,Pessac-Léognan Blanc (Grand Cru Classé de Graves) 1999,Château La Mission Haut-Brion,France,4.1,32,"556,469",https://www.vivino.com/la-mission-haut-brion-pessac-leognan-blanc-grand-cru-classe-de-graves/w/4402538?year=1999&price_id=27859628
+759,Ermitage l'Ermite Blanc 2008,M. Chapoutier,France,4.5,31,"859,440",https://www.vivino.com/m-chapoutier-ermitage-l-ermite-blanc/w/2508940?year=2008&price_id=25401969
+760,Limelight Riesling 2021,Misha's Vineyard,New Zealand,4.0,31,"28,855",https://www.vivino.com/mishas-limelight-riesling/w/2580040?year=2021&price_id=32845875
+761,Meursault-Perrières Premier Cru 2014,Domaine Coche-Dury,France,4.7,31,"7,110,442",https://www.vivino.com/domaine-coche-dury-meursault-perrieres-premier-cru/w/1885312?year=2014&price_id=30768083
+762,Angostura Gran Reserva Chardonnay 2010,Casa Silva,Chile,3.7,31,"45,002",https://www.vivino.com/casa-silva-angostura-gran-reserva-chardonnay/w/1209056?year=2010&price_id=16730140
+763,Reserve Pinot Gris 2011,Cooper Mountain,United States,3.7,31,"41,627",https://www.vivino.com/cooper-mountain-reserve-pinot-gris/w/1133315?year=2011&price_id=2804822
+764,Balciana 2019,Sartarelli,Italy,4.1,31,"62,888",https://www.vivino.com/sartarelli-balciana/w/85568?year=2019&price_id=36485644
+765,Villa Niederberger Riesling Trocken 2015,Von Winning,Germany,3.7,30,"41,627",https://www.vivino.com/de-von-winning-villa-niederberger-riesling-trocken/w/3051030?year=2015&price_id=14650504
+766,The Eddy Sauvignon Blanc 2011,Waterfalls Road,New Zealand,3.4,30,"27,085",https://www.vivino.com/waterfalls-road-the-eddy-sauvignon-blanc/w/1491569?year=2011&price_id=2895167
+767,Süssreserve Riesling 2011,Angels Gate,Canada,3.6,30,"49,169",https://www.vivino.com/angels-gate-sussreserve-riesling/w/10456?year=2011&price_id=4394303
+768,Piesporter Michelberg Mosel Riesling 2005,Meilen,Germany,3.6,30,"20,418",https://www.vivino.com/meilen-piesporter-michelberg-mosel-riesling/w/1395080?year=2005&price_id=14550387
+769,Pinot Gris Alsace Grand Cru Hengst 2011,Cave de Turckheim,France,4.4,30,"75,004",https://www.vivino.com/cave-de-turckheim-pinot-gris-alsace-grand-cru-hengst/w/87963?year=2011&price_id=19190701
+770,Assyrtiko (Ασύρτικο) 2021,Ariousios,Greece,3.9,30,"37,098",https://www.vivino.com/ariousious-assyrtiko-asurtiko/w/10938589?year=2021&price_id=36026707
+771,Tradition Pinot Gris 2011,Michel Fonné,France,3.6,30,"48,336",https://www.vivino.com/michel-fonne-tradition-pinot-gris/w/1532745?year=2011&price_id=14650442
+772,Chardonnay 2012,Brewery Hill,Australia,3.2,30,"29,168",https://www.vivino.com/brewery-hill-chardonnay/w/1487624?year=2012&price_id=2804560
+773,Sauvignon Blanc 2011,Forrest Wines,New Zealand,3.7,30,"35,419",https://www.vivino.com/forrest-sauvignon-blanc/w/1117089?year=2011&price_id=10844383
+774,Chardonnay Gimblett Gravels Vineyard 2022,Craggy Range,New Zealand,3.9,30,"37,101",https://www.vivino.com/craggy-range-chardonnay-gimblett-gravels-vineyard/w/87013?year=2022&price_id=35096006
+775,Piesporter Riesling 2016,Deinhard,Germany,4.1,29,"25,001",https://www.vivino.com/deinhard-piesporter-riesling/w/1155969?year=2016&price_id=15574729
+776,Encore Noble Riesling 2017,Pegasus Bay,New Zealand,4.1,29,"37,101",https://www.vivino.com/pegasus-bay-winery-encore-noble-riesling/w/1632045?year=2017&price_id=31315735
+777,Reserve Chardonnay 2022,Clearview Estate,New Zealand,4.2,29,"42,874",https://www.vivino.com/clearview-estate-reserve-chardonnay/w/1123269?year=2022&price_id=32444661
+778,Éclat de Schiste Savennières 2015,Château de Bellevue,France,4.2,29,"43,286",https://www.vivino.com/fr-chateau-de-bellevue-savennieres-eclat-de-schiste/w/5861496?year=2015&price_id=36831575
+779,Barrique Sauvignon Blanc 2016,Saint Clair Family Estate,New Zealand,3.9,29,"26,381",https://www.vivino.com/saint-clair-family-estate-barrique-sauvignon-blanc/w/2460921?year=2016&price_id=20091155
+780,Talis Pinot Bianco 2022,Venica & Venica,Italy,3.8,29,"40,912",https://www.vivino.com/venica-venica-talis-pinot-bianco/w/1670213?year=2022&price_id=36485476
+781,Graves Blanc 2006,Château Cazebonne,France,3.5,28,"27,085",https://www.vivino.com/chateau-cazebonne-bordeaux-graves-blanc/w/84003?year=2006&price_id=7953579
+782,St. Andrews Chardonnay 2013,Taylors / Wakefield,Australia,4.1,28,"57,920",https://www.vivino.com/taylors-wakefield-st-andrews-chardonnay/w/1379553?year=2013&price_id=12760383
+783,Chardonnay 2007,Hawk Crest by SLWC,United States,3.4,28,"37,294",https://www.vivino.com/hawk-crest-by-slwc-chardonnay/w/1100550?year=2007&price_id=14540944
+784,Gimblett Gravels Les Beaux Cailloux 2017,Craggy Range,New Zealand,4.4,28,"164,922",https://www.vivino.com/craggy-range-gimblett-gravels-les-beaux-cailloux/w/79638?year=2017&price_id=20360912
+785,Bannockburn Riesling 2023,Felton Road,New Zealand,4.0,28,"46,172",https://www.vivino.com/felton-road-bannockburn-riesling/w/1253004?year=2023&price_id=34460473
+786,Châteauneuf-du-Pape Réservé Blanc 2011,Château Rayas,France,4.4,27,"1,335,525",https://www.vivino.com/chateau-rayas-chateauneuf-du-pape-reserve-blanc/w/87554?year=2011&price_id=29840969
+787,Recioto di Soave 2019,Casa Vinicola Bennati,Italy,3.4,27,"29,560",https://www.vivino.com/casa-vinicola-bennati-recioto-di-soave/w/4025121?year=2019&price_id=36738526
+788,Riesling Spätlese 2012,Rosenhof,Austria,3.9,27,"33,335",https://www.vivino.com/rosenhof-riesling-spatlese/w/1799936?year=2012&price_id=14650548
+789,Prahova Valley Reserve Fetească Alba 2011,Domeniile Alexandrion Rhein 1892,Romania,3.2,27,"22,918",https://www.vivino.com/domeniile-alexandrion-rhein-1892-prahova-valley-reserve-feteasca-alba/w/1277635?year=2011&price_id=14650438
+790,Chardonnay 2008,Bagueri,Slovenia,3.4,27,"65,837",https://www.vivino.com/bagueri-chardonnay/w/3980146?year=2008&price_id=14650554
+791,Châteauneuf-du-Pape Blanc 2022,Château des Fines Roches,France,3.9,27,"46,001",https://www.vivino.com/fr-chateau-des-fines-roches-chateauneuf-du-pape-blanc/w/1168895?year=2022&price_id=33696574
+792,The Starlet Sauvignon Blanc 2021,Misha's Vineyard,New Zealand,4.2,27,"27,205",https://www.vivino.com/mishas-the-starlet-central-otago-sauvignon-blanc/w/1624318?year=2021&price_id=30876556
+793,Camille Montagny 2022,Domaine Feuillat-Juillot,France,3.8,27,"28,194",https://www.vivino.com/feuillat-juillot-camille-montagny/w/2814940?year=2022&price_id=34433571
+794,Bianco 2018,Frus,Italy,4.0,27,"37,098",https://www.vivino.com/frus-bianco/w/6560191?year=2018&price_id=28572008
+795,Frétoy Sancerre Blanc 2021,Tinel-Blondelet,France,4.0,26,"40,066",https://www.vivino.com/tinel-blondelet-fretoy-sancerre-blanc-w5432/w/6432350?year=2021&price_id=33696569
+796,Baroness Nadine 2005,Rupert & Rothschild,South Africa,4.0,26,"61,670",https://www.vivino.com/rupert-and-rothschild-vignerons-baroness-nadine/w/12437?year=2005&price_id=8699225
+797,Chardonnay 2006,Jacob's Creek,Australia,3.3,26,"16,209",https://www.vivino.com/jacob-s-creek-chardonnay/w/2706?year=2006&price_id=2804939
+798,Château-Chalon 1989,Berthet Bondet,France,4.3,26,"296,783",https://www.vivino.com/berthet-bondet-chateau-chalon/w/1186030?year=1989&price_id=31286960
+799,Old Vine Chardonnay 2021,Stonecroft,New Zealand,3.9,26,"37,101",https://www.vivino.com/stonecroft-old-vine-chardonnay/w/1193989?year=2021&price_id=32217827
+800,Chardonnay 2020,Pegasus Bay,New Zealand,3.8,26,"37,101",https://www.vivino.com/pegasus-bay-winery-chardonnay/w/16116?year=2020&price_id=35937261
+801,Endeavour Chardonnay 2018,Clearview Estate,New Zealand,4.4,26,"152,552",https://www.vivino.com/clearview-estate-endeavour-hawke-s-bay-chardonnay/w/1401141?year=2018&price_id=30660142
+802,Riesling 2008,Firesteed,United States,3.4,26,"33,002",https://www.vivino.com/firesteed-cellars-riesling/w/15707?year=2008&price_id=14650536
+803,Pinot Gris 2012,Little Beauty,New Zealand,4.1,26,"72,921",https://www.vivino.com/little-beauty-pinot-gris/w/5244992?year=2012&price_id=15466465
+804,Riesling Alsace Grand Cru Sommerberg 2015,Cave de Turckheim,France,3.7,25,"75,004",https://www.vivino.com/cave-de-turckheim-riesling-alsace-grand-cru-sommerberg/w/1312360?year=2015&price_id=19190702
+805,Sallys Pinch Gewurztraminer 2014,Charcoal Gully,New Zealand,3.3,25,"30,504",https://www.vivino.com/charcoal-gully-sallys-pinch-gewurztraminer/w/2546509?year=2014&price_id=36353674
+806,Reserve Chardonnay 2022,Mudbrick Vineyard,New Zealand,4.1,25,"56,893",https://www.vivino.com/mudbrick-reserve-chardonnay/w/1527820?year=2022&price_id=34789822
+807,Finca la Reñana Blanco 2013,Luis Alegre,Spain,4.0,25,"45,836",https://www.vivino.com/luis-alegre-finca-la-renana-blanco/w/12179510?year=2013&price_id=14650527
+808,Riesling 2022,Pegasus Bay,New Zealand,3.8,25,"24,731",https://www.vivino.com/pegasus-bay-winery-riesling/w/16115?year=2022&price_id=36363016
+809,Chardonnay 2022,Nautilus,New Zealand,4.1,25,"29,679",https://www.vivino.com/nautilus-estate-chardonnay/w/86806?year=2022&price_id=36378982
+810,Alte Reben Riesling Trocken 2023,Carl Loewen,Germany,4.2,25,"20,033",https://www.vivino.com/weingut-carl-loewen-alte-reben-riesling-trocken/w/1175944?year=2023&price_id=36579457

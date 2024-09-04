@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import re
 import json
+import csv
 
 def wait_until(browser, xpath):
   WebDriverWait(browser, 10).until(EC.presence_of_all_elements_located((By.XPATH, xpath)))
@@ -37,8 +38,12 @@ def create_soup(query):
 
 def search(query):
   soup = create_soup(query)
+  file = open(f'data/{query}.csv','w', encoding='utf-8-sig', newline="")
+  writer = csv.writer(file)
+  title='title,price,image,link'.split(',')
+  writer.writerow(title)
+
   es = soup.find_all('div', attrs={'class':re.compile('^box__item-container')})
-  items = []
   for e in es:
     title = e.find('span', attrs={'class':'text__item'}).get_text()
     price = e.find('strong', attrs={'class':'text text__value'}).get_text()
@@ -49,8 +54,12 @@ def search(query):
     print(image)
     print(link)
     print('-' * 50)
-    item = {'title':title, 'price':price, 'image':image, 'link':link}
-    items.append(item)
-  return json.dumps(items, indent=4, ensure_ascii=False)
+    #item = {'title':title, 'price':price, 'image':image, 'link':link}
+    #items.append(item)
+    #json_data=json.dumps(items, indent=4, ensure_ascii=False)
+    data=[title, price, image, link]
+    writer.writerow(data)
+  return 'success'
 
-print(search('노트북'))
+query='노트북'
+print(search(query))
