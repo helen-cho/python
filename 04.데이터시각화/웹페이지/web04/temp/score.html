@@ -33,11 +33,21 @@
         </div>
         <div id="score"></div>
         <div id="info" class="mt-3"></div>
+        <div>
+            <div>
+                <button id="btn" class="btn btn-success w-100">그래프출력</button>
+            </div>
+            <img id="image" src="http://placehold.co/500x300" width="100%"/>
+        </div>
     </div>
 </body>
 <script>
     getData();
 
+    $("#btn").on("click", function(){
+        $("#image").attr("src", "/score/graph");
+    });
+    
     $(frm).on("submit", function(e){
         e.preventDefault();
         const word=$(frm.word).val()

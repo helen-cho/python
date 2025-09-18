@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 import pandas as pd
 
 app =Flask(__name__, template_folder='temp')
@@ -6,6 +6,24 @@ app =Flask(__name__, template_folder='temp')
 @app.route('/score')
 def score():
     return render_template('score.html')
+
+@app.route('/score/graph')
+def score_graph():
+    import matplotlib.pyplot as plt
+    from io import BytesIO
+
+    plt.rc('font', family='Malgun Gothic')
+    plt.rc('axes', unicode_minus=False)
+    
+    df = pd.read_csv(f'{app.root_path}/static/score.csv')
+    df['평균'] = df.apply(lambda row:row['국어':'사회'].mean(), axis=1)
+    plt.bar(df['이름'], df['평균'])
+
+    img = BytesIO()
+    plt.savefig(img, format='png')
+    plt.close()
+    img.seek(0)
+    return send_file(img, mimetype='image/png')
 
 @app.route('/score/data')
 def score_data():
