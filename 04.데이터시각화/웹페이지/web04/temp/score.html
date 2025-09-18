@@ -26,7 +26,7 @@
         <div class="row mb-2">
             <form name="frm" class="col-6">
                 <div class="input-group">
-                    <input placeholder="검색어" class="form-control">
+                    <input name="word" placeholder="검색어" class="form-control">
                     <button class="btn btn-primary">검색</button>
                 </div>
             </form>
@@ -37,10 +37,23 @@
 <script>
     getData();
 
+    $(frm).on("submit", function(e){
+        e.preventDefault();
+        const word=$(frm.word).val()
+        if(word==''){
+            alert('검색어를 입력하세요!');
+        }else{
+            getData();
+        }
+    })
+
     function getData(){
+        const word=$(frm.word).val()
+        //alert(word);
         $.ajax({
             type:'get',
             url:'/score/data',
+            data:{word},
             success:function(data){
                 console.log(data)
                 $("#score").html(data)
