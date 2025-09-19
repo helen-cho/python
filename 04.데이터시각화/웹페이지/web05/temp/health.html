@@ -19,9 +19,19 @@
     <title>공공의료기관현황</title>
 </head>
 <body>
-    <div class="container m-5">
-        <h1 class="text-center mb-3">공공의료기관현황</h1>
-        <div id="health"></div>
+    <div class="container my-5">
+        <h1 class="text-center mb-5">공공의료기관현황</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <form class="mb-2" name="frm">
+                    <div class="input-group">
+                        <input name="word" class="form-control" placeholder="검색어">
+                        <button class="btn btn-primary">검색</button>
+                    </div>    
+                </form>
+                <div id="health"></div>
+            </div>
+        </div>
         <div class="text-center">
             <button class="btn btn-primary px-5" id="prev">이전</button>
             <span class="px-3" id="page">1/10</span>
@@ -32,6 +42,12 @@
 <script>
     let page=1;
     let size=5;
+
+    $(frm).on("submit", function(e){
+        e.preventDefault();
+        page=1;
+        getData();
+    });
 
     $("#next").on("click", function(){
         page++;
@@ -45,10 +61,11 @@
 
     getData();
     function getData(){
+        const word = $(frm.word).val();
         $.ajax({
             type:"get",
             url:"/health/data",
-            data:{'page':page, 'size':size},
+            data:{'page':page, 'size':size, 'word':word},
             success:function(data){
                 $("#health").html(data.table);
                 const count=data.count;
