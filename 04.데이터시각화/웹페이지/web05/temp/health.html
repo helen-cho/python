@@ -23,23 +23,43 @@
         <h1 class="text-center mb-3">공공의료기관현황</h1>
         <div id="health"></div>
         <div class="text-center">
-            <button class="btn btn-primary px-5" id="pre">이전</button>
+            <button class="btn btn-primary px-5" id="prev">이전</button>
             <span class="px-3" id="page">1/10</span>
             <button class="btn btn-primary px-5" id="next">다음</button>
         </div>
     </div>
 </body>
 <script>
+    let page=1;
+    let size=5;
+
+    $("#next").on("click", function(){
+        page++;
+        getData();
+    });
+
+    $("#prev").on("click", function(){
+        page--;
+        getData();
+    });
+
     getData();
     function getData(){
         $.ajax({
             type:"get",
             url:"/health/data",
+            data:{'page':page, 'size':size},
             success:function(data){
                 $("#health").html(data.table);
                 const count=data.count;
-                const total = Math.ceil(count/10);
-                $("#page").html(total)
+                const last = Math.ceil(count/size);
+                $("#page").html(`${page}/${last}`);
+
+                if(page==1) $("#prev").attr("disabled", true);
+                else $("#prev").attr("disabled", false)
+
+                if(page==last) $("#next").attr("disabled", true);
+                else $("#next").attr("disabled", false)
             }
         })
     }
