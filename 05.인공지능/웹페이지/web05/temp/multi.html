@@ -1,0 +1,61 @@
+<div class="my-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div class="row justify-content-center">
+        <form class="col-12 col-md-6 mb-3" name="frm">
+            <div class="input-group">
+                <select class="form-select" name="place">
+                    <option value="">장소선택</option>
+                    <option>집</option>
+                    <option>도서관</option>
+                    <option>카페</option>
+                </select>
+                <select class="form-select" name="absent">
+                    <option value="">결석횟수선택</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <input placeholder="공부시간" class="form-control" name="hour">
+                <button class="btn btn-success">점수예측</button>
+            </div>
+        </form>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <button id="btn" class="btn btn-success w-100">그래프출력</button>
+            <img id="graph" src='http://placehold.co/500x300' width="100%">
+        </div>
+    </div>
+</div>
+<script>
+    $(frm).on("submit", function(e){
+        e.preventDefault();
+        const place=$(frm.place).val();
+        const absent=$(frm.absent).val();
+        const hour=$(frm.hour).val();
+        if(place=="") {
+            $("#box").modal('show');
+            $("#box .modal-body").html("장소를 선택하세요!");
+        }else if(absent==""){
+            $("#box").modal('show');
+            $("#box .modal-body").html("결석횟수를 선택하세요!");
+        }else if(hour==""){
+            $("#box").modal('show');
+            $("#box .modal-body").html("공부시간을 선택하세요!");
+            $(frm.hour).focus();
+        }else{
+            //점수예측
+            $.ajax({
+                type:"get",
+                url:"/multi/predict",
+                data:{hour, place, absent},
+                success:function(data){
+                    str=`공부시간:${hour}, 장소:${place}, 결석횟수:${absent}, 예측점수:<span>${data}</span>`;
+                    $("#box").modal('show');
+                    $("#box .modal-body").html(str);
+                }
+            })
+        }
+    });
+</script>

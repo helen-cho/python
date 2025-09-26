@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습05</title>
+    <style>
+        span {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1~100까지 합</span>
+        <span id="span_sum">?</span>
+        <button onclick="fnSum()">결과</button>
+    </div>
+</body>
+<script>
+    //1~100합을 구하는 함수
+    function fnSum(){
+        sum=0;
+        for(i=1; i<=100; i++){
+            sum += i;
+        }
+        alert(sum);
+        span_sum = document.getElementById('span_sum');
+        span_sum.innerHTML=sum;
+    }
+</script>
+</html>

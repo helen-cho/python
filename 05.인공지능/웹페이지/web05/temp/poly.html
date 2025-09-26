@@ -1,0 +1,53 @@
+<div class="my-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div class="row justify-content-center">
+        <form class="col-12 col-md-6 mb-3" name="frm">
+            <div class="input-group">
+                <input
+                    placeholder="공부시간" class="form-control" name="hour">
+                <button class="btn btn-success">점수예측</button>
+            </div>
+        </form>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <button id="btn" class="btn btn-success w-100">그래프출력</button>
+            <img id="graph" src='http://placehold.co/500x300' width="100%">
+        </div>
+    </div>
+</div>
+<script>
+    $("#btn").on("click", function(){
+        $.ajax({
+            type:"get",
+            url:"/poly/data",
+            success:function(data){
+                console.log(data);
+                $("#box").modal('show');
+                $("#box .modal-body").html(data);
+            }
+        })
+    });
+
+    $(frm).on("submit", function(e){
+        e.preventDefault();
+        hour =$(frm.hour).val();
+        if(hour==''){
+            $("#box").modal("show");
+            $("#box .modal-body").html("공부시간을 입력하세요!");
+            return;
+        }
+        $.ajax({
+            type:"get",
+            url:"/poly/predict",
+            data:{hour},
+            success:function(data){
+                if(data>100) data=100;
+                else if(data<0) data=0;
+                str=`${hour} 공부시간에 대한 예측점수는 <span>${data}</span>점입니다.`;
+                $("#box").modal("show");
+                $("#box .modal-body").html(str);
+            }
+        })
+    })
+</script>
