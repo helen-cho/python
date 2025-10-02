@@ -17,6 +17,25 @@
         const query=$(frm.query).val();
         if(query==""){
             showBox("검색어를 입력하세요!");
+            return;
         }
-    })
+        getNews();
+    });
+
+    function getNews(){
+        const query=$(frm.query).val();
+        $.ajax({
+            type:"get",
+            url:"/search",
+            data:{query},
+            success:function(data){
+                const length = data.length
+                if(length==0){
+                    showBox("검색 내용이 없습니다.");
+                    $(frm.query).val("");
+                }
+                console.log(data);
+            }
+        });
+    }
 </script>
