@@ -1,0 +1,22 @@
+<div class="my-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <form name="frm">
+                <div class="input-group">
+                    <input name="query" class="form-control">
+                    <button class="btn btn-success">검색</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(frm).on("submit", function(e){
+        e.preventDefault();
+        const query=$(frm.query).val();
+        if(query==""){
+            showBox("검색어를 입력하세요!");
+        }
+    })
+</script>
