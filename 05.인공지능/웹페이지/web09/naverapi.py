@@ -17,7 +17,7 @@ def getNew(query, start, display):
         response_body = response.read()
         result = response_body.decode('utf-8')
         result = json.loads(result)
-        return result['items']
+        return result['items'], result['total']
     else:
         print("Error Code:" + rescode)
         return None

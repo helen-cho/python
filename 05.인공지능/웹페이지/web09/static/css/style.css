@@ -30,3 +30,7 @@ table.dataframe th, td {
 .description {
     cursor: pointer;
 }
+
+.red {
+    color: red;
+}
