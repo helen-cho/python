@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할리스 메뉴</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">할리스메뉴소개</h1>
+        <div id="menu" class="row"></div>
+        <script id="temp" type="x-handlebars-template">
+            {{#each .}}
+                <div class="col-6 col-md-3 col-lg-2 mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="{{url}}" width="100%">
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-truncate text-center">
+                                {{title}}
+                            </div> 
+                        </div>
+                    </div>                       
+                </div>
+            {{/each}}
+        </script>
+    </div>
+</body>
+<script src="menu.js"></script>
+<script>
+    temp = Handlebars.compile($("#temp").html())
+    $("#menu").html(temp(data));
+</script>
+</html>

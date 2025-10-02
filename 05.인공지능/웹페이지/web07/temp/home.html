@@ -1,0 +1,82 @@
+<div class="my-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div class="mb-2">
+        <button id="predict" class="btn btn-success px-5">생존예측</button>
+        <button id="reset" class="btn btn-danger px-5">초기화</button>
+    </div>
+    <div id="test"></div>
+    <div class="text-center">
+        <button id="prev" class="btn btn-sm btn-success px-3">이전</button>
+        <span id="page" class="px-2">1/10</span>
+        <button id="next" class="btn btn-sm btn-success px-3">다음</button>
+    </div>
+</div>
+<script>
+    let page=1;
+    let size=5;
+    getData();
+
+    $("#reset").on("click", function(){
+        if(confirm('정말로 초기화하실래요?')){
+            $.ajax({
+                type:"get",
+                url:"/reset",
+                success:function(data){
+                    if(data=='success'){
+                        $("#box").modal("show");
+                        $("#box .modal-body").html("초기화를 성공했습니다.")
+                        page=1;
+                        getData();
+                    }
+                }
+            })
+        }else{
+            $("#box").modal('show');
+            $("#box .modal-body").html("초기화를 취소했습니다.");
+        }
+    });
+
+    $("#predict").on("click", function(){
+        $.ajax({
+            type:"get",
+            url:"/predict",
+            success:function(data){
+                if(data=='success'){
+                    $("#box").modal("show");
+                    $("#box .modal-body").html("예측을 성공했습니다.")
+                    page=1;
+                    getData();
+                }
+            }
+        });
+    });
+
+    $("#prev").on("click", function(){
+        page -=1;
+        getData();
+    });
+
+    $("#next").on("click", function(){
+        page +=1;
+        getData();
+    });
+
+    function getData(){
+        $.ajax({
+            type:"get",
+            url:"/data",
+            data:{page, size},
+            success:function(data){
+                console.log(data);
+                $("#test").html(data.table);
+                last =Math.ceil(data.total/size);
+                $("#page").html(`${page}/${last}`)
+
+                if(page==1) $("#prev").attr("disabled", true);
+                else $("#prev").attr("disabled", false);
+                if(page==last) $("#next").attr("disabled", true);
+                else $("#next").attr("disabled", false);
+            }
+        })
+    }
+</script>

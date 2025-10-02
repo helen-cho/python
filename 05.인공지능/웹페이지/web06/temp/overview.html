@@ -1,0 +1,60 @@
+<div class="py-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <form name="frm">
+                <div class="input-group">
+                    <input name="title" placeholder="영화제목" class="form-control" value="Avatar">
+                    <button class="btn btn-success">영화추천</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div id="result" class="row"></div>
+    {%raw%}
+        <script id="temp_result" type="text/x-handlebars-template">
+            {{#each .}}
+                <div class="col-2 col-md-3 col-lg-2 mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="{{poster}}" width="100%" overview="{{overview}}" title="{{title}}">
+                        </div>
+                        <div class="card-footer">
+                            <div class="title text-truncate">{{title}}</div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </script>
+    {%endraw%}
+    {%include 'modal.html'%}
+</div>
+<script>
+    $("#result").on("click", "img", function(){
+        const src = $(this).attr('src');
+        const overview = $(this).attr("overview")
+        const title=$(this).attr("title")
+
+        $("#overview").modal("show");
+        
+        $("#overview .modal-title").html(title)
+        $("#poster").attr("src", src);
+        $("#story").html(overview);
+    });
+
+    $(frm).on("submit", function(e){
+        e.preventDefault();
+        const title=$(frm.title).val();
+        $.ajax({
+            type:"get",
+            url:"/overview/data",
+            data:{title},
+            success:function(data){
+                console.log(data)
+                const temp=Handlebars.compile($("#temp_result").html())
+                $("#result").html(temp(data));
+            }
+        })
+    });
+</script>
