@@ -26,3 +26,7 @@ table.dataframe th, td {
 #result img {
     cursor: pointer;
 }
+
+.description {
+    cursor: pointer;
+}

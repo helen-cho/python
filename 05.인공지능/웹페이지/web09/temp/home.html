@@ -4,14 +4,32 @@
         <div class="col-12 col-md-6 col-lg-4">
             <form name="frm">
                 <div class="input-group">
-                    <input name="query" class="form-control">
+                    <input name="query" class="form-control" value="인공지능">
                     <button class="btn btn-success">검색</button>
                 </div>
             </form>
         </div>
+        <div id="news" class="my-3"></div>
+        {%raw%}
+        <script id="temp" type="text/x-handlebars-template">
+            {{#each .}}
+                <div class="mb-3">
+                    <h5><a href="{{link}}">{{{title}}}</a></h5>
+                    <div class="description text-truncate">
+                        {{{description}}}
+                        <button class="btn btn-danger btn-sm">감성분석</button>
+                    </div>
+                </div>    
+            {{/each}}
+        </script>
+        {%endraw%}
     </div>
 </div>
 <script>
+    $("#news").on("click", ".description", function(){
+        $(this).toggleClass("text-truncate");
+    });
+
     $(frm).on("submit", function(e){
         e.preventDefault();
         const query=$(frm.query).val();
@@ -33,8 +51,10 @@
                 if(length==0){
                     showBox("검색 내용이 없습니다.");
                     $(frm.query).val("");
+                    return;
                 }
-                console.log(data);
+                const temp=Handlebars.compile($("#temp").html())
+                $("#news").html(temp(data));
             }
         });
     }
