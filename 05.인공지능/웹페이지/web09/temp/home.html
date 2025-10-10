@@ -1,0 +1,97 @@
+<div class="my-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <form name="frm">
+                <div class="input-group">
+                    <input name="query" class="form-control" value="인공지능">
+                    <button class="btn btn-success">검색</button>
+                </div>
+            </form>
+        </div>
+        <div id="news" class="my-3"></div>
+        <div class="text-center" id="buttons">
+            <button class="btn btn-success btn-sm px-5" id="prev">이전</button>
+            <span class="px-3" id="page">1/10</span>
+            <button class="btn btn-success btn-sm px-5" id="next">다음</button>
+        </div>
+        {%raw%}
+        <script id="temp" type="text/x-handlebars-template">
+            {{#each items}}
+                <div class="mb-3">
+                    <div class="text-end">
+                        <button class="btn btn-danger btn-sm" text="{{description}}">감성분석</button>
+                    </div>
+                    <h5><a href="{{link}}">{{{title}}}</a></h5>
+                    <div class="description text-truncate">
+                        {{{description}}}
+                    </div>
+                </div>
+                <hr>    
+            {{/each}}
+        </script>
+        {%endraw%}
+    </div>
+</div>
+<script>
+    let page=1;
+
+    $("#next").on("click", function(){
+        page++;
+        getNews();
+    });
+
+    
+    $("#prev").on("click", function(){
+        page--;
+        getNews();
+    });
+
+    $("#buttons").hide();
+    $("#news").on("click", ".btn-danger", function(){
+        $.ajax({
+            type:"get",
+            url:"/predict",
+            data:{"text":$(this).attr("text")},
+            success:function(data){
+                showBox(`이 기사는 <span class="red">${data}</span>적 기사입니다.`);
+            }
+        })
+    });
+
+    $("#news").on("click", ".description", function(){
+        $(this).toggleClass("text-truncate");
+    });
+
+    $(frm).on("submit", function(e){
+        e.preventDefault();
+        const query=$(frm.query).val();
+        if(query==""){
+            showBox("검색어를 입력하세요!");
+            return;
+        }
+        getNews();
+    });
+
+    function getNews(){
+        const query=$(frm.query).val();
+        $.ajax({
+            type:"get",
+            url:"/search",
+            data:{query, page},
+            success:function(data){
+                const total = data.total
+                if(total==0){
+                    showBox("검색 내용이 없습니다.");
+                    $(frm.query).val("");
+                    return;
+                }else if(total > 5){
+                    $("#buttons").show();
+                }
+                const temp=Handlebars.compile($("#temp").html())
+                $("#news").html(temp(data));
+                $("#page").html(page);
+            }
+        });
+    }
+</script>

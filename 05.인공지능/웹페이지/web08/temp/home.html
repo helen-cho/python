@@ -1,0 +1,39 @@
+<div class="my-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div class="row">
+        <div class="col">
+            <div class="input-group">
+                <select id="code" class="form-select">
+                    <option value="005930">삼성전자</option>
+                    <option value='035720'>카카오</option>
+                    <option value='005380'>현대차</option>
+                    <option value='066570'>LG전자</option>
+                    <option value='035420'>NAVER</option>
+                </select>
+                <input id="start" value="2025-01-01" type="date" class="form-control">
+                <input id="end" value="2025-09-30" type="date" class="form-control">
+                <button id="search" class="btn btn-success">검색</button>
+            </div>
+        </div>
+        {%include 'tab.html'%}
+    </div>
+</div>
+<script>
+    $("#buttons").hide();
+    $("#search").on("click", function(){
+        const code=$("#code").val();
+        const start=$("#start").val();
+        const end=$("#end").val();
+        $.ajax({
+            type:"get",
+            url:"/data",
+            data:{code, start, end},
+            success:function(data){
+                $("#data").html(data);
+                $("#buttons").show();
+            }
+        });
+        //$("#img1").attr("src", `/img1?code=${code}&start=${start}&end=${end}`)
+        //$("#img2").attr("src", `/img2?code=${code}&start=${start}&end=${end}`)
+    });
+</script>

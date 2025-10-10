@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생관리</title>
+    <style>
+        th,
+        td {
+            text-align: center;
+        }
+
+        * {
+            font-family: "Jua", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-3">학생관리</h1>
+        <div class="row mb-2">
+            <form name="frm" class="col-6">
+                <div class="input-group">
+                    <input name="word" placeholder="검색어" class="form-control">
+                    <button class="btn btn-primary">검색</button>
+                </div>
+            </form>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    학생성적
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    학생정보
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                    성적그래프
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div id="score" class="mt-3"></div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div id="info" class="mt-3"></div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="mt-3">
+                    <button id="btn" class="btn btn-success w-100">그래프출력</button>
+                </div>
+                <img id="image" src="http://placehold.co/500x300" width="100%" />
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    getData();
+
+    $("#btn").on("click", function () {
+        $("#image").attr("src", "/score/graph");
+    });
+
+    $(frm).on("submit", function (e) {
+        e.preventDefault();
+        getData()
+    })
+
+    function getData() {
+        const word = $(frm.word).val()
+        //alert(word);
+        $.ajax({
+            type: 'get',
+            url: '/score/data',
+            data: { word },
+            success: function (data) {
+                console.log(data);
+                $("#score").html(data.score);
+                $("#info").html(data.info);
+            }
+        })
+    }
+</script>
+
+</html>

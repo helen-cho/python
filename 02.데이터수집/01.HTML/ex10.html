@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서목록</title>
+    <style>
+        * {
+            font-family: "Jua", sans-serif;
+        }
+
+        .box {
+            border: 1px solid green;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .title, .author{
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container p-5">
+        <h1 class="text-center">한빛미디어</h1>
+        <div id="books" class="row"></div>
+        <script id="temp" type="x-handlebars-template">
+            {{#each .}}
+                <div class='col-6 col-md-3 col-lg-2 mb-3'>
+                    <div class="card">
+                        <div class="card-body">
+                            <a href='{{link}}'>
+                                <img src="{{image}}" width="100%">
+                            </a>
+                        </div> 
+                        <div class="card-footer">   
+                            <div class="text-truncate text-center title">{{title}}</div>
+                            <div class="text-center author">{{author}}</div> 
+                        </div>    
+                    </div>       
+                </div>    
+            {{/each}}
+        </script>
+    </div>
+</body>
+<script src="books.js"></script>
+<script>
+    //1.템플릿 컴파일
+    temp = Handlebars.compile($("#temp").html())
+    //2.템플릿에 데이터넣기
+    temp_data = temp(data)
+    //3. 아이디(books)에 템플릿데이터 넣기
+    $("#books").html(temp_data)
+</script>
+</html>

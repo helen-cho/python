@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습06</title>
+</head>
+<body>
+    <button id="btn1">1~100까지 합</button>
+    <button id="btn2">1~100까지 짝수합</button>
+    <button id="btn3">1~100까지 홀수합</button>
+    <h1 id="result">결과</h1>
+</body>
+<script>
+    //1~100까지 합
+    $("#btn1").on("click", function(){
+        sum=0;
+        for(i=1; i<=100; i++){
+            sum =sum+i;
+        }
+        $("#result").html(sum);
+    });
+
+    //1~100까지 짝수합
+    $("#btn2").on("click", function(){
+        sum=0;
+        for(i=0; i<=100; i+=2){
+            sum =sum+i;
+        }
+        $("#result").html(sum);
+    });
+
+    //1~100까지 홀수합
+    $("#btn3").on("click", function(){
+        sum=0;
+        for(i=1; i<100; i+=2){
+            sum =sum+i;
+        }
+        $("#result").html(sum);
+    });
+</script>
+</html>

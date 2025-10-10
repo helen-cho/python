@@ -1,0 +1,82 @@
+<div class="my-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <div class="row justify-content-center">
+        <form class="col-12 col-md-6 mb-3" name="frm">
+            <div class="input-group">
+                <input placeholder="공부시간" class="form-control" name="hour">
+                <button class="btn btn-success">합격결과</button>
+            </div>
+        </form>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">그래프출력</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">예측결과</button>
+                </li>
+            </ul>
+            <div class="tab-content p-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <button id="btn" class="btn btn-success w-100">그래프출력</button>
+                    <img id="graph" src='http://placehold.co/500x300' width="100%">
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <button id="btn2" class="btn btn-success w-100 mb-2">예측결과</button>
+                    <div id="result">{{table|safe}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#btn2").on("click", function(e){
+        $.ajax({
+            type:'get',
+            url:'/logistic/predict/data',
+            success:function(data){
+                $("#result").html(data);
+            }
+        });
+    });
+
+    $(frm).on("submit", function (e) {
+        e.preventDefault();
+        const hour = $(frm.hour).val();
+        if (hour == '') {
+            $("#box").modal("show");
+            $("#box .modal-body").html('공부시간을 입력하세요!');
+            return;
+        }
+        $.ajax({
+            type: 'get',
+            url: '/logistic/predict',
+            data: { hour },
+            success: function (data) {
+                //console.log(data)
+                let str = '';
+                if (data.result == 1) {
+                    str = '합격이 예상됩니다.';
+                } else {
+                    str = '불합격이 예상됩니다.'
+                }
+                str += `<br>불합격율:${data.fail}, 합격율:${data.pass}`;
+                $("#box").modal('show');
+                $("#box .modal-body").html(str);
+            }
+        })
+    });
+
+    // $("[name='hour']").on("input", function() {
+    //     let value = $(this).val();
+    //     value = value.replace(/[^0-9.]/g, ''); // 숫자와 소수점만 허용
+    //     value = value.replace(/(\..*?)\..*/g, '$1'); // 소수점이 여러 개 들어오면 첫 번째만 유지
+    //     $(this).val(value);
+    // });
+</script>
