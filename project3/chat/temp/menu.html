@@ -8,19 +8,32 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">친구</a>
+                    <a class="nav-link active" aria-current="page" href="/chat/0">친구</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">가족</a>
+                    <a class="nav-link active" aria-current="page" href="/chat/1">가족</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">회사</a>
+                    <a class="nav-link active" aria-current="page" href="/chat/2">회사</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="아이디" aria-label="Search" />
+                <input id="uid" value="{{uid}}" class="form-control me-2" type="search" placeholder="아이디" aria-label="Search" />
                 <button class="btn btn-outline-success" type="submit">Login</button>
             </form>
         </div>
     </div>
 </nav>
+<script>
+    $(".nav-item").on("click", "a", function(e){
+        e.preventDefault();
+        const uid = $("#uid").val();
+        const href = $(this).attr("href");
+        if(uid=="") {
+            alert("아이디를 입력 하세요!");
+            $("#uid").focus();
+        }else{
+            window.location.href=href + "?uid=" + uid;
+        }
+    });
+</script>
