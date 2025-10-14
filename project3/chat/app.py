@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, session
-from flask_socketio import SocketIO, emit, join_room
+from flask_socketio import SocketIO, emit, join_room, leave_room
 
 app = Flask(__name__, template_folder='temp')
 app.secret_key='1234'
@@ -27,5 +27,20 @@ def joined():
     msg = f'{uid}님 입장하셨습니다.'
     emit('status', {'msg':msg}, room=room)
 
+@socketio.on('text', namespace='/chat')
+def text(data):
+    uid = session['uid']
+    room = session['room']
+    msg = data.get('msg')
+    emit('message', {'msg':f'{uid}: {msg}'}, room=room)
+
+@socketio.on('left', namespace='/chat')
+def left():
+    uid = session['uid']
+    room = session['room']
+    msg = f'{uid}님 퇴장하셨습니다.'
+    emit('status', {'msg':msg}, room=room)
+    leave_room(room)
+    
 if __name__=='__main__':
     socketio.run(app, port=5000, debug=True)
