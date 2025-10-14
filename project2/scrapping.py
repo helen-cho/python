@@ -7,8 +7,8 @@ def create_soup(url):
     soup = BeautifulSoup(res.text, 'lxml')
     return soup
 
-def weather():
-    url='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%98%A4%EB%8A%98%EC%9D%98%EB%82%A0%EC%94%A8&ackey=xhv7y3jw'
+def weather(query):
+    url=f'https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query={query}&ackey=llypdp3k'
     soup = create_soup(url)
     temp = soup.find('div', attrs={'class':'temperature_text'})
     time.sleep(1)

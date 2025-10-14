@@ -43,7 +43,10 @@ def answer(text):
         rate = exchange()
         answer_text='1달러 환율은 ' + rate + '원 입니다.'
     elif '날씨' in text:
-        answer_text = weather()
+        index = text.find('날씨')
+        query = text[:index + 2]
+        temp = weather(query)
+        answer_text = f'{query}의 기온은 {temp}입니다.'
     elif '안녕' in text:
         answer_text='안녕하세요! 반갑습니다.'
     else:
