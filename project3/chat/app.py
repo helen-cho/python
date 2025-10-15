@@ -27,7 +27,7 @@ def joined():
     msg = f'{uid}님 입장하셨습니다.'
     emit('status', {'msg':msg}, room=room)
 
-@socketio.on('text', namespace='/chat')
+@socketio.on('message', namespace='/chat')
 def text(data):
     uid = session['uid']
     room = session['room']

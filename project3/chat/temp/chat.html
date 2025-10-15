@@ -38,7 +38,7 @@
         if(text=="") {
             alert("전송할 내용을 입력하세요!");
         }else{
-            socket.emit("text", {msg:text});
+            socket.emit("message", {msg:text});
             $(frm.text).val("");
         }
     });
